@@ -1,0 +1,1682 @@
+(dp0
+S'test_function_can_return'
+p1
+(lp2
+S'_start SymbolType.FunctionSymbol 0x8040094L False'
+p3
+asS'test_function_stack'
+p4
+(lp5
+S"['var_c', 'var_8', 'var_4', 'testautovar']"
+p6
+aS'<undetermined>'
+p7
+ag7
+aS'None'
+p8
+asS'test_strings'
+p9
+(lp10
+S'hello world\n StringType.AsciiString 0x80410ecL'
+p11
+asS'test_function_low_il_basic_blocks'
+p12
+(lp13
+S'0x0L 0xbL 1'
+p14
+aS'0xbL 0xdL 2'
+p15
+aS'0xdL 0x15L 0'
+p16
+aS'0x15L 0x19L 1'
+p17
+asS'test_functions_attributes'
+p18
+(lp19
+S"['var_c', 'var_8', 'var_4', 'testautovar', 'r0', 'r0_1', 'r0_2', 'r0_3', 'r1', 'r2', 'r2_1', 'r7', 'r11', 'lr']"
+p20
+aS'[]'
+p21
+aS'{}'
+p22
+aI1
+aS'[]'
+p23
+aS'False'
+p24
+aS'True'
+p25
+aI30
+ag7
+aS'testcomment _start'
+p26
+ag24
+ag24
+aS'push(lr)'
+p27
+aS'[]'
+p28
+aS"['r7', 'r11', 'sp', 'lr']"
+p29
+aS"['sp']"
+p30
+aS'[<ref to var_4>, <ref to var_8>, <ref to var_c>]'
+p31
+aS'[]'
+p32
+aS'push(lr)'
+p33
+aS'[]'
+p34
+aS'[]'
+p35
+aS'<graph of <func: armv7eb@0x8040094>>'
+p36
+aS'[]'
+p37
+aS'[]'
+p38
+aS'<block: armv7eb@0x8040094-0x80400b4>'
+p39
+aS'<color: #ff00ff>'
+p40
+aS'[<0x8040094: int32_t _start() __noreturn>]'
+p41
+asS'test_function_starts'
+p42
+(lp43
+S'0x8040094L'
+p44
+asS'test_function_llil'
+p45
+(lp46
+S'<block: armv7eb@0x0-0xb>'
+p47
+aS'<block: armv7eb@0xb-0xd>'
+p48
+aS'<block: armv7eb@0xd-0x15>'
+p49
+aS'<block: armv7eb@0x15-0x19>'
+p50
+aS'push(lr)'
+p51
+aS'push(r11)'
+p52
+aS'push(r7)'
+p53
+aS'r11 = sp'
+p54
+aS'sp = sp'
+p55
+aS'r0 = 0x1040'
+p56
+aS'r2 = 0x80400ac + r0'
+p57
+aS'r3 = r2'
+p58
+aS'r2 = r3'
+p59
+aS'r1 = 0'
+p60
+aS'goto 11 @ 0x80400b4'
+p61
+aS'r0 = sx.d([r2].b)'
+p62
+aS'if (r0 == 0) then 13 @ 0x80400d0 else 21 @ 0x80400c0'
+p63
+aS'r2 = r1'
+p64
+aS'r0 = 1'
+p65
+aS'r1 = r3'
+p66
+aS'r7 = 4'
+p67
+aS'syscall'
+p68
+aS'r7 = 1'
+p69
+aS'syscall'
+p70
+aS'noreturn'
+p71
+aS'r1 = r1 + 1'
+p72
+aS'r0 = r2 + 1'
+p73
+aS'r2 = r0'
+p74
+aS'goto 11 @ 0x80400b4'
+p75
+aS'<block: armv7eb@0x0-0x6>'
+p76
+aS'<block: armv7eb@0x6-0x8>'
+p77
+aS'<block: armv7eb@0x8-0xc>'
+p78
+aS'<block: armv7eb@0xc-0x10>'
+p79
+aS'var_4 = lr'
+p80
+aS'var_8 = r11'
+p81
+aS'var_c = r7'
+p82
+aS'r2 = 0x80410ec'
+p83
+aS'r1 = 0'
+p84
+aS'goto 6 @ 0x80400b4'
+p85
+aS'r0_1 = sx.d([r2].b)'
+p86
+aS'if (r0_1 == 0) then 8 @ 0x80400d0 else 12 @ 0x80400c0'
+p87
+aS'r2_1 = r1'
+p88
+aS'r0_3 = syscall(4, 1, 0x80410ec, r2_1, 0x80410ec)'
+p89
+aS'syscall(sys_exit {1}, r0_3)'
+p90
+aS'noreturn'
+p91
+aS'r1 = r1 + 1'
+p92
+aS'r0_2 = r2 + 1'
+p93
+aS'r2 = r0_2'
+p94
+aS'goto 6 @ 0x80400b4'
+p95
+aS"(['push', '    ', '{', 'r7', ', ', 'r11', ', ', 'lr', '}', ''], 134480020L)"
+p96
+aS"(['mov', '     ', 'r11', '', ', ', 'sp', ''], 134480024L)"
+p97
+aS"(['sub', '     ', 'sp', '', ', ', 'sp', '', ', ', '#', '0'], 134480028L)"
+p98
+aS"(['movw', '    ', 'r0', '', ', ', '#', '0x1040'], 134480032L)"
+p99
+aS"(['add', '     ', 'r2', '', ', ', 'pc', '', ', ', 'r0', ''], 134480036L)"
+p100
+aS"(['mov', '     ', 'r3', '', ', ', 'r2', ''], 134480040L)"
+p101
+aS"(['mov', '     ', 'r2', '', ', ', 'r3', ''], 134480044L)"
+p102
+aS"(['mov', '     ', 'r1', '', ', ', '#', '0'], 134480048L)"
+p103
+aS"(['mov', '     ', 'r2', '', ', ', 'r1', ''], 134480080L)"
+p104
+aS"(['mov', '     ', 'r0', '', ', ', '#', '0x1'], 134480084L)"
+p105
+aS"(['mov', '     ', 'r1', '', ', ', 'r3', ''], 134480088L)"
+p106
+aS"(['movw', '    ', 'r7', '', ', ', '#', '0x4'], 134480092L)"
+p107
+aS"(['svc', '     ', '#', '0'], 134480096L)"
+p108
+aS"(['movw', '    ', 'r7', '', ', ', '#', '0x1'], 134480100L)"
+p109
+aS"(['svc', '     ', '#', '0'], 134480104L)"
+p110
+aS"(['add', '     ', 'r1', '', ', ', 'r1', '', ', ', '#', '0x1'], 134480064L)"
+p111
+aS"(['add', '     ', 'r0', '', ', ', 'r2', '', ', ', '#', '0x1'], 134480068L)"
+p112
+aS"(['mov', '     ', 'r2', '', ', ', 'r0', ''], 134480072L)"
+p113
+aS"(['b', '       ', '0x80400b4'], 134480076L)"
+p114
+aS"(['ldrsb', '   ', 'r0', '', ', ', '[', 'r2', ']'], 134480052L)"
+p115
+aS"(['cmp', '     ', 'r0', '', ', ', '#', '0'], 134480056L)"
+p116
+aS"(['beq', '     ', '0x80400d0'], 134480060L)"
+p117
+asS'test_low_il_ssa'
+p118
+(lp119
+S'None'
+p120
+aS'[]'
+p121
+ag7
+aS'None'
+p122
+aS'[]'
+p123
+ag7
+aS'None'
+p124
+aS'[]'
+p125
+ag7
+aS'None'
+p126
+aS'[]'
+p127
+ag7
+aS'None'
+p128
+aS'[]'
+p129
+ag7
+aS'None'
+p130
+aS'[]'
+p131
+ag7
+aS'None'
+p132
+aS'[]'
+p133
+ag7
+aS'None'
+p134
+aS'[]'
+p135
+ag7
+aS'None'
+p136
+aS'[]'
+p137
+ag7
+aS'None'
+p138
+aS'[]'
+p139
+ag7
+aS'None'
+p140
+aS'[]'
+p141
+ag7
+aS'None'
+p142
+aS'[]'
+p143
+ag7
+aS'None'
+p144
+aS'[]'
+p145
+ag7
+aS'None'
+p146
+aS'[]'
+p147
+ag7
+aS'None'
+p148
+aS'[]'
+p149
+ag7
+aS'None'
+p150
+aS'[]'
+p151
+ag7
+aS'None'
+p152
+aS'[]'
+p153
+ag7
+aS'None'
+p154
+aS'[]'
+p155
+ag7
+aS'None'
+p156
+aS'[]'
+p157
+ag7
+aS'None'
+p158
+aS'[]'
+p159
+ag7
+aS'None'
+p160
+aS'[]'
+p161
+ag7
+aS'None'
+p162
+aS'[]'
+p163
+ag7
+aS'None'
+p164
+aS'[]'
+p165
+ag7
+aS'None'
+p166
+aS'[]'
+p167
+ag7
+aS'None'
+p168
+aS'[]'
+p169
+ag7
+aS'None'
+p170
+aS'[]'
+p171
+ag7
+aS'None'
+p172
+aS'[]'
+p173
+ag7
+aS'3'
+p174
+aS'[]'
+p175
+aS'<stack frame offset -0xc>'
+p176
+aS'None'
+p177
+aS'[]'
+p178
+ag7
+aS'None'
+p179
+aS'[]'
+p180
+ag7
+aS'None'
+p181
+aS'[]'
+p182
+ag7
+aS'None'
+p183
+aS'[]'
+p184
+ag7
+aS'None'
+p185
+aS'[]'
+p186
+ag7
+aS'None'
+p187
+aS'[]'
+p188
+ag7
+aS'None'
+p189
+aS'[]'
+p190
+ag7
+aS'None'
+p191
+aS'[]'
+p192
+ag7
+aS'None'
+p193
+aS'[]'
+p194
+ag7
+aS'None'
+p195
+aS'[]'
+p196
+ag7
+aS'None'
+p197
+aS'[]'
+p198
+ag7
+aS'None'
+p199
+aS'[]'
+p200
+ag7
+aS'None'
+p201
+aS'[]'
+p202
+ag7
+aS'None'
+p203
+aS'[]'
+p204
+ag7
+aS'None'
+p205
+aS'[]'
+p206
+ag7
+aS'None'
+p207
+aS'[]'
+p208
+ag7
+aS'None'
+p209
+aS'[]'
+p210
+ag7
+aS'None'
+p211
+aS'[]'
+p212
+ag7
+aS'None'
+p213
+aS'[]'
+p214
+ag7
+aS'16'
+p215
+aS'[17L]'
+p216
+aS'<const 0x4>'
+p217
+aS'5'
+p218
+aS'[6L, 11L]'
+p219
+aS'<const 0x1040>'
+p220
+aS'9'
+p221
+aS'[11L]'
+p222
+aS'<const 0x0>'
+p223
+aS'6'
+p224
+aS'[7L]'
+p225
+aS'<const ptr 0x80410ec>'
+p226
+aS'7'
+p227
+aS'[8L, 15L, 17L, 19L]'
+p228
+aS'<const ptr 0x80410ec>'
+p229
+aS'None'
+p230
+aS'[]'
+p231
+ag7
+aS'None'
+p232
+aS'[]'
+p233
+ag7
+aS'None'
+p234
+aS'[]'
+p235
+ag7
+aS'None'
+p236
+aS'[]'
+p237
+ag7
+aS'None'
+p238
+aS'[]'
+p239
+ag7
+aS'0'
+p240
+aS'[1L]'
+p241
+aS'<stack frame offset -0x4>'
+p242
+aS'None'
+p243
+aS'[]'
+p244
+ag7
+aS'None'
+p245
+aS'[]'
+p246
+ag7
+aS'None'
+p247
+aS'[]'
+p248
+ag7
+aS'None'
+p249
+aS'[]'
+p250
+ag7
+aS'None'
+p251
+aS'[]'
+p252
+ag7
+aS'None'
+p253
+aS'[]'
+p254
+ag7
+aS'None'
+p255
+aS'[]'
+p256
+ag7
+aS'None'
+p257
+aS'[]'
+p258
+ag7
+aS'None'
+p259
+aS'[]'
+p260
+ag7
+aS'None'
+p261
+aS'[]'
+p262
+ag7
+aS'None'
+p263
+aS'[]'
+p264
+ag7
+aS'None'
+p265
+aS'[]'
+p266
+ag7
+aS'None'
+p267
+aS'[]'
+p268
+ag7
+aS'None'
+p269
+aS'[]'
+p270
+ag7
+aS'None'
+p271
+aS'[]'
+p272
+ag7
+aS'None'
+p273
+aS'[]'
+p274
+ag7
+aS'None'
+p275
+aS'[]'
+p276
+ag7
+aS'None'
+p277
+aS'[]'
+p278
+ag7
+aS'None'
+p279
+aS'[]'
+p280
+ag7
+aS'None'
+p281
+aS'[]'
+p282
+ag7
+aS'None'
+p283
+aS'[]'
+p284
+ag7
+aS'None'
+p285
+aS'[]'
+p286
+ag7
+aS'None'
+p287
+aS'[]'
+p288
+ag7
+aS'None'
+p289
+aS'[]'
+p290
+ag7
+aS'None'
+p291
+aS'[]'
+p292
+ag7
+aS'None'
+p293
+aS'[]'
+p294
+ag7
+aS'None'
+p295
+aS'[]'
+p296
+ag7
+aS'None'
+p297
+aS'[]'
+p298
+ag7
+aS'None'
+p299
+aS'[]'
+p300
+ag7
+aS'None'
+p301
+aS'[]'
+p302
+ag7
+aS'None'
+p303
+aS'[]'
+p304
+ag7
+aS'None'
+p305
+aS'[]'
+p306
+ag7
+aS'None'
+p307
+aS'[]'
+p308
+ag7
+aS'None'
+p309
+aS'[]'
+p310
+ag7
+aS'None'
+p311
+aS'[]'
+p312
+ag7
+aS'None'
+p313
+aS'[]'
+p314
+ag7
+aS'None'
+p315
+aS'[]'
+p316
+ag7
+aS'None'
+p317
+aS'[]'
+p318
+ag7
+aS'[]'
+p319
+ag7
+aS'[]'
+p320
+ag7
+aS'[]'
+p321
+ag7
+aS'[]'
+p322
+ag7
+aS'[]'
+p323
+ag7
+aS'0'
+p324
+aS'0'
+p325
+aS'0'
+p326
+aS'0'
+p327
+aS'1'
+p328
+aS'2'
+p329
+aS'1'
+p330
+aS'2'
+p331
+aS'2'
+p332
+aS'4'
+p333
+aS'2'
+p334
+aS'4'
+p335
+aS'3'
+p336
+aS'6'
+p337
+aS'None'
+p338
+aS'6'
+p339
+aS'4'
+p340
+aS'7'
+p341
+aS'None'
+p342
+aS'7'
+p343
+aS'5'
+p344
+aS'8'
+p345
+aS'None'
+p346
+aS'8'
+p347
+aS'6'
+p348
+aS'9'
+p349
+aS'None'
+p350
+aS'9'
+p351
+aS'7'
+p352
+aS'10'
+p353
+aS'3'
+p354
+aS'10'
+p355
+aS'8'
+p356
+aS'11'
+p357
+aS'3'
+p358
+aS'11'
+p359
+aS'9'
+p360
+aS'12'
+p361
+aS'4'
+p362
+aS'12'
+p363
+aS'10'
+p364
+aS'13'
+p365
+aS'5'
+p366
+aS'13'
+p367
+aS'11'
+p368
+aS'17'
+p369
+aS'6'
+p370
+aS'14'
+p371
+aS'12'
+p372
+aS'18'
+p373
+aS'7'
+p374
+aS'15'
+p375
+aS'13'
+p376
+aS'19'
+p377
+aS'8'
+p378
+aS'16'
+p379
+aS'14'
+p380
+aS'20'
+p381
+aS'9'
+p382
+aS'17'
+p383
+aS'15'
+p384
+aS'21'
+p385
+aS'9'
+p386
+aS'18'
+p387
+aS'16'
+p388
+aS'22'
+p389
+aS'9'
+p390
+aS'19'
+p391
+aS'17'
+p392
+aS'23'
+p393
+aS'9'
+p394
+aS'20'
+p395
+aS'18'
+p396
+aS'24'
+p397
+aS'10'
+p398
+aS'21'
+p399
+aS'19'
+p400
+aS'25'
+p401
+aS'10'
+p402
+aS'22'
+p403
+aS'20'
+p404
+aS'26'
+p405
+aS'11'
+p406
+aS'23'
+p407
+aS'21'
+p408
+aS'27'
+p409
+aS'12'
+p410
+aS'24'
+p411
+aS'22'
+p412
+aS'28'
+p413
+aS'13'
+p414
+aS'25'
+p415
+aS'23'
+p416
+aS'29'
+p417
+aS'14'
+p418
+aS'26'
+p419
+aS'24'
+p420
+aS'30'
+p421
+aS'15'
+p422
+aS'27'
+p423
+asS'test_med_il_instructions'
+p424
+(lp425
+S'None'
+p426
+aS'[sp#0 - 4].d = lr#0 @ mem#0 -> mem#1'
+p427
+ag7
+aS'<undetermined>'
+p428
+aS'{}'
+p429
+aS"['<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', 'lr', 'var_4']"
+p430
+aS"['<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', 'lr', 'var_4']"
+p431
+aS'var_4#1 = lr#0'
+p432
+aS'var_4 = lr'
+p433
+aS'None'
+p434
+aS'[sp#1 - 4].d = r11#0 @ mem#1 -> mem#2'
+p435
+ag7
+ag428
+aS'{}'
+p436
+aS"['<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', 'r11', 'var_8']"
+p437
+aS"['<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', 'r11', 'var_8']"
+p438
+aS'var_8#1 = r11#0'
+p439
+aS'var_8 = r11'
+p440
+aS'None'
+p441
+aS'[sp#2 - 4].d = r7#0 @ mem#2 -> mem#3'
+p442
+ag7
+ag428
+aS'{}'
+p443
+aS"['<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', 'r7', 'var_c']"
+p444
+aS"['<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', 'r7', 'var_c']"
+p445
+aS'var_c#1 = r7#0'
+p446
+aS'var_c = r7'
+p447
+aS'None'
+p448
+aS'r2#2 = r3#1'
+p449
+ag7
+ag428
+aS'{}'
+p450
+aS"['134484204', '<MLIL_CONST_PTR 4>', '<MLIL_SET_VAR 4>', 'r2']"
+p451
+aS"['134484204', '<MLIL_CONST_PTR 4>', '<MLIL_SET_VAR 4>', 'r2']"
+p452
+aS'r2#1 = 0x80410ec'
+p453
+aS'r2 = 0x80410ec'
+p454
+aS'None'
+p455
+aS'r1#1 = 0'
+p456
+ag7
+ag428
+aS'{}'
+p457
+aS"['0', '<MLIL_CONST 4>', '<MLIL_SET_VAR 4>', 'r1']"
+p458
+aS"['0', '<MLIL_CONST 4>', '<MLIL_SET_VAR 4>', 'r1']"
+p459
+aS'r1#1 = 0'
+p460
+aS'r1 = 0'
+p461
+aS'None'
+p462
+aS'goto 14 @ 0x80400b4'
+p463
+ag7
+ag428
+aS'{}'
+p464
+aS"['6', '<MLIL_GOTO>']"
+p465
+aS"['6', '<MLIL_GOTO>']"
+p466
+aS'goto 6 @ 0x80400b4'
+p467
+aS'goto 6 @ 0x80400b4'
+p468
+aS'None'
+p469
+aS'r0#3 = sx.d([r2#3].b @ mem#3)'
+p470
+ag7
+ag428
+aS'{}'
+p471
+aS"['<MLIL_LOAD 1>', '<MLIL_SET_VAR 4>', '<MLIL_SX 4>', '<MLIL_VAR 4>', 'r0_1', 'r2']"
+p472
+aS"['<MLIL_LOAD 1>', '<MLIL_SET_VAR 4>', '<MLIL_SX 4>', '<MLIL_VAR 4>', 'r0_1', 'r2']"
+p473
+aS'r0_1#2 = sx.d([r2#2].b @ mem#0)'
+p474
+aS'r0_1 = sx.d([r2].b)'
+p475
+aS'None'
+p476
+aS'if (r0#3 == 0) then 19 @ 0x80400d0 else 27 @ 0x80400c0'
+p477
+ag7
+ag428
+aS'{}'
+p478
+aS"['0', '12', '8', '<MLIL_CMP_E 4>', '<MLIL_CONST 4>', '<MLIL_IF>', '<MLIL_VAR 4>', 'r0_1']"
+p479
+aS"['0', '12', '8', '<MLIL_CMP_E 4>', '<MLIL_CONST 4>', '<MLIL_IF>', '<MLIL_VAR 4>', 'r0_1']"
+p480
+aS'if (r0_1#2 == 0) then 11 @ 0x80400d0 else 15 @ 0x80400c0'
+p481
+aS'if (r0_1 == 0) then 8 @ 0x80400d0 else 12 @ 0x80400c0'
+p482
+aS'None'
+p483
+aS'r2#4 = r1#2'
+p484
+ag7
+ag428
+aS'{7L: <ILBranchDependence.TrueBranchDependent: 1>}'
+p485
+aS"['<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', 'r1', 'r2_1']"
+p486
+aS"['<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', 'r1', 'r2_1']"
+p487
+aS'r2_1#3 = r1#2'
+p488
+aS'r2_1 = r1'
+p489
+aS'None'
+p490
+aS'r0#5, mem#4 = syscall(stack = sp#4 @ mem#3, params = r7#1, r0#4, r1#3, r2#4, r3#1, r4#0, r5#0, r6#0)'
+p491
+ag7
+ag428
+aS'{7L: <ILBranchDependence.TrueBranchDependent: 1>}'
+p492
+aS"['<MLIL_SYSCALL>', '[<il: 4>, <il: 1>, <il: 0x80410ec>, <il: r2_1>, <il: 0x80410ec>]', '[<var int32_t r0_3>]']"
+p493
+aS"['<MLIL_SYSCALL>', '[<il: 4>, <il: 1>, <il: 0x80410ec>, <il: r2_1>, <il: 0x80410ec>]', '[<var int32_t r0_3>]']"
+p494
+aS'r0_3#3, mem#1 = syscall(4, 1, 0x80410ec, r2_1#3, 0x80410ec) @ mem#0'
+p495
+aS'r0_3 = syscall(4, 1, 0x80410ec, r2_1, 0x80410ec)'
+p496
+aS'None'
+p497
+aS'r0#6, mem#5 = syscall(stack = sp#4 @ mem#4, params = r7#2, r0#5, r1#3, r2#4, r3#1, r4#0, r5#0, r6#0)'
+p498
+ag7
+ag428
+aS'{7L: <ILBranchDependence.TrueBranchDependent: 1>}'
+p499
+aS"['<MLIL_SYSCALL>', '[<il: 1>, <il: r0_3>]', '[]']"
+p500
+aS"['<MLIL_SYSCALL>', '[<il: 1>, <il: r0_3>]', '[]']"
+p501
+aS'mem#2 = syscall(sys_exit {1}, r0_3#3) @ mem#1'
+p502
+aS'syscall(sys_exit {1}, r0_3)'
+p503
+aS'None'
+p504
+aS'noreturn'
+p505
+ag7
+ag428
+aS'{7L: <ILBranchDependence.TrueBranchDependent: 1>}'
+p506
+aS"['<MLIL_NORET>']"
+p507
+aS"['<MLIL_NORET>']"
+p508
+aS'noreturn'
+p509
+aS'noreturn'
+p510
+aS'None'
+p511
+aS'r1#4 = r1#2 + 1'
+p512
+ag7
+ag428
+aS'{7L: <ILBranchDependence.FalseBranchDependent: 2>}'
+p513
+aS"['1', '<MLIL_ADD 4>', '<MLIL_CONST 4>', '<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', 'r1', 'r1']"
+p514
+aS"['1', '<MLIL_ADD 4>', '<MLIL_CONST 4>', '<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', 'r1', 'r1']"
+p515
+aS'r1#3 = r1#2 + 1'
+p516
+aS'r1 = r1 + 1'
+p517
+aS'None'
+p518
+aS'r0#7 = r2#3 + 1'
+p519
+ag7
+ag428
+aS'{7L: <ILBranchDependence.FalseBranchDependent: 2>}'
+p520
+aS"['1', '<MLIL_ADD 4>', '<MLIL_CONST 4>', '<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', 'r0_2', 'r2']"
+p521
+aS"['1', '<MLIL_ADD 4>', '<MLIL_CONST 4>', '<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', 'r0_2', 'r2']"
+p522
+aS'r0_2#4 = r2#2 + 1'
+p523
+aS'r0_2 = r2 + 1'
+p524
+aS'None'
+p525
+aS'r2#5 = r0#7'
+p526
+ag7
+ag428
+aS'{7L: <ILBranchDependence.FalseBranchDependent: 2>}'
+p527
+aS"['<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', 'r0_2', 'r2']"
+p528
+aS"['<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', 'r0_2', 'r2']"
+p529
+aS'r2#4 = r0_2#4'
+p530
+aS'r2 = r0_2'
+p531
+aS'None'
+p532
+aS'goto 14 @ 0x80400b4'
+p533
+ag7
+ag428
+aS'{7L: <ILBranchDependence.FalseBranchDependent: 2>}'
+p534
+aS"['6', '<MLIL_GOTO>']"
+p535
+aS"['6', '<MLIL_GOTO>']"
+p536
+aS'goto 6 @ 0x80400b4'
+p537
+aS'goto 6 @ 0x80400b4'
+p538
+asS'test_function_symbol_names'
+p539
+(lp540
+S'_start SymbolType.FunctionSymbol 0x8040094L'
+p541
+asS'test_BinaryView'
+p542
+(lp543
+S'struct'
+p544
+aS'struct'
+p545
+aS'struct'
+p546
+aS'struct'
+p547
+aS'void*'
+p548
+aS'[<segment: 0x8040000-0x80400ec, r-x>, <segment: 0x80410ec-0x80410fc, rw->]'
+p549
+aS'{}'
+p550
+aS'[<0x8040000-0x80400ec>, <0x80410ec-0x80410fc>]'
+p551
+aS'{}'
+p552
+aS'134479872'
+p553
+aS'134480044'
+p554
+aS'134479924'
+p555
+aS'134484204'
+p556
+aS'<func: armv7eb@0x8040094>'
+p557
+aS'<func: armv7eb@0x8040094>'
+p558
+aS'0x8040094L'
+p559
+aS'0x8040000L'
+p560
+aS'length: 0x10fc'
+p561
+asS'test_available_types'
+p562
+(lp563
+S'Raw'
+p564
+aS'ELF'
+p565
+asS'test_function_basic_blocks'
+p566
+(lp567
+S'0x8040094L 0x80400b4L False'
+p568
+aS'0x80400d0L 0x80400ecL False'
+p569
+aS'0x80400c0L 0x80400d0L False'
+p570
+aS'0x80400b4L 0x80400c0L False'
+p571
+asS'test_function_med_il_basic_blocks'
+p572
+(lp573
+S'0x0L 0x6L 1'
+p574
+aS'0x6L 0x8L 2'
+p575
+aS'0x8L 0xcL 0'
+p576
+aS'0xcL 0x10L 1'
+p577
+asS'test_symbols'
+p578
+(lp579
+S'__elf_header'
+p580
+aS'__elf_program_headers'
+p581
+aS'_start'
+p582
+asS'test_low_il_instructions'
+p583
+(lp584
+S'var_4 = lr'
+p585
+aS'var_4 = lr'
+p586
+ag7
+ag428
+aS'[<LLIL_PUSH 4>, <LLIL_REG 4>, lr]'
+p587
+aS'[lr, <LLIL_REG 4>, <LLIL_PUSH 4>]'
+p588
+aS'[sp#0 - 4].d = lr#0 @ mem#0 -> mem#1'
+p589
+aS'push(lr)'
+p590
+aS'var_8 = r11'
+p591
+aS'var_8 = r11'
+p592
+ag7
+ag428
+aS'[<LLIL_PUSH 4>, <LLIL_REG 4>, r11]'
+p593
+aS'[r11, <LLIL_REG 4>, <LLIL_PUSH 4>]'
+p594
+aS'[sp#1 - 4].d = r11#0 @ mem#1 -> mem#2'
+p595
+aS'push(r11)'
+p596
+aS'var_c = r7'
+p597
+aS'var_c = r7'
+p598
+ag7
+ag428
+aS'[<LLIL_PUSH 4>, <LLIL_REG 4>, r7]'
+p599
+aS'[r7, <LLIL_REG 4>, <LLIL_PUSH 4>]'
+p600
+aS'[sp#2 - 4].d = r7#0 @ mem#2 -> mem#3'
+p601
+aS'push(r7)'
+p602
+aS'None'
+p603
+aS'r11 = &var_c'
+p604
+ag7
+ag428
+aS'[<LLIL_SET_REG 4>, r11, <LLIL_REG 4>, sp]'
+p605
+aS'[r11, sp, <LLIL_REG 4>, <LLIL_SET_REG 4>]'
+p606
+aS'r11#1 = sp#3'
+p607
+aS'r11 = sp'
+p608
+aS'None'
+p609
+aS'sp = &var_c'
+p610
+ag7
+ag428
+aS'[<LLIL_SET_REG 4>, sp, <LLIL_REG 4>, sp]'
+p611
+aS'[sp, sp, <LLIL_REG 4>, <LLIL_SET_REG 4>]'
+p612
+aS'sp#4 = sp#3'
+p613
+aS'sp = sp'
+p614
+aS'None'
+p615
+aS'r0 = 0x1040'
+p616
+ag7
+ag428
+aS'[<LLIL_SET_REG 4>, r0, <LLIL_CONST 4>, 4160L]'
+p617
+aS'[r0, 4160L, <LLIL_CONST 4>, <LLIL_SET_REG 4>]'
+p618
+aS'r0#1 = 0x1040'
+p619
+aS'r0 = 0x1040'
+p620
+aS'None'
+p621
+aS'r2 = 0x80410ec'
+p622
+ag7
+ag428
+aS'[<LLIL_SET_REG 4>, r2, <LLIL_ADD 4>, <LLIL_CONST_PTR 4>, 134480044L, <LLIL_REG 4>, r0]'
+p623
+aS'[r2, 134480044L, <LLIL_CONST_PTR 4>, r0, <LLIL_REG 4>, <LLIL_ADD 4>, <LLIL_SET_REG 4>]'
+p624
+aS'r2#1 = 0x80400ac + r0#1'
+p625
+aS'r2 = 0x80400ac + r0'
+p626
+aS'None'
+p627
+aS'r3 = 0x80410ec'
+p628
+ag7
+ag428
+aS'[<LLIL_SET_REG 4>, r3, <LLIL_REG 4>, r2]'
+p629
+aS'[r3, r2, <LLIL_REG 4>, <LLIL_SET_REG 4>]'
+p630
+aS'r3#1 = r2#1'
+p631
+aS'r3 = r2'
+p632
+aS'r2 = 0x80410ec'
+p633
+aS'r2 = 0x80410ec'
+p634
+ag7
+ag428
+aS'[<LLIL_SET_REG 4>, r2, <LLIL_REG 4>, r3]'
+p635
+aS'[r2, r3, <LLIL_REG 4>, <LLIL_SET_REG 4>]'
+p636
+aS'r2#2 = r3#1'
+p637
+aS'r2 = r3'
+p638
+aS'r1 = 0'
+p639
+aS'r1 = 0'
+p640
+ag7
+ag428
+aS'[<LLIL_SET_REG 4>, r1, <LLIL_CONST 4>, 0L]'
+p641
+aS'[r1, 0L, <LLIL_CONST 4>, <LLIL_SET_REG 4>]'
+p642
+aS'r1#1 = 0'
+p643
+aS'r1 = 0'
+p644
+aS'None'
+p645
+aS'goto 14 @ 0x80400b4'
+p646
+ag7
+ag428
+aS'[<LLIL_GOTO>, 11L]'
+p647
+aS'[11L, <LLIL_GOTO>]'
+p648
+aS'goto 14 @ 0x80400b4'
+p649
+aS'goto 11 @ 0x80400b4'
+p650
+aS'r0_1 = sx.d([r2].b)'
+p651
+aS'r0 = sx.d([r2].b)'
+p652
+ag7
+ag428
+aS'[<LLIL_SET_REG 4>, r0, <LLIL_SX 4>, <LLIL_LOAD 1>, <LLIL_REG 4>, r2]'
+p653
+aS'[r0, r2, <LLIL_REG 4>, <LLIL_LOAD 1>, <LLIL_SX 4>, <LLIL_SET_REG 4>]'
+p654
+aS'r0#3 = sx.d([r2#3].b @ mem#3)'
+p655
+aS'r0 = sx.d([r2].b)'
+p656
+aS'None'
+p657
+aS'if (r0 == 0) then 16 @ 0x80400d0 else 24 @ 0x80400c0'
+p658
+ag7
+ag428
+aS'[<LLIL_IF>, <LLIL_CMP_E 4>, <LLIL_REG 4>, r0, <LLIL_CONST 4>, 0L, 13L, 21L]'
+p659
+aS'[r0, <LLIL_REG 4>, 0L, <LLIL_CONST 4>, <LLIL_CMP_E 4>, 13L, 21L, <LLIL_IF>]'
+p660
+aS'if (r0#3 == 0) then 19 @ 0x80400d0 else 27 @ 0x80400c0'
+p661
+aS'if (r0 == 0) then 13 @ 0x80400d0 else 21 @ 0x80400c0'
+p662
+aS'r2_1 = r1'
+p663
+aS'r2 = r1'
+p664
+ag7
+ag428
+aS'[<LLIL_SET_REG 4>, r2, <LLIL_REG 4>, r1]'
+p665
+aS'[r2, r1, <LLIL_REG 4>, <LLIL_SET_REG 4>]'
+p666
+aS'r2#4 = r1#2'
+p667
+aS'r2 = r1'
+p668
+aS'None'
+p669
+aS'r0 = 1'
+p670
+ag7
+ag428
+aS'[<LLIL_SET_REG 4>, r0, <LLIL_CONST 4>, 1L]'
+p671
+aS'[r0, 1L, <LLIL_CONST 4>, <LLIL_SET_REG 4>]'
+p672
+aS'r0#4 = 1'
+p673
+aS'r0 = 1'
+p674
+aS'None'
+p675
+aS'r1 = 0x80410ec'
+p676
+ag7
+ag428
+aS'[<LLIL_SET_REG 4>, r1, <LLIL_REG 4>, r3]'
+p677
+aS'[r1, r3, <LLIL_REG 4>, <LLIL_SET_REG 4>]'
+p678
+aS'r1#3 = r3#1'
+p679
+aS'r1 = r3'
+p680
+aS'None'
+p681
+aS'r7 = 4'
+p682
+ag7
+ag428
+aS'[<LLIL_SET_REG 4>, r7, <LLIL_CONST 4>, 4L]'
+p683
+aS'[r7, 4L, <LLIL_CONST 4>, <LLIL_SET_REG 4>]'
+p684
+aS'r7#1 = 4'
+p685
+aS'r7 = 4'
+p686
+aS'r0_3 = syscall(4, 1, 0x80410ec, r2_1, 0x80410ec)'
+p687
+aS'r0 = syscall(r7, r0, r1, r2, r3, r4, r5, r6, stack = &var_c)'
+p688
+ag7
+ag428
+aS'[<LLIL_SYSCALL>]'
+p689
+aS'[<LLIL_SYSCALL>]'
+p690
+aS'r0#5, mem#4 = syscall(stack = sp#4 @ mem#3, params = r7#1, r0#4, r1#3, r2#4, r3#1, r4#0, r5#0, r6#0)'
+p691
+aS'syscall'
+p692
+aS'None'
+p693
+aS'r7 = 1'
+p694
+ag7
+ag428
+aS'[<LLIL_SET_REG 4>, r7, <LLIL_CONST 4>, 1L]'
+p695
+aS'[r7, 1L, <LLIL_CONST 4>, <LLIL_SET_REG 4>]'
+p696
+aS'r7#2 = 1'
+p697
+aS'r7 = 1'
+p698
+aS'syscall(sys_exit {1}, r0_3)'
+p699
+aS'r0 = syscall(r7, r0, r1, r2, r3, r4, r5, r6, stack = &var_c)'
+p700
+ag7
+ag428
+aS'[<LLIL_SYSCALL>]'
+p701
+aS'[<LLIL_SYSCALL>]'
+p702
+aS'r0#6, mem#5 = syscall(stack = sp#4 @ mem#4, params = r7#2, r0#5, r1#3, r2#4, r3#1, r4#0, r5#0, r6#0)'
+p703
+aS'syscall'
+p704
+aS'None'
+p705
+aS'noreturn'
+p706
+ag7
+ag428
+aS'[<LLIL_NORET>]'
+p707
+aS'[<LLIL_NORET>]'
+p708
+aS'noreturn'
+p709
+aS'noreturn'
+p710
+aS'r1 = r1 + 1'
+p711
+aS'r1 = r1 + 1'
+p712
+ag7
+ag428
+aS'[<LLIL_SET_REG 4>, r1, <LLIL_ADD 4>, <LLIL_REG 4>, r1, <LLIL_CONST 4>, 1L]'
+p713
+aS'[r1, r1, <LLIL_REG 4>, 1L, <LLIL_CONST 4>, <LLIL_ADD 4>, <LLIL_SET_REG 4>]'
+p714
+aS'r1#4 = r1#2 + 1'
+p715
+aS'r1 = r1 + 1'
+p716
+aS'r0_2 = r2 + 1'
+p717
+aS'r0 = r2 + 1'
+p718
+ag7
+ag428
+aS'[<LLIL_SET_REG 4>, r0, <LLIL_ADD 4>, <LLIL_REG 4>, r2, <LLIL_CONST 4>, 1L]'
+p719
+aS'[r0, r2, <LLIL_REG 4>, 1L, <LLIL_CONST 4>, <LLIL_ADD 4>, <LLIL_SET_REG 4>]'
+p720
+aS'r0#7 = r2#3 + 1'
+p721
+aS'r0 = r2 + 1'
+p722
+aS'r2 = r0_2'
+p723
+aS'r2 = r0'
+p724
+ag7
+ag428
+aS'[<LLIL_SET_REG 4>, r2, <LLIL_REG 4>, r0]'
+p725
+aS'[r2, r0, <LLIL_REG 4>, <LLIL_SET_REG 4>]'
+p726
+aS'r2#5 = r0#7'
+p727
+aS'r2 = r0'
+p728
+aS'None'
+p729
+aS'goto 14 @ 0x80400b4'
+p730
+ag7
+ag428
+aS'[<LLIL_GOTO>, 11L]'
+p731
+aS'[11L, <LLIL_GOTO>]'
+p732
+aS'goto 14 @ 0x80400b4'
+p733
+aS'goto 11 @ 0x80400b4'
+p734
+asS'test_med_il_vars'
+p735
+(lp736
+S'None [0L] <return address> <undetermined> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: var_4#1 = lr#0>>'
+p737
+aS'0 [] <return address> <undetermined> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: var_4#1 = lr#0>>'
+p738
+aS'None [1L] <entry r11> <entry r11> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: var_8#1 = r11#0>>'
+p739
+aS'1 [] <entry r11> <entry r11> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: var_8#1 = r11#0>>'
+p740
+aS'None [2L] <entry r7> <entry r7> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: var_c#1 = r7#0>>'
+p741
+aS'2 [] <entry r7> <entry r7> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: var_c#1 = r7#0>>'
+p742
+aS'3 [6L] <const ptr 0x80410ec> <const ptr 0x80410ec> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: r2#1 = 0x80410ec>>'
+p743
+aS'4 [6L] <const 0x0> <const 0x0> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: r1#1 = 0>>'
+p744
+aS'6 [6L, 13L] <undetermined> <undetermined> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: r0_1#2 = sx.d([r2#2].b @ mem#0)>>'
+p745
+aS'6 [7L] <undetermined> <signed ranges: [<range: -0x80 to 0x7f>]> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: r0_1#2 = sx.d([r2#2].b @ mem#0)>>'
+p746
+aS'6 [7L] <undetermined> <signed ranges: [<range: -0x80 to 0x7f>]> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: if (r0_1#2 == 0) then 11 @ 0x80400d0 else 15 @ 0x80400c0>>'
+p747
+aS'6 [8L, 12L] <undetermined> <undetermined> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: r2_1#3 = r1#2>>'
+p748
+aS'8 [9L] <undetermined> <undetermined> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: r2_1#3 = r1#2>>'
+p749
+aS'8 [9L] <undetermined> <undetermined> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: r0_3#3, mem#1 = syscall(4, 1, 0x80410ec, r2_1#3, 0x80410ec) @ mem#0>>'
+p750
+aS'9 [10L] <undetermined> <undetermined> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: r0_3#3, mem#1 = syscall(4, 1, 0x80410ec, r2_1#3, 0x80410ec) @ mem#0>>'
+p751
+aS'9 [10L] <undetermined> <undetermined> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: mem#2 = syscall(sys_exit {1}, r0_3#3) @ mem#1>>'
+p752
+aS'6 [8L, 12L] <undetermined> <undetermined> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: r1#3 = r1#2 + 1>>'
+p753
+aS'12 [6L] <undetermined> <undetermined> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: r1#3 = r1#2 + 1>>'
+p754
+aS'6 [6L, 13L] <undetermined> <undetermined> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: r0_2#4 = r2#2 + 1>>'
+p755
+aS'13 [6L, 14L] <undetermined> <undetermined> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: r0_2#4 = r2#2 + 1>>'
+p756
+aS'13 [6L, 14L] <undetermined> <undetermined> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: r2#4 = r0_2#4>>'
+p757
+aS'14 [6L] <undetermined> <undetermined> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: r2#4 = r0_2#4>>'
+p758
+as.

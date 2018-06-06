@@ -1,0 +1,988 @@
+(dp0
+S'test_function_can_return'
+p1
+(lp2
+S'_start SymbolType.FunctionSymbol 0x8040094L True'
+p3
+asS'test_function_stack'
+p4
+(lp5
+S"['__return_addr', 'testautovar']"
+p6
+aS'<undetermined>'
+p7
+ag7
+aS'None'
+p8
+asS'test_strings'
+p9
+(lp10
+S'/bin/bash StringType.AsciiString 0x80410e9L'
+p11
+aS'/bin/sh StringType.AsciiString 0x80410f3L'
+p12
+asS'test_function_low_il_basic_blocks'
+p13
+(lp14
+S'0x0L 0x1L 2'
+p15
+aS'0x1L 0x2L 0'
+p16
+aS'0x2L 0x3L 2'
+p17
+aS'0x3L 0x6L 1'
+p18
+aS'0x6L 0x9L 1'
+p19
+asS'test_functions_attributes'
+p20
+(lp21
+S"['testautovar', 'arg1', 'ecx', 'ecx_1', 'ecx_2', 'arg2']"
+p22
+aS'[<branch x86:0x8040099 -> x86:0x80400a0>, <branch x86:0x8040099 -> x86:0x80400a9>]'
+p23
+aS'{}'
+p24
+aI1
+aS'[]'
+p25
+aS'False'
+p26
+aS'True'
+p27
+aI19
+ag7
+aS'testcomment _start'
+p28
+ag26
+ag26
+aS'if (eax u> 5) then 1 @ 0x80400b2 else 2 @ 0x8040099'
+p29
+aS'[]'
+p30
+aS"['eax']"
+p31
+aS'[]'
+p32
+aS'[]'
+p33
+aS'[<constant 0x5 size 4>]'
+p34
+aS'sub.d{*}(eax, 5)'
+p35
+aS'[]'
+p36
+aS"['c', 'p', 'a', 'z', 's', 'o']"
+p37
+aS'<graph of <func: x86@0x8040094>>'
+p38
+aS'[]'
+p39
+aS'[]'
+p40
+aS'<block: x86@0x8040094-0x8040099>'
+p41
+aS'<color: #ff00ff>'
+p42
+aS'[<0x8040094: int32_t __fastcall _start(int32_t arg1, int32_t arg2)>]'
+p43
+asS'test_function_starts'
+p44
+(lp45
+S'0x8040094L'
+p46
+asS'test_function_llil'
+p47
+(lp48
+S'<block: x86@0x0-0x1>'
+p49
+aS'<block: x86@0x1-0x2>'
+p50
+aS'<block: x86@0x2-0x3>'
+p51
+aS'<block: x86@0x3-0x6>'
+p52
+aS'<block: x86@0x6-0x9>'
+p53
+aS'if (eax u> 5) then 1 @ 0x80400b2 else 2 @ 0x8040099'
+p54
+aS'<return> jump(pop)'
+p55
+aS'jump([(eax << 2) + 0x80400b3].d => 3 @ 0x80400a0, 6 @ 0x80400a9)'
+p56
+aS'eax = edx'
+p57
+aS'ecx = 1'
+p58
+aS'goto 2 @ 0x8040099'
+p59
+aS'eax = edx'
+p60
+aS'ecx = 2'
+p61
+aS'goto 2'
+p62
+aS'<block: x86@0x0-0x1>'
+p63
+aS'<block: x86@0x1-0x2>'
+p64
+aS'<block: x86@0x2-0x3>'
+p65
+aS'<block: x86@0x3-0x6>'
+p66
+aS'<block: x86@0x6-0x9>'
+p67
+aS'if (arg1 u> 5) then 1 @ 0x80400b2 else 2 @ 0x8040099'
+p68
+aS'return '
+p69
+aS'jump([(arg1 << 2) + 0x80400b3].d => 3 @ 0x80400a0, 6 @ 0x80400a9)'
+p70
+aS'arg1 = arg2'
+p71
+aS'ecx_1 = 1'
+p72
+aS'goto 2 @ 0x8040099'
+p73
+aS'arg1 = arg2'
+p74
+aS'ecx_2 = 2'
+p75
+aS'goto 2 @ 0x8040099'
+p76
+aS"(['cmp', '     ', 'eax', ', ', '0x5'], 134480020L)"
+p77
+aS"(['ja', '      ', '0x80400b2'], 134480023L)"
+p78
+aS"(['retn', '    '], 134480050L)"
+p79
+aS"(['jmp', '     ', 'dword ', '[', 'eax', '*4', '+', '0x80400b3', ']'], 134480025L)"
+p80
+aS"(['mov', '     ', 'eax', ', ', 'edx'], 134480032L)"
+p81
+aS"(['mov', '     ', 'ecx', ', ', '0x1'], 134480034L)"
+p82
+aS"(['jmp', '     ', '0x8040099'], 134480039L)"
+p83
+aS"(['mov', '     ', 'eax', ', ', 'edx'], 134480041L)"
+p84
+aS"(['mov', '     ', 'ecx', ', ', '0x2'], 134480043L)"
+p85
+aS"(['jmp', '     ', '0x8040099'], 134480048L)"
+p86
+asS'test_low_il_ssa'
+p87
+(lp88
+S'None'
+p89
+aS'[]'
+p90
+ag7
+aS'None'
+p91
+aS'[]'
+p92
+ag7
+aS'None'
+p93
+aS'[]'
+p94
+ag7
+aS'None'
+p95
+aS'[]'
+p96
+ag7
+aS'None'
+p97
+aS'[]'
+p98
+ag7
+aS'None'
+p99
+aS'[]'
+p100
+ag7
+aS'None'
+p101
+aS'[]'
+p102
+ag7
+aS'None'
+p103
+aS'[]'
+p104
+ag7
+aS'None'
+p105
+aS'[]'
+p106
+ag7
+aS'None'
+p107
+aS'[]'
+p108
+ag7
+aS'None'
+p109
+aS'[]'
+p110
+ag7
+aS'None'
+p111
+aS'[]'
+p112
+ag7
+aS'None'
+p113
+aS'[]'
+p114
+ag7
+aS'None'
+p115
+aS'[]'
+p116
+ag7
+aS'None'
+p117
+aS'[]'
+p118
+ag7
+aS'None'
+p119
+aS'[]'
+p120
+ag7
+aS'None'
+p121
+aS'[]'
+p122
+ag7
+aS'None'
+p123
+aS'[]'
+p124
+ag7
+aS'None'
+p125
+aS'[]'
+p126
+ag7
+aS'None'
+p127
+aS'[]'
+p128
+ag7
+aS'None'
+p129
+aS'[]'
+p130
+ag7
+aS'None'
+p131
+aS'[]'
+p132
+ag7
+aS'None'
+p133
+aS'[]'
+p134
+ag7
+aS'None'
+p135
+aS'[]'
+p136
+ag7
+aS'None'
+p137
+aS'[]'
+p138
+ag7
+aS'None'
+p139
+aS'[]'
+p140
+ag7
+aS'None'
+p141
+aS'[]'
+p142
+ag7
+aS'None'
+p143
+aS'[]'
+p144
+ag7
+aS'None'
+p145
+aS'[]'
+p146
+ag7
+aS'None'
+p147
+aS'[]'
+p148
+ag7
+aS'None'
+p149
+aS'[]'
+p150
+ag7
+aS'None'
+p151
+aS'[]'
+p152
+ag7
+aS'None'
+p153
+aS'[]'
+p154
+ag7
+aS'None'
+p155
+aS'[]'
+p156
+ag7
+aS'None'
+p157
+aS'[]'
+p158
+ag7
+aS'None'
+p159
+aS'[]'
+p160
+ag7
+aS'None'
+p161
+aS'[]'
+p162
+ag7
+aS'None'
+p163
+aS'[]'
+p164
+ag7
+aS'None'
+p165
+aS'[]'
+p166
+ag7
+aS'None'
+p167
+aS'[]'
+p168
+ag7
+aS'None'
+p169
+aS'[]'
+p170
+ag7
+aS'None'
+p171
+aS'[]'
+p172
+ag7
+aS'None'
+p173
+aS'[]'
+p174
+ag7
+aS'None'
+p175
+aS'[]'
+p176
+ag7
+aS'None'
+p177
+aS'[]'
+p178
+ag7
+aS'None'
+p179
+aS'[]'
+p180
+ag7
+aS'None'
+p181
+aS'[]'
+p182
+ag7
+aS'2'
+p183
+aS'[2L]'
+p184
+ag7
+aS'None'
+p185
+aS'[]'
+p186
+ag7
+aS'None'
+p187
+aS'[]'
+p188
+ag7
+aS'None'
+p189
+aS'[]'
+p190
+ag7
+aS'None'
+p191
+aS'[]'
+p192
+ag7
+aS'None'
+p193
+aS'[]'
+p194
+ag7
+aS'None'
+p195
+aS'[]'
+p196
+ag7
+aS'None'
+p197
+aS'[]'
+p198
+ag7
+aS'None'
+p199
+aS'[]'
+p200
+ag7
+aS'2'
+p201
+aS'[]'
+p202
+ag7
+aS'None'
+p203
+aS'[]'
+p204
+ag7
+aS'None'
+p205
+aS'[]'
+p206
+ag7
+aS'None'
+p207
+aS'[]'
+p208
+ag7
+aS'None'
+p209
+aS'[]'
+p210
+ag7
+aS'None'
+p211
+aS'[]'
+p212
+ag7
+aS'None'
+p213
+aS'[]'
+p214
+ag7
+aS'None'
+p215
+aS'[]'
+p216
+ag7
+aS'None'
+p217
+aS'[]'
+p218
+ag7
+aS'[]'
+p219
+ag7
+aS'[]'
+p220
+ag7
+aS'[]'
+p221
+ag7
+aS'[]'
+p222
+ag7
+aS'[]'
+p223
+ag7
+aS'[]'
+p224
+ag7
+aS'[]'
+p225
+ag7
+aS'[]'
+p226
+ag7
+aS'[]'
+p227
+ag7
+aS'[]'
+p228
+ag7
+aS'[]'
+p229
+ag7
+aS'0'
+p230
+aS'0'
+p231
+aS'0'
+p232
+aS'0'
+p233
+aS'1'
+p234
+aS'1'
+p235
+aS'1'
+p236
+aS'1'
+p237
+aS'2'
+p238
+aS'4'
+p239
+aS'2'
+p240
+aS'2'
+p241
+aS'3'
+p242
+aS'5'
+p243
+aS'3'
+p244
+aS'3'
+p245
+aS'4'
+p246
+aS'6'
+p247
+aS'4'
+p248
+aS'4'
+p249
+aS'5'
+p250
+aS'7'
+p251
+aS'5'
+p252
+aS'5'
+p253
+aS'6'
+p254
+aS'8'
+p255
+aS'6'
+p256
+aS'6'
+p257
+aS'7'
+p258
+aS'9'
+p259
+aS'7'
+p260
+aS'7'
+p261
+aS'8'
+p262
+aS'10'
+p263
+aS'8'
+p264
+aS'8'
+p265
+asS'test_med_il_instructions'
+p266
+(lp267
+S'None'
+p268
+aS'if (eax#0 u> 5) then 1 @ 0x80400b2 else 2 @ 0x8040099'
+p269
+ag7
+aS'<undetermined>'
+p270
+aS'{}'
+p271
+aS"['1', '2', '5', '<MLIL_CMP_UGT 4>', '<MLIL_CONST 4>', '<MLIL_IF>', '<MLIL_VAR 4>', 'arg1']"
+p272
+aS"['1', '2', '5', '<MLIL_CMP_UGT 4>', '<MLIL_CONST 4>', '<MLIL_IF>', '<MLIL_VAR 4>', 'arg1']"
+p273
+aS'if (arg1#0 u> 5) then 1 @ 0x80400b2 else 2 @ 0x0'
+p274
+aS'if (arg1 u> 5) then 1 @ 0x80400b2 else 2 @ 0x8040099'
+p275
+aS'None'
+p276
+aS'<return> jump([esp#0].d @ mem#0)'
+p277
+ag7
+ag270
+aS'{0L: <ILBranchDependence.TrueBranchDependent: 1>}'
+p278
+aS"['<MLIL_RET>', '[]']"
+p279
+aS"['<MLIL_RET>', '[]']"
+p280
+aS'return '
+p281
+aS'return '
+p282
+aS'None'
+p283
+aS'jump([(eax#1 << 2) + 0x80400b3].d @ mem#0 => 5 @ 0x80400a0, 8 @ 0x80400a9)'
+p284
+ag7
+ag270
+aS'{0L: <ILBranchDependence.FalseBranchDependent: 2>}'
+p285
+aS"['134480051', '2', '<MLIL_ADD 4>', '<MLIL_CONST 1>', '<MLIL_CONST 4>', '<MLIL_JUMP_TO>', '<MLIL_LOAD 4>', '<MLIL_LSL 4>', '<MLIL_VAR 4>', '[3L, 6L]', 'arg1']"
+p286
+aS"['134480051', '2', '<MLIL_ADD 4>', '<MLIL_CONST 1>', '<MLIL_CONST 4>', '<MLIL_JUMP_TO>', '<MLIL_LOAD 4>', '<MLIL_LSL 4>', '<MLIL_VAR 4>', '[3L, 6L]', 'arg1']"
+p287
+aS'jump([(arg1#1 << 2) + 0x80400b3].d @ mem#0 => 6 @ 0x80400a0, 9 @ 0x80400a9)'
+p288
+aS'jump([(arg1 << 2) + 0x80400b3].d => 3 @ 0x80400a0, 6 @ 0x80400a9)'
+p289
+aS'None'
+p290
+aS'eax#2 = edx#0'
+p291
+ag7
+ag270
+aS'{0L: <ILBranchDependence.FalseBranchDependent: 2>}'
+p292
+aS"['<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', 'arg1', 'arg2']"
+p293
+aS"['<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', 'arg1', 'arg2']"
+p294
+aS'arg1#2 = arg2#0'
+p295
+aS'arg1 = arg2'
+p296
+aS'None'
+p297
+aS'ecx#2 = 1'
+p298
+ag7
+ag270
+aS'{0L: <ILBranchDependence.FalseBranchDependent: 2>}'
+p299
+aS"['1', '<MLIL_CONST 4>', '<MLIL_SET_VAR 4>', 'ecx_1']"
+p300
+aS"['1', '<MLIL_CONST 4>', '<MLIL_SET_VAR 4>', 'ecx_1']"
+p301
+aS'ecx_1#2 = 1'
+p302
+aS'ecx_1 = 1'
+p303
+aS'None'
+p304
+aS'goto 2'
+p305
+ag7
+ag270
+aS'{0L: <ILBranchDependence.FalseBranchDependent: 2>}'
+p306
+aS"['2', '<MLIL_GOTO>']"
+p307
+aS"['2', '<MLIL_GOTO>']"
+p308
+aS'goto 3 @ 0x8040099'
+p309
+aS'goto 2 @ 0x8040099'
+p310
+aS'None'
+p311
+aS'eax#3 = edx#0'
+p312
+ag7
+ag270
+aS'{0L: <ILBranchDependence.FalseBranchDependent: 2>}'
+p313
+aS"['<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', 'arg1', 'arg2']"
+p314
+aS"['<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', 'arg1', 'arg2']"
+p315
+aS'arg1#3 = arg2#0'
+p316
+aS'arg1 = arg2'
+p317
+aS'None'
+p318
+aS'ecx#3 = 2'
+p319
+ag7
+ag270
+aS'{0L: <ILBranchDependence.FalseBranchDependent: 2>}'
+p320
+aS"['2', '<MLIL_CONST 4>', '<MLIL_SET_VAR 4>', 'ecx_2']"
+p321
+aS"['2', '<MLIL_CONST 4>', '<MLIL_SET_VAR 4>', 'ecx_2']"
+p322
+aS'ecx_2#3 = 2'
+p323
+aS'ecx_2 = 2'
+p324
+aS'None'
+p325
+aS'goto 2'
+p326
+ag7
+ag270
+aS'{0L: <ILBranchDependence.FalseBranchDependent: 2>}'
+p327
+aS"['2', '<MLIL_GOTO>']"
+p328
+aS"['2', '<MLIL_GOTO>']"
+p329
+aS'goto 3 @ 0x8040099'
+p330
+aS'goto 2 @ 0x8040099'
+p331
+asS'test_function_symbol_names'
+p332
+(lp333
+S'_start SymbolType.FunctionSymbol 0x8040094L'
+p334
+asS'test_BinaryView'
+p335
+(lp336
+S'struct'
+p337
+aS'struct'
+p338
+aS'struct'
+p339
+aS'struct'
+p340
+aS'void*'
+p341
+aS'[<segment: 0x8040000-0x80400e9, r-x>, <segment: 0x80410e9-0x80410fb, rw->]'
+p342
+aS'{}'
+p343
+aS'[<0x8040000-0x80400e9>, <0x80410e9-0x80410fb>]'
+p344
+aS'{}'
+p345
+aS'134479872'
+p346
+aS'134480051'
+p347
+aS'134479924'
+p348
+aS'<func: x86@0x8040094>'
+p349
+aS'<func: x86@0x8040094>'
+p350
+aS'0x8040094L'
+p351
+aS'0x8040000L'
+p352
+aS'length: 0x10fb'
+p353
+asS'test_available_types'
+p354
+(lp355
+S'Raw'
+p356
+aS'ELF'
+p357
+asS'test_function_basic_blocks'
+p358
+(lp359
+S'0x8040094L 0x8040099L False'
+p360
+aS'0x80400b2L 0x80400b3L True'
+p361
+aS'0x8040099L 0x80400a0L False'
+p362
+aS'0x80400a0L 0x80400a9L False'
+p363
+aS'0x80400a9L 0x80400b2L False'
+p364
+asS'test_function_med_il_basic_blocks'
+p365
+(lp366
+S'0x0L 0x1L 2'
+p367
+aS'0x1L 0x2L 0'
+p368
+aS'0x2L 0x3L 2'
+p369
+aS'0x3L 0x6L 1'
+p370
+aS'0x6L 0x9L 1'
+p371
+asS'test_symbols'
+p372
+(lp373
+S'__elf_header'
+p374
+aS'__elf_program_headers'
+p375
+aS'_start'
+p376
+aS'jump_table_80400b3'
+p377
+asS'test_low_il_instructions'
+p378
+(lp379
+S'None'
+p380
+aS'if (arg1 u> 5) then 1 @ 0x80400b2 else 2 @ 0x8040099'
+p381
+ag7
+ag270
+aS'[<LLIL_IF>, <LLIL_CMP_UGT 4>, <LLIL_REG 4>, eax, <LLIL_CONST 4>, 5L, 1L, 2L]'
+p382
+aS'[eax, <LLIL_REG 4>, 5L, <LLIL_CONST 4>, <LLIL_CMP_UGT 4>, 1L, 2L, <LLIL_IF>]'
+p383
+aS'if (eax#0 u> 5) then 1 @ 0x80400b2 else 2 @ 0x8040099'
+p384
+aS'if (eax u> 5) then 1 @ 0x80400b2 else 2 @ 0x8040099'
+p385
+aS'None'
+p386
+aS'return '
+p387
+ag7
+ag270
+aS'[<LLIL_RET>, <LLIL_POP 4>]'
+p388
+aS'[<LLIL_POP 4>, <LLIL_RET>]'
+p389
+aS'<return> jump([esp#0].d @ mem#0)'
+p390
+aS'<return> jump(pop)'
+p391
+aS'None'
+p392
+aS'jump([(arg1 << 2) + 0x80400b3].d => 3 @ 0x80400a0, 6 @ 0x80400a9)'
+p393
+ag7
+ag270
+aS'[<LLIL_JUMP_TO>, <LLIL_LOAD 4>, <LLIL_ADD 4>, <LLIL_LSL 4>, <LLIL_REG 4>, eax, <LLIL_CONST 1>, 2L, <LLIL_CONST 4>, 134480051L, [3L, 6L]]'
+p394
+aS'[eax, <LLIL_REG 4>, 2L, <LLIL_CONST 1>, <LLIL_LSL 4>, 134480051L, <LLIL_CONST 4>, <LLIL_ADD 4>, <LLIL_LOAD 4>, [3L, 6L], <LLIL_JUMP_TO>]'
+p395
+aS'jump([(eax#1 << 2) + 0x80400b3].d @ mem#0 => 5 @ 0x80400a0, 8 @ 0x80400a9)'
+p396
+aS'jump([(eax << 2) + 0x80400b3].d => 3 @ 0x80400a0, 6 @ 0x80400a9)'
+p397
+aS'arg1 = arg2'
+p398
+aS'arg1 = arg2'
+p399
+ag7
+ag270
+aS'[<LLIL_SET_REG 4>, eax, <LLIL_REG 4>, edx]'
+p400
+aS'[eax, edx, <LLIL_REG 4>, <LLIL_SET_REG 4>]'
+p401
+aS'eax#2 = edx#0'
+p402
+aS'eax = edx'
+p403
+aS'ecx_1 = 1'
+p404
+aS'ecx = 1'
+p405
+ag7
+ag270
+aS'[<LLIL_SET_REG 4>, ecx, <LLIL_CONST 4>, 1L]'
+p406
+aS'[ecx, 1L, <LLIL_CONST 4>, <LLIL_SET_REG 4>]'
+p407
+aS'ecx#2 = 1'
+p408
+aS'ecx = 1'
+p409
+aS'None'
+p410
+aS'goto 2 @ 0x8040099'
+p411
+ag7
+ag270
+aS'[<LLIL_GOTO>, 2L]'
+p412
+aS'[2L, <LLIL_GOTO>]'
+p413
+aS'goto 2'
+p414
+aS'goto 2 @ 0x8040099'
+p415
+aS'arg1 = arg2'
+p416
+aS'arg1 = arg2'
+p417
+ag7
+ag270
+aS'[<LLIL_SET_REG 4>, eax, <LLIL_REG 4>, edx]'
+p418
+aS'[eax, edx, <LLIL_REG 4>, <LLIL_SET_REG 4>]'
+p419
+aS'eax#3 = edx#0'
+p420
+aS'eax = edx'
+p421
+aS'ecx_2 = 2'
+p422
+aS'ecx = 2'
+p423
+ag7
+ag270
+aS'[<LLIL_SET_REG 4>, ecx, <LLIL_CONST 4>, 2L]'
+p424
+aS'[ecx, 2L, <LLIL_CONST 4>, <LLIL_SET_REG 4>]'
+p425
+aS'ecx#3 = 2'
+p426
+aS'ecx = 2'
+p427
+aS'None'
+p428
+aS'goto 2 @ 0x8040099'
+p429
+ag7
+ag270
+aS'[<LLIL_GOTO>, 2L]'
+p430
+aS'[2L, <LLIL_GOTO>]'
+p431
+aS'goto 2'
+p432
+aS'goto 2'
+p433
+asS'test_med_il_vars'
+p434
+(lp435
+S'None [0L, 2L] <entry eax> <entry eax> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: if (arg1#0 u> 5) then 1 @ 0x80400b2 else 2 @ 0x0>>'
+p436
+aS'2 [2L] <undetermined> <undetermined> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: jump([(arg1#1 << 2) + 0x80400b3].d @ mem#0 => 6 @ 0x80400a0, 9 @ 0x80400a9)>>'
+p437
+aS'None [3L, 6L] <entry edx> <entry edx> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: arg1#2 = arg2#0>>'
+p438
+aS'3 [2L] <entry edx> <entry edx> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: arg1#2 = arg2#0>>'
+p439
+aS'4 [2L] <const 0x1> <const 0x1> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ecx_1#2 = 1>>'
+p440
+aS'None [3L, 6L] <entry edx> <entry edx> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: arg1#3 = arg2#0>>'
+p441
+aS'6 [2L] <entry edx> <entry edx> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: arg1#3 = arg2#0>>'
+p442
+aS'7 [2L] <const 0x2> <const 0x2> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ecx_2#3 = 2>>'
+p443
+as.
