@@ -2,2740 +2,3566 @@
 S'test_function_can_return'
 p1
 (lp2
-S'_start SymbolType.FunctionSymbol 0x401000L True'
+S'function name: _start type: SymbolType.FunctionSymbol address: 0x401000L can_return: True'
 p3
 asS'test_function_stack'
 p4
 (lp5
-S"['var_84', 'var_14', 'var_14_1', 'var_8', 'var_8_1', '__saved_ebp', '__return_addr', 'testautovar']"
+S'Stack position 0: var_84'
 p6
-aS'<return address>'
+aS'Stack position 1: var_14'
 p7
-ag7
-aS'None'
+aS'Stack position 2: var_14_1'
 p8
-asS'test_strings'
+aS'Stack position 3: var_8'
 p9
-(lp10
-S'!This program cannot be run in DOS mode.\r\r\n$ StringType.AsciiString 0x40004dL'
+aS'Stack position 4: var_8_1'
+p10
+aS'Stack position 5: __saved_ebp'
 p11
-aS'RichQ StringType.AsciiString 0x4000b0L'
+aS'Stack position 6: __return_addr'
 p12
-aS'.text StringType.AsciiString 0x4001b8L'
+aS'Stack position 7: testautovar'
 p13
-aS'`.rdata StringType.AsciiString 0x4001dfL'
+aS'Stack content sample: <return address>'
 p14
-aS'@.data StringType.AsciiString 0x400207L'
+aS'Stack content range sample: <return address>'
 p15
-aS'\rp0@ StringType.AsciiString 0x40113fL'
+aS'Sample stack var: None'
 p16
-aS'h(0@ StringType.AsciiString 0x4011ddL'
+asS'test_strings'
 p17
-aS'\rt0@ StringType.AsciiString 0x4011e3L'
-p18
-aS'Rj\nh<0@ StringType.AsciiString 0x401202L'
+(lp18
+S'String: !This program cannot be run in DOS mode.\r\r\n$ type: StringType.AsciiString at: 0x40004dL'
 p19
-aS'Qj$hH0@ StringType.AsciiString 0x40121dL'
+aS'String: RichQ type: StringType.AsciiString at: 0x4000b0L'
 p20
-aS'GetStdHandle StringType.AsciiString 0x40213eL'
+aS'String: .text type: StringType.AsciiString at: 0x4001b8L'
 p21
-aS'ReadFile StringType.AsciiString 0x40214eL'
+aS'String: `.rdata type: StringType.AsciiString at: 0x4001dfL'
 p22
-aS'WriteFile StringType.AsciiString 0x40215aL'
+aS'String: @.data type: StringType.AsciiString at: 0x400207L'
 p23
-aS'ExitProcess StringType.AsciiString 0x402166L'
+aS'String: \rp0@ type: StringType.AsciiString at: 0x40113fL'
 p24
-aS'KERNEL32.dll StringType.AsciiString 0x402172L'
+aS'String: h(0@ type: StringType.AsciiString at: 0x4011ddL'
 p25
-aS'\r&IE* StringType.AsciiString 0x403000L'
+aS'String: \rt0@ type: StringType.AsciiString at: 0x4011e3L'
 p26
-aS'xD+l]^E StringType.AsciiString 0x403006L'
+aS'String: Rj\nh<0@ type: StringType.AsciiString at: 0x401202L'
 p27
-aS'+DonV\t_EGs&\n\r StringType.AsciiString 0x403010L'
+aS'String: Qj$hH0@ type: StringType.AsciiString at: 0x40121dL'
 p28
-aS'G1v3 m3 t3h fl4g:  StringType.AsciiString 0x403028L'
+aS'String: GetStdHandle type: StringType.AsciiString at: 0x40213eL'
 p29
-aS'G00d j0b! StringType.AsciiString 0x40303cL'
+aS'String: ReadFile type: StringType.AsciiString at: 0x40214eL'
 p30
-aS'N0t t00 h0t R we? 7ry 4ga1nz plzzz! StringType.AsciiString 0x403048L'
+aS'String: WriteFile type: StringType.AsciiString at: 0x40215aL'
 p31
-asS'test_function_low_il_basic_blocks'
+aS'String: ExitProcess type: StringType.AsciiString at: 0x402166L'
 p32
-(lp33
-S'0x0L 0xeL 2'
+aS'String: KERNEL32.dll type: StringType.AsciiString at: 0x402172L'
+p33
+aS'String: \r&IE* type: StringType.AsciiString at: 0x403000L'
 p34
-aS'0xeL 0x13L 2'
+aS'String: xD+l]^E type: StringType.AsciiString at: 0x403006L'
 p35
-aS'0x13L 0x18L 1'
+aS'String: +DonV\t_EGs&\n\r type: StringType.AsciiString at: 0x403010L'
 p36
-aS'0x18L 0x1eL 2'
+aS'String: G1v3 m3 t3h fl4g:  type: StringType.AsciiString at: 0x403028L'
 p37
-aS'0x1eL 0x25L 1'
+aS'String: G00d j0b! type: StringType.AsciiString at: 0x40303cL'
 p38
-aS'0x25L 0x27L 1'
+aS'String: N0t t00 h0t R we? 7ry 4ga1nz plzzz! type: StringType.AsciiString at: 0x403048L'
 p39
-aS'0x27L 0x29L 1'
+asS'test_function_low_il_basic_blocks'
 p40
-aS'0x29L 0x2cL 0'
-p41
-aS'0x2cL 0x2fL 1'
+(lp41
+S'LLIL basic block <block: x86@0x0-0xe> start: 0x0L end: 0xeL outgoing edges: 2'
 p42
-asS'test_functions_attributes'
+aS'LLIL basic block <block: x86@0xe-0x13> start: 0xeL end: 0x13L outgoing edges: 2'
 p43
-(lp44
-S"['var_84', 'var_14', 'var_14_1', 'var_8', 'var_8_1', '__saved_ebp', 'testautovar', 'eax', 'eax_1', 'eax_2', 'eax_3', 'eax_4', 'ecx', 'ecx_1', 'ecx_2', 'ecx_3', 'ecx_4', 'ecx_5', 'ecx_6', 'ecx_7', 'edx', 'edx_1', 'ebx', 'ebx_1', 'arg1', 'cond:0', 'cond:0_1']"
+aS'LLIL basic block <block: x86@0x13-0x18> start: 0x13L end: 0x18L outgoing edges: 1'
+p44
+aS'LLIL basic block <block: x86@0x18-0x1e> start: 0x18L end: 0x1eL outgoing edges: 2'
 p45
-aS'[]'
+aS'LLIL basic block <block: x86@0x1e-0x25> start: 0x1eL end: 0x25L outgoing edges: 1'
 p46
-aS'{}'
+aS'LLIL basic block <block: x86@0x25-0x27> start: 0x25L end: 0x27L outgoing edges: 1'
 p47
-aI1
-aS"['eax', 'ecx', 'edx']"
+aS'LLIL basic block <block: x86@0x27-0x29> start: 0x27L end: 0x29L outgoing edges: 1'
 p48
-aS'False'
+aS'LLIL basic block <block: x86@0x29-0x2c> start: 0x29L end: 0x2cL outgoing edges: 0'
 p49
-aS'True'
+aS'LLIL basic block <block: x86@0x2c-0x2f> start: 0x2cL end: 0x2fL outgoing edges: 1'
 p50
-aI56
-aS'<const 0x0>'
+asS'test_functions_attributes'
 p51
-aS'testcomment _start'
-p52
-ag49
-ag49
-aS'push(ebp)'
+(lp52
+S'Function _start var: var_84'
 p53
-aS'[]'
+aS'Function _start var: var_14'
 p54
-aS"['esp', 'ebp']"
+aS'Function _start var: var_14_1'
 p55
-aS"['esp']"
+aS'Function _start var: var_8'
 p56
-aS'[<ref to __saved_ebp>]'
+aS'Function _start var: var_8_1'
 p57
-aS'[]'
+aS'Function _start var: __saved_ebp'
 p58
-aS'push(ebp)'
+aS'Function _start var: testautovar'
 p59
-aS'[]'
+aS'Function _start var: eax'
 p60
-aS'[]'
+aS'Function _start var: eax_1'
 p61
-aS'<graph of <func: x86@0x401000>>'
+aS'Function _start var: eax_2'
 p62
-aS'[]'
+aS'Function _start var: eax_3'
 p63
-aS'[]'
+aS'Function _start var: eax_4'
 p64
-aS'<block: x86@0x401000-0x40102f>'
+aS'Function _start var: ecx'
 p65
-aS'<color: #ff00ff>'
+aS'Function _start var: ecx_1'
 p66
-aS'[<0x401000: uint32_t _start(int32_t arg1 @ edi)>]'
+aS'Function _start var: ecx_2'
 p67
-asS'test_function_starts'
+aS'Function _start var: ecx_3'
 p68
-(lp69
-S'0x401000L'
+aS'Function _start var: ecx_4'
+p69
+aS'Function _start var: ecx_5'
 p70
-asS'test_function_llil'
+aS'Function _start var: ecx_6'
 p71
-(lp72
-S'<block: x86@0x0-0xe>'
+aS'Function _start var: edx'
+p72
+aS'Function _start var: edx_1'
 p73
-aS'<block: x86@0xe-0x13>'
+aS'Function _start var: ebx'
 p74
-aS'<block: x86@0x13-0x18>'
+aS'Function _start var: ebx_1'
 p75
-aS'<block: x86@0x18-0x1e>'
+aS'Function _start var: arg1'
 p76
-aS'<block: x86@0x1e-0x25>'
+aS'Function _start var: cond:0'
 p77
-aS'<block: x86@0x25-0x27>'
+aS'Function _start var: cond:0_1'
 p78
-aS'<block: x86@0x27-0x29>'
+aS'Function _start session data: {}'
 p79
-aS'<block: x86@0x29-0x2c>'
+aS'Function _start analysis perf length: 1'
 p80
-aS'<block: x86@0x2c-0x2f>'
+aS'Function _start clobbered reg: eax'
 p81
-aS'push(ebp)'
+aS'Function _start clobbered reg: ecx'
 p82
-aS'ebp = esp {__saved_ebp}'
+aS'Function _start clobbered reg: edx'
 p83
-aS'esp = esp - 0x80'
+aS'Function _start explicitly defined type: False'
 p84
-aS'eax = 0xffffffff'
+aS'Function _start needs update: True'
 p85
-aS'al = 0xa5'
+aS'Function _start global pointer value: <const 0x0>'
 p86
-aS'ah = 0xab'
+aS'Function _start comment: testcomment _start'
 p87
-aS'dh = 0xde'
+aS'Function _start too large: False'
 p88
-aS'dl = 0xad'
+aS'Function _start analysis skipped: False'
 p89
-aS'ecx = edx'
+aS'Function _start first ins LLIL: push(ebp)'
 p90
-aS'eax = rol.d(eax, 0x10)'
+aS'Function _start LLIL exit test: []'
 p91
-aS'ax = cx'
+aS"Function _start regs read test: ['esp', 'ebp']"
 p92
-aS'ecx = ecx u>> 0x10'
+aS"Function _start regs written test: ['esp']"
 p93
-aS'[ebp - 0x10 {var_14}].w = cx'
+aS'Function _start stack var test: [<ref to __saved_ebp>]'
 p94
-aS'if (ax u> 0xff) then 14 @ 0x401090 else 19 @ 0x40102f'
+aS'Function _start constant reference test: []'
 p95
-aS'ax = cx'
+aS'Function _start first ins lifted IL: push(ebp)'
 p96
-aS'bx = cx'
+aS'Function _start flags read by lifted IL ins: []'
 p97
-aS'ebx = 0'
+aS'Function _start flags written by lifted IL ins: []'
 p98
-aS'bx = cx'
+aS'Function _start create graph: <graph of <func: x86@0x401000>>'
 p99
-aS'if (edi != 3) then 24 @ 0x40103e else 30 @ 0x4010a4'
+aS'Function _start indirect branches test: []'
 p100
-aS'cx = 0'
+aS'Function _start test instr highlight: <color: #ff00ff>'
 p101
-aS'[ebp - 0x10 {var_14_1}].w = cx'
+aS'Function _start type token: uint32_t _start(int32_t arg1 @ edi)'
 p102
-aS'edx = zx.d([ebp - 0x10 {var_14_1}].w)'
+asS'test_function_starts'
 p103
-aS'dh = dh + 1'
-p104
-aS'goto 24 @ 0x40103e'
+(lp104
+S'Function start: 0x401000L'
 p105
-aS'[ebp - 4 {var_8_1}].w = dx'
+asS'test_function_llil'
 p106
-aS'eax = zx.d([ebp - 4 {var_8_1}].w)'
-p107
-aS'ecx = ecx u>> 0x18'
+(lp107
+S'LLIL basic block: <block: x86@0x0-0xe>'
 p108
-aS'cond:0 = ecx u> 0x20'
+aS'LLIL basic block: <block: x86@0xe-0x13>'
 p109
-aS'edx = 0x20'
+aS'LLIL basic block: <block: x86@0x13-0x18>'
 p110
-aS'if (cond:0) then 37 @ 0x401051 else 39 @ 0x401051'
+aS'LLIL basic block: <block: x86@0x18-0x1e>'
 p111
-aS'ecx = ecx u>> 8'
+aS'LLIL basic block: <block: x86@0x1e-0x25>'
 p112
-aS'ecx = ecx + ecx'
+aS'LLIL basic block: <block: x86@0x25-0x27>'
 p113
-aS'ecx = ecx + ecx'
+aS'LLIL basic block: <block: x86@0x27-0x29>'
 p114
-aS'eax = ecx'
+aS'LLIL basic block: <block: x86@0x29-0x2c>'
 p115
-aS'ecx = edi'
+aS'LLIL basic block: <block: x86@0x2c-0x2f>'
 p116
-aS'eax = eax u>> cl'
+aS'LLIL instruction: push(ebp)'
 p117
-aS'goto 41 @ 0x401058'
+aS'LLIL instruction: ebp = esp {__saved_ebp}'
 p118
-aS'ecx = edx'
+aS'LLIL instruction: esp = esp - 0x80'
 p119
-aS'goto 44 @ 0x401054'
+aS'LLIL instruction: eax = 0xffffffff'
 p120
-aS'ecx = ecx'
+aS'LLIL instruction: al = 0xa5'
 p121
-aS'goto 44 @ 0x401054'
+aS'LLIL instruction: ah = 0xab'
 p122
-aS'esp = esp + 0x80'
+aS'LLIL instruction: dh = 0xde'
 p123
-aS'ebp = pop'
+aS'LLIL instruction: dl = 0xad'
 p124
-aS'<return> jump(pop)'
+aS'LLIL instruction: ecx = edx'
 p125
-aS'edx = ecx'
+aS'LLIL instruction: eax = rol.d(eax, 0x10)'
 p126
-aS'eax = eax + ecx'
+aS'LLIL instruction: ax = cx'
 p127
-aS'goto 41 @ 0x401058'
+aS'LLIL instruction: ecx = ecx u>> 0x10'
 p128
-aS'<block: x86@0x0-0xb>'
+aS'LLIL instruction: [ebp - 0x10 {var_14}].w = cx'
 p129
-aS'<block: x86@0xb-0x10>'
+aS'LLIL instruction: if (ax u> 0xff) then 14 @ 0x401090 else 19 @ 0x40102f'
 p130
-aS'<block: x86@0x10-0x15>'
+aS'LLIL instruction: ax = cx'
 p131
-aS'<block: x86@0x15-0x1a>'
+aS'LLIL instruction: bx = cx'
 p132
-aS'<block: x86@0x1a-0x21>'
+aS'LLIL instruction: ebx = 0'
 p133
-aS'<block: x86@0x21-0x23>'
+aS'LLIL instruction: bx = cx'
 p134
-aS'<block: x86@0x23-0x25>'
+aS'LLIL instruction: if (edi != 3) then 24 @ 0x40103e else 30 @ 0x4010a4'
 p135
-aS'<block: x86@0x25-0x26>'
+aS'LLIL instruction: cx = 0'
 p136
-aS'<block: x86@0x26-0x29>'
+aS'LLIL instruction: [ebp - 0x10 {var_14_1}].w = cx'
 p137
-aS'eax = 0xffffffff'
+aS'LLIL instruction: edx = zx.d([ebp - 0x10 {var_14_1}].w)'
 p138
-aS'eax.al = 0xa5'
+aS'LLIL instruction: dh = dh + 1'
 p139
-aS'eax.ah = 0xab'
+aS'LLIL instruction: goto 24 @ 0x40103e'
 p140
-aS'edx.dh = 0xde'
+aS'LLIL instruction: [ebp - 4 {var_8_1}].w = dx'
 p141
-aS'edx.dl = 0xad'
+aS'LLIL instruction: eax = zx.d([ebp - 4 {var_8_1}].w)'
 p142
-aS'ecx = edx'
+aS'LLIL instruction: ecx = ecx u>> 0x18'
 p143
-aS'eax_1 = 0xaba5ffff'
+aS'LLIL instruction: cond:0 = ecx u> 0x20'
 p144
-aS'eax_1.ax = ecx.cx'
+aS'LLIL instruction: edx = 0x20'
 p145
-aS'ecx_1 = ecx u>> 0x10'
+aS'LLIL instruction: if (cond:0) then 37 @ 0x401051 else 39 @ 0x401051'
 p146
-aS'var_14 = ecx_1.cx'
+aS'LLIL instruction: ecx = ecx u>> 8'
 p147
-aS'if (eax_1.ax u> 0xff) then 11 @ 0x401090 else 16 @ 0x40102f'
+aS'LLIL instruction: ecx = ecx + ecx'
 p148
-aS'eax_1.ax = ecx_1.cx'
+aS'LLIL instruction: ecx = ecx + ecx'
 p149
-aS'ebx.bx = ecx_1.cx'
+aS'LLIL instruction: eax = ecx'
 p150
-aS'ebx_1 = 0'
+aS'LLIL instruction: ecx = edi'
 p151
-aS'ebx_1.bx = ecx_1.cx'
+aS'LLIL instruction: eax = eax u>> cl'
 p152
-aS'if (arg1 != 3) then 21 @ 0x40103e else 26 @ 0x4010a4'
+aS'LLIL instruction: goto 41 @ 0x401058'
 p153
-aS'ecx_1.cx = 0'
+aS'LLIL instruction: ecx = edx'
 p154
-aS'var_14_1 = ecx_1.cx'
+aS'LLIL instruction: goto 44 @ 0x401054'
 p155
-aS'edx = zx.d(var_14_1)'
+aS'LLIL instruction: ecx = ecx'
 p156
-aS'edx.dh = edx.dh + 1'
+aS'LLIL instruction: goto 44 @ 0x401054'
 p157
-aS'goto 21 @ 0x40103e'
+aS'LLIL instruction: esp = esp + 0x80'
 p158
-aS'var_8_1 = edx.dx'
+aS'LLIL instruction: ebp = pop'
 p159
-aS'eax_2 = zx.d(var_8_1)'
+aS'LLIL instruction: <return> jump(pop)'
 p160
-aS'ecx_2 = ecx_1 u>> 0x18'
+aS'LLIL instruction: edx = ecx'
 p161
-aS'cond:0_1 = ecx_2 u> 0x20'
+aS'LLIL instruction: eax = eax + ecx'
 p162
-aS'if (cond:0_1) then 33 else 35'
+aS'LLIL instruction: goto 41 @ 0x401058'
 p163
-aS'ecx_4 = ecx_1 u>> 8'
+aS'MLIL basic block: <block: x86@0x0-0xb>'
 p164
-aS'ecx_5 = ecx_4 + ecx_4'
+aS'MLIL basic block: <block: x86@0xb-0x10>'
 p165
-aS'ecx_6 = ecx_5 + ecx_5'
+aS'MLIL basic block: <block: x86@0x10-0x15>'
 p166
-aS'eax_4 = ecx_6'
+aS'MLIL basic block: <block: x86@0x15-0x1a>'
 p167
-aS'ecx_7 = arg1'
+aS'MLIL basic block: <block: x86@0x1a-0x21>'
 p168
-aS'eax_3 = eax_4 u>> ecx_7.cl'
+aS'MLIL basic block: <block: x86@0x21-0x22>'
 p169
-aS'goto 37 @ 0x40105f'
+aS'MLIL basic block: <block: x86@0x22-0x23>'
 p170
-aS'ecx_3 = 0x20'
+aS'MLIL basic block: <block: x86@0x23-0x24>'
 p171
-aS'goto 38 @ 0x401054'
+aS'MLIL basic block: <block: x86@0x24-0x27>'
 p172
-aS'ecx_3 = ecx_2'
+aS'MLIL instruction: eax = 0xffffffff'
 p173
-aS'goto 38 @ 0x401054'
+aS'MLIL instruction: eax.al = 0xa5'
 p174
-aS'return eax_3'
+aS'MLIL instruction: eax.ah = 0xab'
 p175
-aS'edx_1 = ecx_3'
+aS'MLIL instruction: edx.dh = 0xde'
 p176
-aS'eax_3 = eax_2 + ecx_3'
+aS'MLIL instruction: edx.dl = 0xad'
 p177
-aS'goto 37 @ 0x40105f'
+aS'MLIL instruction: ecx = edx'
 p178
-aS"(['push', '    ', 'ebp'], 4198400L)"
+aS'MLIL instruction: eax_1 = 0xaba5ffff'
 p179
-aS"(['mov', '     ', 'ebp', ', ', 'esp'], 4198401L)"
+aS'MLIL instruction: eax_1.ax = ecx.cx'
 p180
-aS"(['sub', '     ', 'esp', ', ', '0x80'], 4198403L)"
+aS'MLIL instruction: ecx_1 = ecx u>> 0x10'
 p181
-aS"(['mov', '     ', 'eax', ', ', '0xffffffff'], 4198409L)"
+aS'MLIL instruction: var_14 = ecx_1.cx'
 p182
-aS"(['mov', '     ', 'al', ', ', '0xa5'], 4198414L)"
+aS'MLIL instruction: if (eax_1.ax u> 0xff) then 11 @ 0x401090 else 16 @ 0x40102f'
 p183
-aS"(['mov', '     ', 'ah', ', ', '0xab'], 4198416L)"
+aS'MLIL instruction: eax_1.ax = ecx_1.cx'
 p184
-aS"(['mov', '     ', 'dh', ', ', '0xde'], 4198418L)"
+aS'MLIL instruction: ebx.bx = ecx_1.cx'
 p185
-aS"(['mov', '     ', 'dl', ', ', '0xad'], 4198420L)"
+aS'MLIL instruction: ebx_1 = 0'
 p186
-aS"(['mov', '     ', 'ecx', ', ', 'edx'], 4198422L)"
+aS'MLIL instruction: ebx_1.bx = ecx_1.cx'
 p187
-aS"(['rol', '     ', 'eax', ', ', '0x10'], 4198424L)"
+aS'MLIL instruction: if (arg1 != 3) then 21 @ 0x40103e else 26 @ 0x4010a4'
 p188
-aS"(['mov', '     ', 'ax', ', ', 'cx'], 4198427L)"
+aS'MLIL instruction: ecx_1.cx = 0'
 p189
-aS"(['shr', '     ', 'ecx', ', ', '0x10'], 4198430L)"
+aS'MLIL instruction: var_14_1 = ecx_1.cx'
 p190
-aS"(['mov', '     ', 'word ', '[', 'ebp', '-0x10', ']', ', ', 'cx'], 4198433L)"
+aS'MLIL instruction: edx = zx.d(var_14_1)'
 p191
-aS"(['cmp', '     ', 'ax', ', ', '0xff'], 4198437L)"
+aS'MLIL instruction: edx.dh = edx.dh + 1'
 p192
-aS"(['ja', '      ', '0x401090'], 4198441L)"
+aS'MLIL instruction: goto 21 @ 0x40103e'
 p193
-aS"(['mov', '     ', 'ax', ', ', 'cx'], 4198544L)"
+aS'MLIL instruction: var_8_1 = edx.dx'
 p194
-aS"(['mov', '     ', 'bx', ', ', 'cx'], 4198547L)"
+aS'MLIL instruction: eax_2 = zx.d(var_8_1)'
 p195
-aS"(['xor', '     ', 'ebx', ', ', 'ebx'], 4198550L)"
+aS'MLIL instruction: ecx_2 = ecx_1 u>> 0x18'
 p196
-aS"(['mov', '     ', 'bx', ', ', 'cx'], 4198552L)"
+aS'MLIL instruction: cond:0_1 = ecx_2 u> 0x20'
 p197
-aS"(['cmp', '     ', 'edi', ', ', '0x3'], 4198555L)"
+aS'MLIL instruction: if (cond:0_1) then 33 else 34'
 p198
-aS"(['jne', '     ', '0x40103e'], 4198558L)"
+aS'MLIL instruction: ecx_3 = ecx_1 u>> 8'
 p199
-aS"(['mov', '     ', 'cx', ', ', '0x0'], 4198447L)"
+aS'MLIL instruction: ecx_4 = ecx_3 + ecx_3'
 p200
-aS"(['mov', '     ', 'word ', '[', 'ebp', '-0x10', ']', ', ', 'cx'], 4198451L)"
+aS'MLIL instruction: ecx_5 = ecx_4 + ecx_4'
 p201
-aS"(['movzx', '   ', 'edx', ', ', 'word ', '[', 'ebp', '-0x10', ']'], 4198455L)"
+aS'MLIL instruction: eax_4 = ecx_5'
 p202
-aS"(['add', '     ', 'dh', ', ', '0x1'], 4198459L)"
+aS'MLIL instruction: ecx_6 = arg1'
 p203
-aS"(['mov', '     ', 'word ', '[', 'ebp', '-0x4', ']', ', ', 'dx'], 4198462L)"
+aS'MLIL instruction: eax_3 = eax_4 u>> ecx_6.cl'
 p204
-aS"(['movzx', '   ', 'eax', ', ', 'word ', '[', 'ebp', '-0x4', ']'], 4198466L)"
+aS'MLIL instruction: goto 35 @ 0x40105f'
 p205
-aS"(['shr', '     ', 'ecx', ', ', '0x18'], 4198470L)"
+aS'MLIL instruction: goto 36 @ 0x401054'
 p206
-aS"(['cmp', '     ', 'ecx', ', ', '0x20'], 4198473L)"
+aS'MLIL instruction: goto 36 @ 0x401054'
 p207
-aS"(['mov', '     ', 'edx', ', ', '0x20'], 4198476L)"
+aS'MLIL instruction: return eax_3'
 p208
-aS"(['cmova', '   ', 'ecx', ', ', 'edx'], 4198481L)"
+aS'MLIL instruction: edx_1 = 0x20'
 p209
-aS"(['mov', '     ', 'edx', ', ', 'ecx'], 4198484L)"
+aS'MLIL instruction: eax_3 = eax_2 + 0x20'
 p210
-aS"(['add', '     ', 'eax', ', ', 'ecx'], 4198486L)"
+aS'MLIL instruction: goto 35 @ 0x40105f'
 p211
-aS"(['shr', '     ', 'ecx', ', ', '0x8'], 4198564L)"
+aS'Instructiin: 0x401000L: push    ebp'
 p212
-aS"(['add', '     ', 'ecx', ', ', 'ecx'], 4198567L)"
+aS'Instructiin: 0x401001L: mov     ebp, esp'
 p213
-aS"(['add', '     ', 'ecx', ', ', 'ecx'], 4198569L)"
+aS'Instructiin: 0x401003L: sub     esp, 0x80'
 p214
-aS"(['mov', '     ', 'eax', ', ', 'ecx'], 4198571L)"
+aS'Instructiin: 0x401009L: mov     eax, 0xffffffff'
 p215
-aS"(['mov', '     ', 'ecx', ', ', 'edi'], 4198573L)"
+aS'Instructiin: 0x40100eL: mov     al, 0xa5'
 p216
-aS"(['shr', '     ', 'eax', ', ', 'cl'], 4198575L)"
+aS'Instructiin: 0x401010L: mov     ah, 0xab'
 p217
-aS"(['jmp', '     ', '0x401058'], 4198577L)"
+aS'Instructiin: 0x401012L: mov     dh, 0xde'
 p218
-aS"(['add', '     ', 'esp', ', ', '0x80'], 4198488L)"
+aS'Instructiin: 0x401014L: mov     dl, 0xad'
 p219
-aS"(['pop', '     ', 'ebp'], 4198494L)"
+aS'Instructiin: 0x401016L: mov     ecx, edx'
 p220
-aS"(['retn', '    '], 4198495L)"
+aS'Instructiin: 0x401018L: rol     eax, 0x10'
 p221
-asS'test_low_il_ssa'
+aS'Instructiin: 0x40101bL: mov     ax, cx'
 p222
-(lp223
-S'None'
+aS'Instructiin: 0x40101eL: shr     ecx, 0x10'
+p223
+aS'Instructiin: 0x401021L: mov     word [ebp-0x10], cx'
 p224
-aS'[]'
+aS'Instructiin: 0x401025L: cmp     ax, 0xff'
 p225
-aS'<undetermined>'
+aS'Instructiin: 0x401029L: ja      0x401090'
 p226
-aS'None'
+aS'Instructiin: 0x401090L: mov     ax, cx'
 p227
-aS'[]'
+aS'Instructiin: 0x401093L: mov     bx, cx'
 p228
-ag226
-aS'None'
+aS'Instructiin: 0x401096L: xor     ebx, ebx'
 p229
-aS'[]'
+aS'Instructiin: 0x401098L: mov     bx, cx'
 p230
-ag226
-aS'None'
+aS'Instructiin: 0x40109bL: cmp     edi, 0x3'
 p231
-aS'[]'
+aS'Instructiin: 0x40109eL: jne     0x40103e'
 p232
-ag226
-aS'None'
+aS'Instructiin: 0x40102fL: mov     cx, 0x0'
 p233
-aS'[]'
+aS'Instructiin: 0x401033L: mov     word [ebp-0x10], cx'
 p234
-ag226
-aS'None'
+aS'Instructiin: 0x401037L: movzx   edx, word [ebp-0x10]'
 p235
-aS'[]'
+aS'Instructiin: 0x40103bL: add     dh, 0x1'
 p236
-ag226
-aS'None'
+aS'Instructiin: 0x40103eL: mov     word [ebp-0x4], dx'
 p237
-aS'[]'
+aS'Instructiin: 0x401042L: movzx   eax, word [ebp-0x4]'
 p238
-ag226
-aS'None'
+aS'Instructiin: 0x401046L: shr     ecx, 0x18'
 p239
-aS'[]'
+aS'Instructiin: 0x401049L: cmp     ecx, 0x20'
 p240
-ag226
-aS'None'
+aS'Instructiin: 0x40104cL: mov     edx, 0x20'
 p241
-aS'[]'
+aS'Instructiin: 0x401051L: cmova   ecx, edx'
 p242
-ag226
-aS'None'
+aS'Instructiin: 0x401054L: mov     edx, ecx'
 p243
-aS'[]'
+aS'Instructiin: 0x401056L: add     eax, ecx'
 p244
-ag226
-aS'None'
+aS'Instructiin: 0x4010a4L: shr     ecx, 0x8'
 p245
-aS'[]'
+aS'Instructiin: 0x4010a7L: add     ecx, ecx'
 p246
-ag226
-aS'None'
+aS'Instructiin: 0x4010a9L: add     ecx, ecx'
 p247
-aS'[]'
+aS'Instructiin: 0x4010abL: mov     eax, ecx'
 p248
-ag226
-aS'None'
+aS'Instructiin: 0x4010adL: mov     ecx, edi'
 p249
-aS'[]'
+aS'Instructiin: 0x4010afL: shr     eax, cl'
 p250
-ag226
-aS'None'
+aS'Instructiin: 0x4010b1L: jmp     0x401058'
 p251
-aS'[]'
+aS'Instructiin: 0x401058L: add     esp, 0x80'
 p252
-ag226
-aS'None'
+aS'Instructiin: 0x40105eL: pop     ebp'
 p253
-aS'[]'
+aS'Instructiin: 0x40105fL: retn    '
 p254
-ag226
-aS'1'
+asS'test_low_il_ssa'
 p255
-aS'[12L, 20L, 21L, 24L, 25L]'
-p256
-aS'<stack frame offset -0x4>'
+(lp256
+S'Reg ch SSA definition: None'
 p257
-aS'None'
+aS'Reg ch SSA uses: []'
 p258
-aS'[]'
+aS'Reg ch SSA value: <undetermined>'
 p259
-ag226
-aS'None'
+aS'Reg gs SSA definition: None'
 p260
-aS'[]'
+aS'Reg gs SSA uses: []'
 p261
-ag226
-aS'6'
+aS'Reg gs SSA value: <undetermined>'
 p262
-aS'[]'
+aS'Reg xmm4 SSA definition: None'
 p263
-ag226
-aS'15'
+aS'Reg xmm4 SSA uses: []'
 p264
-aS'[]'
+aS'Reg xmm4 SSA value: <undetermined>'
 p265
-ag226
-aS'None'
+aS'Reg x87_r3 SSA definition: None'
 p266
-aS'[]'
+aS'Reg x87_r3 SSA uses: []'
 p267
-ag226
-aS'None'
+aS'Reg x87_r3 SSA value: <undetermined>'
 p268
-aS'[]'
+aS'Reg cl SSA definition: None'
 p269
-ag226
-aS'0'
+aS'Reg cl SSA uses: []'
 p270
-aS'[1L, 2L]'
+aS'Reg cl SSA value: <undetermined>'
 p271
-aS'<stack frame offset -0x4>'
+aS'Reg mm5 SSA definition: None'
 p272
-aS'None'
+aS'Reg mm5 SSA uses: []'
 p273
-aS'[]'
+aS'Reg mm5 SSA value: <undetermined>'
 p274
-ag226
-aS'None'
+aS'Reg ah SSA definition: None'
 p275
-aS'[]'
+aS'Reg ah SSA uses: []'
 p276
-ag226
-aS'None'
+aS'Reg ah SSA value: <undetermined>'
 p277
-aS'[]'
+aS'Reg mm7 SSA definition: None'
 p278
-ag226
-aS'None'
+aS'Reg mm7 SSA uses: []'
 p279
-aS'[]'
+aS'Reg mm7 SSA value: <undetermined>'
 p280
-ag226
-aS'None'
+aS'Reg edi SSA definition: None'
 p281
-aS'[]'
+aS'Reg edi SSA uses: []'
 p282
-ag226
-aS'None'
+aS'Reg edi SSA value: <undetermined>'
 p283
-aS'[]'
+aS'Reg mm1 SSA definition: None'
 p284
-ag226
-aS'None'
+aS'Reg mm1 SSA uses: []'
 p285
-aS'[]'
+aS'Reg mm1 SSA value: <undetermined>'
 p286
-ag226
-aS'None'
+aS'Reg al SSA definition: None'
 p287
-aS'[]'
+aS'Reg al SSA uses: []'
 p288
-ag226
-aS'None'
+aS'Reg al SSA value: <undetermined>'
 p289
-aS'[]'
+aS'Reg mm3 SSA definition: None'
 p290
-ag226
-aS'None'
+aS'Reg mm3 SSA uses: []'
 p291
-aS'[]'
+aS'Reg mm3 SSA value: <undetermined>'
 p292
-ag226
-aS'None'
+aS'Reg mm2 SSA definition: None'
 p293
-aS'[]'
+aS'Reg mm2 SSA uses: []'
 p294
-ag226
-aS'None'
+aS'Reg mm2 SSA value: <undetermined>'
 p295
-aS'[]'
+aS'Reg gsbase SSA definition: None'
 p296
-ag226
-aS'None'
+aS'Reg gsbase SSA uses: []'
 p297
-aS'[]'
+aS'Reg gsbase SSA value: <undetermined>'
 p298
-ag226
-aS'None'
+aS'Reg cx SSA definition: None'
 p299
-aS'[]'
+aS'Reg cx SSA uses: []'
 p300
-ag226
-aS'None'
+aS'Reg cx SSA value: <undetermined>'
 p301
-aS'[]'
+aS'Reg ebp SSA definition: 1'
 p302
-ag226
-aS'None'
+aS'Reg ebp SSA uses: [12L, 20L, 21L, 24L, 25L]'
 p303
-aS'[]'
+aS'Reg ebp SSA value: <stack frame offset -0x4>'
 p304
-ag226
-aS'None'
+aS'Reg cs SSA definition: None'
 p305
-aS'[]'
+aS'Reg cs SSA uses: []'
 p306
-ag226
-aS'None'
+aS'Reg cs SSA value: <undetermined>'
 p307
-aS'[]'
+aS'Reg ax SSA definition: None'
 p308
-ag226
-aS'None'
+aS'Reg ax SSA uses: []'
 p309
-aS'[]'
+aS'Reg ax SSA value: <undetermined>'
 p310
-ag226
-aS'None'
+aS'Reg edx SSA definition: 6'
 p311
-aS'[]'
+aS'Reg edx SSA uses: []'
 p312
-ag226
-aS'None'
+aS'Reg edx SSA value: <undetermined>'
 p313
-aS'[]'
+aS'Reg ebx SSA definition: 15'
 p314
-ag226
-aS'None'
+aS'Reg ebx SSA uses: []'
 p315
-aS'[]'
+aS'Reg ebx SSA value: <undetermined>'
 p316
-ag226
-aS'None'
+aS'Reg es SSA definition: None'
 p317
-aS'[]'
+aS'Reg es SSA uses: []'
 p318
-ag226
-aS'None'
+aS'Reg es SSA value: <undetermined>'
 p319
-aS'[]'
+aS'Reg x87_r2 SSA definition: None'
 p320
-ag226
-aS'3'
+aS'Reg x87_r2 SSA uses: []'
 p321
-aS'[]'
+aS'Reg x87_r2 SSA value: <undetermined>'
 p322
-aS'<const 0xffffffff>'
+aS'Reg esp SSA definition: 0'
 p323
-aS'None'
+aS'Reg esp SSA uses: [1L, 2L]'
 p324
-aS'[]'
+aS'Reg esp SSA value: <stack frame offset -0x4>'
 p325
-ag226
-aS'None'
+aS'Reg mm4 SSA definition: None'
 p326
-aS'[]'
+aS'Reg mm4 SSA uses: []'
 p327
-ag226
-aS'None'
+aS'Reg mm4 SSA value: <undetermined>'
 p328
-aS'[]'
+aS'Reg top SSA definition: None'
 p329
-ag226
-aS'None'
+aS'Reg top SSA uses: []'
 p330
-aS'[]'
+aS'Reg top SSA value: <undetermined>'
 p331
-ag226
-aS'None'
+aS'Reg x87_r0 SSA definition: None'
 p332
-aS'[]'
+aS'Reg x87_r0 SSA uses: []'
 p333
-ag226
-aS'None'
+aS'Reg x87_r0 SSA value: <undetermined>'
 p334
-aS'[]'
+aS'Reg st4 SSA definition: None'
 p335
-ag226
-aS'None'
+aS'Reg st4 SSA uses: []'
 p336
-aS'[]'
+aS'Reg st4 SSA value: <undetermined>'
 p337
-ag226
-aS'None'
+aS'Reg st5 SSA definition: None'
 p338
-aS'[]'
+aS'Reg st5 SSA uses: []'
 p339
-ag226
-aS'8'
+aS'Reg st5 SSA value: <undetermined>'
 p340
-aS'[10L, 11L]'
+aS'Reg st6 SSA definition: None'
 p341
-ag226
-aS'None'
+aS'Reg st6 SSA uses: []'
 p342
-aS'[]'
+aS'Reg st6 SSA value: <undetermined>'
 p343
-ag226
-aS'None'
+aS'Reg st7 SSA definition: None'
 p344
-aS'[]'
+aS'Reg st7 SSA uses: []'
 p345
-ag226
-aS'None'
+aS'Reg st7 SSA value: <undetermined>'
 p346
-aS'[]'
+aS'Reg st0 SSA definition: None'
 p347
-ag226
-aS'None'
+aS'Reg st0 SSA uses: []'
 p348
-aS'[]'
+aS'Reg st0 SSA value: <undetermined>'
 p349
-ag226
-aS'None'
+aS'Reg st1 SSA definition: None'
 p350
-aS'[]'
+aS'Reg st1 SSA uses: []'
 p351
-ag226
-aS'None'
+aS'Reg st1 SSA value: <undetermined>'
 p352
-aS'[]'
+aS'Reg st2 SSA definition: None'
 p353
-ag226
-aS'None'
+aS'Reg st2 SSA uses: []'
 p354
-aS'[]'
+aS'Reg st2 SSA value: <undetermined>'
 p355
-ag226
-aS'None'
+aS'Reg st3 SSA definition: None'
 p356
-aS'[]'
+aS'Reg st3 SSA uses: []'
 p357
-ag226
-aS'[]'
+aS'Reg st3 SSA value: <undetermined>'
 p358
-ag226
-aS'[]'
+aS'Reg x87_r6 SSA definition: None'
 p359
-ag226
-aS'[]'
+aS'Reg x87_r6 SSA uses: []'
 p360
-ag226
-aS'[]'
+aS'Reg x87_r6 SSA value: <undetermined>'
 p361
-ag226
-aS'[]'
+aS'Reg esi SSA definition: None'
 p362
-ag226
-aS'[]'
+aS'Reg esi SSA uses: []'
 p363
-ag226
-aS'[]'
+aS'Reg esi SSA value: <undetermined>'
 p364
-ag226
-aS'[]'
+aS'Reg x87_r7 SSA definition: None'
 p365
-ag226
-aS'[]'
+aS'Reg x87_r7 SSA uses: []'
 p366
-ag226
-aS'[]'
+aS'Reg x87_r7 SSA value: <undetermined>'
 p367
-ag226
-aS'[]'
+aS'Reg dl SSA definition: None'
 p368
-ag226
-aS'0'
+aS'Reg dl SSA uses: []'
 p369
-aS'0'
+aS'Reg dl SSA value: <undetermined>'
 p370
-aS'0'
+aS'Reg mm6 SSA definition: None'
 p371
-aS'0'
+aS'Reg mm6 SSA uses: []'
 p372
-aS'1'
+aS'Reg mm6 SSA value: <undetermined>'
 p373
-aS'2'
+aS'Reg x87_r4 SSA definition: None'
 p374
-aS'None'
+aS'Reg x87_r4 SSA uses: []'
 p375
-aS'2'
+aS'Reg x87_r4 SSA value: <undetermined>'
 p376
-aS'2'
+aS'Reg dh SSA definition: None'
 p377
-aS'3'
+aS'Reg dh SSA uses: []'
 p378
-aS'None'
+aS'Reg dh SSA value: <undetermined>'
 p379
-aS'3'
+aS'Reg di SSA definition: None'
 p380
-aS'3'
+aS'Reg di SSA uses: []'
 p381
-aS'4'
+aS'Reg di SSA value: <undetermined>'
 p382
-aS'0'
+aS'Reg bl SSA definition: None'
 p383
-aS'4'
+aS'Reg bl SSA uses: []'
 p384
-aS'4'
+aS'Reg bl SSA value: <undetermined>'
 p385
-aS'5'
+aS'Reg x87_r5 SSA definition: None'
 p386
-aS'1'
+aS'Reg x87_r5 SSA uses: []'
 p387
-aS'5'
+aS'Reg x87_r5 SSA value: <undetermined>'
 p388
-aS'5'
+aS'Reg bh SSA definition: None'
 p389
-aS'6'
+aS'Reg bh SSA uses: []'
 p390
-aS'2'
+aS'Reg bh SSA value: <undetermined>'
 p391
-aS'6'
+aS'Reg mm0 SSA definition: None'
 p392
-aS'6'
+aS'Reg mm0 SSA uses: []'
 p393
-aS'7'
+aS'Reg mm0 SSA value: <undetermined>'
 p394
-aS'3'
+aS'Reg xmm2 SSA definition: None'
 p395
-aS'7'
+aS'Reg xmm2 SSA uses: []'
 p396
-aS'7'
+aS'Reg xmm2 SSA value: <undetermined>'
 p397
-aS'8'
+aS'Reg eax SSA definition: 3'
 p398
-aS'4'
+aS'Reg eax SSA uses: []'
 p399
-aS'8'
+aS'Reg eax SSA value: <const 0xffffffff>'
 p400
-aS'8'
+aS'Reg xmm0 SSA definition: None'
 p401
-aS'9'
+aS'Reg xmm0 SSA uses: []'
 p402
-aS'5'
+aS'Reg xmm0 SSA value: <undetermined>'
 p403
-aS'9'
+aS'Reg xmm1 SSA definition: None'
 p404
-aS'9'
+aS'Reg xmm1 SSA uses: []'
 p405
-aS'10'
+aS'Reg xmm1 SSA value: <undetermined>'
 p406
-aS'6'
+aS'Reg bp SSA definition: None'
 p407
-aS'10'
+aS'Reg bp SSA uses: []'
 p408
-aS'10'
+aS'Reg bp SSA value: <undetermined>'
 p409
-aS'11'
+aS'Reg xmm7 SSA definition: None'
 p410
-aS'7'
+aS'Reg xmm7 SSA uses: []'
 p411
-aS'11'
+aS'Reg xmm7 SSA value: <undetermined>'
 p412
-aS'11'
+aS'Reg dx SSA definition: None'
 p413
-aS'12'
+aS'Reg dx SSA uses: []'
 p414
-aS'8'
+aS'Reg dx SSA value: <undetermined>'
 p415
-aS'12'
+aS'Reg xmm5 SSA definition: None'
 p416
-aS'12'
+aS'Reg xmm5 SSA uses: []'
 p417
-aS'13'
+aS'Reg xmm5 SSA value: <undetermined>'
 p418
-aS'9'
+aS'Reg bx SSA definition: None'
 p419
-aS'13'
+aS'Reg bx SSA uses: []'
 p420
-aS'13'
+aS'Reg bx SSA value: <undetermined>'
 p421
-aS'14'
+aS'Reg ds SSA definition: None'
 p422
-aS'10'
+aS'Reg ds SSA uses: []'
 p423
-aS'14'
+aS'Reg ds SSA value: <undetermined>'
 p424
-aS'14'
+aS'Reg ecx SSA definition: 8'
 p425
-aS'15'
+aS'Reg ecx SSA uses: [10L, 11L]'
 p426
-aS'11'
+aS'Reg ecx SSA value: <undetermined>'
 p427
-aS'15'
+aS'Reg xmm3 SSA definition: None'
 p428
-aS'15'
+aS'Reg xmm3 SSA uses: []'
 p429
-aS'16'
+aS'Reg xmm3 SSA value: <undetermined>'
 p430
-aS'12'
+aS'Reg ss SSA definition: None'
 p431
-aS'16'
+aS'Reg ss SSA uses: []'
 p432
-aS'16'
+aS'Reg ss SSA value: <undetermined>'
 p433
-aS'17'
+aS'Reg sp SSA definition: None'
 p434
-aS'13'
+aS'Reg sp SSA uses: []'
 p435
-aS'17'
+aS'Reg sp SSA value: <undetermined>'
 p436
-aS'17'
+aS'Reg fs SSA definition: None'
 p437
-aS'18'
+aS'Reg fs SSA uses: []'
 p438
-aS'14'
+aS'Reg fs SSA value: <undetermined>'
 p439
-aS'18'
+aS'Reg si SSA definition: None'
 p440
-aS'18'
+aS'Reg si SSA uses: []'
 p441
-aS'19'
+aS'Reg si SSA value: <undetermined>'
 p442
-aS'15'
+aS'Reg x87_r1 SSA definition: None'
 p443
-aS'19'
+aS'Reg x87_r1 SSA uses: []'
 p444
-aS'19'
+aS'Reg x87_r1 SSA value: <undetermined>'
 p445
-aS'20'
+aS'Reg xmm6 SSA definition: None'
 p446
-aS'16'
+aS'Reg xmm6 SSA uses: []'
 p447
-aS'20'
+aS'Reg xmm6 SSA value: <undetermined>'
 p448
-aS'20'
+aS'Reg fsbase SSA definition: None'
 p449
-aS'21'
+aS'Reg fsbase SSA uses: []'
 p450
-aS'17'
+aS'Reg fsbase SSA value: <undetermined>'
 p451
-aS'21'
+aS'Flag c SSA uses: []'
 p452
-aS'21'
+aS'Flag c SSA value: <undetermined>'
 p453
-aS'22'
+aS'Flag p SSA uses: []'
 p454
-aS'18'
+aS'Flag p SSA value: <undetermined>'
 p455
-aS'22'
+aS'Flag a SSA uses: []'
 p456
-aS'22'
+aS'Flag a SSA value: <undetermined>'
 p457
-aS'23'
+aS'Flag z SSA uses: []'
 p458
-aS'19'
+aS'Flag z SSA value: <undetermined>'
 p459
-aS'23'
+aS'Flag s SSA uses: []'
 p460
-aS'23'
+aS'Flag s SSA value: <undetermined>'
 p461
-aS'24'
+aS'Flag d SSA uses: []'
 p462
-aS'20'
+aS'Flag d SSA value: <undetermined>'
 p463
-aS'24'
+aS'Flag o SSA uses: []'
 p464
-aS'24'
+aS'Flag o SSA value: <undetermined>'
 p465
-aS'30'
+aS'Flag c0 SSA uses: []'
 p466
-aS'21'
+aS'Flag c0 SSA value: <undetermined>'
 p467
-aS'25'
+aS'Flag c1 SSA uses: []'
 p468
-aS'25'
+aS'Flag c1 SSA value: <undetermined>'
 p469
-aS'31'
+aS'Flag c2 SSA uses: []'
 p470
-aS'22'
+aS'Flag c2 SSA value: <undetermined>'
 p471
-aS'26'
+aS'Flag c3 SSA uses: []'
 p472
-aS'26'
+aS'Flag c3 SSA value: <undetermined>'
 p473
-aS'32'
+aS'Non-SSA instruction index: 0'
 p474
-aS'23'
+aS'SSA instruction index: 0'
 p475
-aS'27'
+aS'MLIL instruction index: 0'
 p476
-aS'27'
+aS'Mapped MLIL instruction index: 0'
 p477
-aS'33'
+aS'Non-SSA instruction index: 1'
 p478
-aS'24'
+aS'SSA instruction index: 2'
 p479
-aS'28'
+aS'MLIL instruction index: None'
 p480
-aS'28'
+aS'Mapped MLIL instruction index: 2'
 p481
-aS'34'
+aS'Non-SSA instruction index: 2'
 p482
-aS'None'
+aS'SSA instruction index: 3'
 p483
-aS'29'
+aS'MLIL instruction index: None'
 p484
-aS'29'
+aS'Mapped MLIL instruction index: 3'
 p485
-aS'35'
+aS'Non-SSA instruction index: 3'
 p486
-aS'25'
+aS'SSA instruction index: 4'
 p487
-aS'30'
+aS'MLIL instruction index: 0'
 p488
-aS'30'
+aS'Mapped MLIL instruction index: 4'
 p489
-aS'36'
+aS'Non-SSA instruction index: 4'
 p490
-aS'26'
+aS'SSA instruction index: 5'
 p491
-aS'31'
+aS'MLIL instruction index: 1'
 p492
-aS'31'
+aS'Mapped MLIL instruction index: 5'
 p493
-aS'37'
+aS'Non-SSA instruction index: 5'
 p494
-aS'27'
+aS'SSA instruction index: 6'
 p495
-aS'32'
+aS'MLIL instruction index: 2'
 p496
-aS'32'
+aS'Mapped MLIL instruction index: 6'
 p497
-aS'38'
+aS'Non-SSA instruction index: 6'
 p498
-aS'28'
+aS'SSA instruction index: 7'
 p499
-aS'33'
+aS'MLIL instruction index: 3'
 p500
-aS'33'
+aS'Mapped MLIL instruction index: 7'
 p501
-aS'39'
+aS'Non-SSA instruction index: 7'
 p502
-aS'29'
+aS'SSA instruction index: 8'
 p503
-aS'34'
+aS'MLIL instruction index: 4'
 p504
-aS'34'
+aS'Mapped MLIL instruction index: 8'
 p505
-aS'40'
+aS'Non-SSA instruction index: 8'
 p506
-aS'30'
+aS'SSA instruction index: 9'
 p507
-aS'35'
+aS'MLIL instruction index: 5'
 p508
-aS'35'
+aS'Mapped MLIL instruction index: 9'
 p509
-aS'41'
+aS'Non-SSA instruction index: 9'
 p510
-aS'31'
+aS'SSA instruction index: 10'
 p511
-aS'36'
+aS'MLIL instruction index: 6'
 p512
-aS'36'
+aS'Mapped MLIL instruction index: 10'
 p513
-aS'42'
+aS'Non-SSA instruction index: 10'
 p514
-aS'32'
+aS'SSA instruction index: 11'
 p515
-aS'37'
+aS'MLIL instruction index: 7'
 p516
-aS'37'
+aS'Mapped MLIL instruction index: 11'
 p517
-aS'43'
+aS'Non-SSA instruction index: 11'
 p518
-aS'33'
+aS'SSA instruction index: 12'
 p519
-aS'38'
+aS'MLIL instruction index: 8'
 p520
-aS'38'
+aS'Mapped MLIL instruction index: 12'
 p521
-aS'44'
+aS'Non-SSA instruction index: 12'
 p522
-aS'34'
+aS'SSA instruction index: 13'
 p523
-aS'39'
+aS'MLIL instruction index: 9'
 p524
-aS'39'
+aS'Mapped MLIL instruction index: 13'
 p525
-aS'45'
+aS'Non-SSA instruction index: 13'
 p526
-aS'35'
+aS'SSA instruction index: 14'
 p527
-aS'40'
+aS'MLIL instruction index: 10'
 p528
-aS'40'
+aS'Mapped MLIL instruction index: 14'
 p529
-aS'46'
+aS'Non-SSA instruction index: 14'
 p530
-aS'36'
+aS'SSA instruction index: 15'
 p531
-aS'41'
+aS'MLIL instruction index: 11'
 p532
-aS'41'
+aS'Mapped MLIL instruction index: 15'
 p533
-aS'53'
+aS'Non-SSA instruction index: 15'
 p534
-aS'None'
+aS'SSA instruction index: 16'
 p535
-aS'42'
+aS'MLIL instruction index: 12'
 p536
-aS'42'
+aS'Mapped MLIL instruction index: 16'
 p537
-aS'54'
+aS'Non-SSA instruction index: 16'
 p538
-aS'None'
+aS'SSA instruction index: 17'
 p539
-aS'43'
+aS'MLIL instruction index: 13'
 p540
-aS'43'
+aS'Mapped MLIL instruction index: 17'
 p541
-aS'56'
+aS'Non-SSA instruction index: 17'
 p542
-aS'37'
+aS'SSA instruction index: 18'
 p543
-aS'45'
+aS'MLIL instruction index: 14'
 p544
-aS'44'
+aS'Mapped MLIL instruction index: 18'
 p545
-aS'58'
+aS'Non-SSA instruction index: 18'
 p546
-aS'38'
+aS'SSA instruction index: 19'
 p547
-aS'46'
+aS'MLIL instruction index: 15'
 p548
-aS'45'
+aS'Mapped MLIL instruction index: 19'
 p549
-aS'59'
+aS'Non-SSA instruction index: 19'
 p550
-aS'39'
+aS'SSA instruction index: 20'
 p551
-aS'47'
+aS'MLIL instruction index: 16'
 p552
-aS'46'
+aS'Mapped MLIL instruction index: 20'
 p553
-aS'60'
+aS'Non-SSA instruction index: 20'
 p554
-aS'40'
+aS'SSA instruction index: 21'
 p555
-aS'48'
+aS'MLIL instruction index: 17'
 p556
-asS'test_med_il_instructions'
+aS'Mapped MLIL instruction index: 21'
 p557
-(lp558
-S'None'
+aS'Non-SSA instruction index: 21'
+p558
+aS'SSA instruction index: 22'
 p559
-aS'eax#1 = 0xffffffff'
+aS'MLIL instruction index: 18'
 p560
-ag226
-aS'<undetermined>'
+aS'Mapped MLIL instruction index: 22'
 p561
-aS'{}'
+aS'Non-SSA instruction index: 22'
 p562
-aS"['4294967295', '<MLIL_CONST 4>', '<MLIL_SET_VAR 4>', 'eax']"
+aS'SSA instruction index: 23'
 p563
-aS"['4294967295', '<MLIL_CONST 4>', '<MLIL_SET_VAR 4>', 'eax']"
+aS'MLIL instruction index: 19'
 p564
-aS'eax#1 = 0xffffffff'
+aS'Mapped MLIL instruction index: 23'
 p565
-aS'eax = 0xffffffff'
+aS'Non-SSA instruction index: 23'
 p566
-aS'None'
+aS'SSA instruction index: 24'
 p567
-aS'eax#2.al = 0xa5'
+aS'MLIL instruction index: 20'
 p568
-ag226
-ag561
-aS'{}'
+aS'Mapped MLIL instruction index: 24'
 p569
-aS"['0', '165', '<MLIL_CONST 1>', '<MLIL_SET_VAR_FIELD 1>', 'eax']"
+aS'Non-SSA instruction index: 24'
 p570
-aS"['0', '165', '<MLIL_CONST 1>', '<MLIL_SET_VAR_FIELD 1>', 'eax']"
+aS'SSA instruction index: 30'
 p571
-aS'eax#2.al = 0xa5 @ eax#1'
+aS'MLIL instruction index: 21'
 p572
-aS'eax.al = 0xa5'
+aS'Mapped MLIL instruction index: 25'
 p573
-aS'None'
+aS'Non-SSA instruction index: 25'
 p574
-aS'eax#3.ah = 0xab'
+aS'SSA instruction index: 31'
 p575
-ag226
-ag561
-aS'{}'
+aS'MLIL instruction index: 22'
 p576
-aS"['1', '171', '<MLIL_CONST 1>', '<MLIL_SET_VAR_FIELD 1>', 'eax']"
+aS'Mapped MLIL instruction index: 26'
 p577
-aS"['1', '171', '<MLIL_CONST 1>', '<MLIL_SET_VAR_FIELD 1>', 'eax']"
+aS'Non-SSA instruction index: 26'
 p578
-aS'eax#3.ah = 0xab @ eax#2'
+aS'SSA instruction index: 32'
 p579
-aS'eax.ah = 0xab'
+aS'MLIL instruction index: 23'
 p580
-aS'None'
+aS'Mapped MLIL instruction index: 27'
 p581
-aS'edx#1.dh = 0xde'
+aS'Non-SSA instruction index: 27'
 p582
-ag226
-ag561
-aS'{}'
+aS'SSA instruction index: 33'
 p583
-aS"['1', '222', '<MLIL_CONST 1>', '<MLIL_SET_VAR_FIELD 1>', 'edx']"
+aS'MLIL instruction index: 24'
 p584
-aS"['1', '222', '<MLIL_CONST 1>', '<MLIL_SET_VAR_FIELD 1>', 'edx']"
+aS'Mapped MLIL instruction index: 28'
 p585
-aS'edx#1.dh = 0xde @ edx#0'
+aS'Non-SSA instruction index: 28'
 p586
-aS'edx.dh = 0xde'
+aS'SSA instruction index: 34'
 p587
-aS'None'
+aS'MLIL instruction index: None'
 p588
-aS'edx#2.dl = 0xad'
+aS'Mapped MLIL instruction index: 29'
 p589
-ag226
-ag561
-aS'{}'
+aS'Non-SSA instruction index: 29'
 p590
-aS"['0', '173', '<MLIL_CONST 1>', '<MLIL_SET_VAR_FIELD 1>', 'edx']"
+aS'SSA instruction index: 35'
 p591
-aS"['0', '173', '<MLIL_CONST 1>', '<MLIL_SET_VAR_FIELD 1>', 'edx']"
+aS'MLIL instruction index: 25'
 p592
-aS'edx#2.dl = 0xad @ edx#1'
+aS'Mapped MLIL instruction index: 30'
 p593
-aS'edx.dl = 0xad'
+aS'Non-SSA instruction index: 30'
 p594
-aS'None'
+aS'SSA instruction index: 36'
 p595
-aS'ecx#1 = edx#2'
+aS'MLIL instruction index: 26'
 p596
-ag226
-ag561
-aS'{}'
+aS'Mapped MLIL instruction index: 31'
 p597
-aS"['<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', 'ecx', 'edx']"
+aS'Non-SSA instruction index: 31'
 p598
-aS"['<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', 'ecx', 'edx']"
+aS'SSA instruction index: 37'
 p599
-aS'ecx#1 = edx#2'
+aS'MLIL instruction index: 27'
 p600
-aS'ecx = edx'
+aS'Mapped MLIL instruction index: 32'
 p601
-aS'None'
+aS'Non-SSA instruction index: 32'
 p602
-aS'eax#4 = rol.d(eax#3, 0x10)'
+aS'SSA instruction index: 38'
 p603
-ag226
-ag561
-aS'{}'
+aS'MLIL instruction index: 28'
 p604
-aS"['2879782911', '<MLIL_CONST 4>', '<MLIL_SET_VAR 4>', 'eax_1']"
+aS'Mapped MLIL instruction index: 33'
 p605
-aS"['2879782911', '<MLIL_CONST 4>', '<MLIL_SET_VAR 4>', 'eax_1']"
+aS'Non-SSA instruction index: 33'
 p606
-aS'eax_1#4 = 0xaba5ffff'
+aS'SSA instruction index: 39'
 p607
-aS'eax_1 = 0xaba5ffff'
+aS'MLIL instruction index: 29'
 p608
-aS'None'
+aS'Mapped MLIL instruction index: 34'
 p609
-aS'eax#5.ax = ecx#1.cx'
+aS'Non-SSA instruction index: 34'
 p610
-ag226
-ag561
-aS'{}'
+aS'SSA instruction index: 40'
 p611
-aS"['0', '0', '<MLIL_SET_VAR_FIELD 2>', '<MLIL_VAR_FIELD 2>', 'eax_1', 'ecx']"
+aS'MLIL instruction index: 30'
 p612
-aS"['0', '0', '<MLIL_SET_VAR_FIELD 2>', '<MLIL_VAR_FIELD 2>', 'eax_1', 'ecx']"
+aS'Mapped MLIL instruction index: 35'
 p613
-aS'eax_1#5.ax = ecx#1.cx @ eax_1#4'
+aS'Non-SSA instruction index: 35'
 p614
-aS'eax_1.ax = ecx.cx'
+aS'SSA instruction index: 41'
 p615
-aS'None'
+aS'MLIL instruction index: 31'
 p616
-aS'ecx#2 = ecx#1 u>> 0x10'
+aS'Mapped MLIL instruction index: 36'
 p617
-ag226
-ag561
-aS'{}'
+aS'Non-SSA instruction index: 36'
 p618
-aS"['16', '<MLIL_CONST 1>', '<MLIL_LSR 4>', '<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', 'ecx', 'ecx_1']"
+aS'SSA instruction index: 42'
 p619
-aS"['16', '<MLIL_CONST 1>', '<MLIL_LSR 4>', '<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', 'ecx', 'ecx_1']"
+aS'MLIL instruction index: 32'
 p620
-aS'ecx_1#2 = ecx#1 u>> 0x10'
+aS'Mapped MLIL instruction index: 37'
 p621
-aS'ecx_1 = ecx u>> 0x10'
+aS'Non-SSA instruction index: 37'
 p622
-aS'None'
+aS'SSA instruction index: 43'
 p623
-aS'[ebp#1 - 0x10].w = ecx#2.cx @ mem#1 -> mem#2'
+aS'MLIL instruction index: None'
 p624
-ag226
-ag561
-aS'{}'
+aS'Mapped MLIL instruction index: 38'
 p625
-aS"['0', '<MLIL_SET_VAR 2>', '<MLIL_VAR_FIELD 2>', 'ecx_1', 'var_14']"
+aS'Non-SSA instruction index: 38'
 p626
-aS"['0', '<MLIL_SET_VAR 2>', '<MLIL_VAR_FIELD 2>', 'ecx_1', 'var_14']"
+aS'SSA instruction index: 44'
 p627
-aS'var_14#1 = ecx_1#2.cx'
+aS'MLIL instruction index: 33'
 p628
-aS'var_14 = ecx_1.cx'
+aS'Mapped MLIL instruction index: 39'
 p629
-aS'None'
+aS'Non-SSA instruction index: 39'
 p630
-aS'if (eax#5.ax u> 0xff) then 15 @ 0x401090 else 20 @ 0x40102f'
+aS'SSA instruction index: 45'
 p631
-ag226
-ag561
-aS'{}'
+aS'MLIL instruction index: None'
 p632
-aS"['0', '11', '16', '255', '<MLIL_CMP_UGT 2>', '<MLIL_CONST 2>', '<MLIL_IF>', '<MLIL_VAR_FIELD 2>', 'eax_1']"
+aS'Mapped MLIL instruction index: 40'
 p633
-aS"['0', '11', '16', '255', '<MLIL_CMP_UGT 2>', '<MLIL_CONST 2>', '<MLIL_IF>', '<MLIL_VAR_FIELD 2>', 'eax_1']"
+aS'Non-SSA instruction index: 40'
 p634
-aS'if (eax_1#5.ax u> 0xff) then 11 @ 0x401090 else 16 @ 0x40102f'
+aS'SSA instruction index: 46'
 p635
-aS'if (eax_1.ax u> 0xff) then 11 @ 0x401090 else 16 @ 0x40102f'
+aS'MLIL instruction index: 34'
 p636
-aS'None'
+aS'Mapped MLIL instruction index: 41'
 p637
-aS'eax#6.ax = ecx#2.cx'
+aS'Non-SSA instruction index: 41'
 p638
-ag226
-ag561
-aS'{10L: <ILBranchDependence.TrueBranchDependent: 1>}'
+aS'SSA instruction index: 53'
 p639
-aS"['0', '0', '<MLIL_SET_VAR_FIELD 2>', '<MLIL_VAR_FIELD 2>', 'eax_1', 'ecx_1']"
+aS'MLIL instruction index: None'
 p640
-aS"['0', '0', '<MLIL_SET_VAR_FIELD 2>', '<MLIL_VAR_FIELD 2>', 'eax_1', 'ecx_1']"
+aS'Mapped MLIL instruction index: 42'
 p641
-aS'eax_1#6.ax = ecx_1#2.cx @ eax_1#5'
+aS'Non-SSA instruction index: 42'
 p642
-aS'eax_1.ax = ecx_1.cx'
+aS'SSA instruction index: 54'
 p643
-aS'None'
+aS'MLIL instruction index: None'
 p644
-aS'ebx#1.bx = ecx#2.cx'
+aS'Mapped MLIL instruction index: 43'
 p645
-ag226
-ag561
-aS'{10L: <ILBranchDependence.TrueBranchDependent: 1>}'
+aS'Non-SSA instruction index: 43'
 p646
-aS"['0', '0', '<MLIL_SET_VAR_FIELD 2>', '<MLIL_VAR_FIELD 2>', 'ebx', 'ecx_1']"
+aS'SSA instruction index: 56'
 p647
-aS"['0', '0', '<MLIL_SET_VAR_FIELD 2>', '<MLIL_VAR_FIELD 2>', 'ebx', 'ecx_1']"
+aS'MLIL instruction index: 35'
 p648
-aS'ebx#1.bx = ecx_1#2.cx @ ebx#0'
+aS'Mapped MLIL instruction index: 45'
 p649
-aS'ebx.bx = ecx_1.cx'
+aS'Non-SSA instruction index: 44'
 p650
-aS'None'
+aS'SSA instruction index: 58'
 p651
-aS'ebx#2 = 0'
+aS'MLIL instruction index: 36'
 p652
-ag226
-ag561
-aS'{10L: <ILBranchDependence.TrueBranchDependent: 1>}'
+aS'Mapped MLIL instruction index: 46'
 p653
-aS"['0', '<MLIL_CONST 4>', '<MLIL_SET_VAR 4>', 'ebx_1']"
+aS'Non-SSA instruction index: 45'
 p654
-aS"['0', '<MLIL_CONST 4>', '<MLIL_SET_VAR 4>', 'ebx_1']"
+aS'SSA instruction index: 59'
 p655
-aS'ebx_1#2 = 0'
+aS'MLIL instruction index: 37'
 p656
-aS'ebx_1 = 0'
+aS'Mapped MLIL instruction index: 47'
 p657
-aS'None'
+aS'Non-SSA instruction index: 46'
 p658
-aS'ebx#3.bx = ecx#2.cx'
+aS'SSA instruction index: 60'
 p659
-ag226
-ag561
-aS'{10L: <ILBranchDependence.TrueBranchDependent: 1>}'
+aS'MLIL instruction index: 38'
 p660
-aS"['0', '0', '<MLIL_SET_VAR_FIELD 2>', '<MLIL_VAR_FIELD 2>', 'ebx_1', 'ecx_1']"
+aS'Mapped MLIL instruction index: 48'
 p661
-aS"['0', '0', '<MLIL_SET_VAR_FIELD 2>', '<MLIL_VAR_FIELD 2>', 'ebx_1', 'ecx_1']"
+asS'test_med_il_instructions'
 p662
-aS'ebx_1#3.bx = ecx_1#2.cx @ ebx_1#2'
-p663
-aS'ebx_1.bx = ecx_1.cx'
+(lp663
+S'Expression type: None'
 p664
-aS'None'
+aS'LLIL: eax#1 = 0xffffffff'
 p665
-aS'if (edi#0 != 3) then 25 @ 0x40103e else 36 @ 0x4010a4'
+aS'Value: <undetermined>'
 p666
-ag226
-ag561
-aS'{10L: <ILBranchDependence.TrueBranchDependent: 1>}'
+aS'Possible values: <undetermined>'
 p667
-aS"['21', '26', '3', '<MLIL_CMP_NE 4>', '<MLIL_CONST 4>', '<MLIL_IF>', '<MLIL_VAR 4>', 'arg1']"
+aS'Branch dependence: {}'
 p668
-aS"['21', '26', '3', '<MLIL_CMP_NE 4>', '<MLIL_CONST 4>', '<MLIL_IF>', '<MLIL_VAR 4>', 'arg1']"
+aS"Prefix operands: ['4294967295', '<MLIL_CONST 4>', '<MLIL_SET_VAR 4>', 'eax']"
 p669
-aS'if (arg1#0 != 3) then 21 @ 0x0 else 22 @ 0x4010a4'
+aS"Postfix operands: ['4294967295', '<MLIL_CONST 4>', '<MLIL_SET_VAR 4>', 'eax']"
 p670
-aS'if (arg1 != 3) then 21 @ 0x40103e else 26 @ 0x4010a4'
+aS'SSA form: eax#1 = 0xffffffff'
 p671
-aS'None'
+aS'Non-SSA formeax = 0xffffffff'
 p672
-aS'ecx#7.cx = 0'
+aS'Expression type: None'
 p673
-ag226
-ag561
-aS'{10L: <ILBranchDependence.FalseBranchDependent: 2>}'
+aS'LLIL: eax#2.al = 0xa5'
 p674
-aS"['0', '0', '<MLIL_CONST 2>', '<MLIL_SET_VAR_FIELD 2>', 'ecx_1']"
+aS'Value: <undetermined>'
 p675
-aS"['0', '0', '<MLIL_CONST 2>', '<MLIL_SET_VAR_FIELD 2>', 'ecx_1']"
+aS'Possible values: <undetermined>'
 p676
-aS'ecx_1#7.cx = 0 @ ecx_1#2'
+aS'Branch dependence: {}'
 p677
-aS'ecx_1.cx = 0'
+aS"Prefix operands: ['0', '165', '<MLIL_CONST 1>', '<MLIL_SET_VAR_FIELD 1>', 'eax']"
 p678
-aS'None'
+aS"Postfix operands: ['0', '165', '<MLIL_CONST 1>', '<MLIL_SET_VAR_FIELD 1>', 'eax']"
 p679
-aS'[ebp#1 - 0x10].w = ecx#7.cx @ mem#2 -> mem#3'
+aS'SSA form: eax#2.al = 0xa5 @ eax#1'
 p680
-ag226
-ag561
-aS'{10L: <ILBranchDependence.FalseBranchDependent: 2>}'
+aS'Non-SSA formeax.al = 0xa5'
 p681
-aS"['0', '<MLIL_SET_VAR 2>', '<MLIL_VAR_FIELD 2>', 'ecx_1', 'var_14_1']"
+aS'Expression type: None'
 p682
-aS"['0', '<MLIL_SET_VAR 2>', '<MLIL_VAR_FIELD 2>', 'ecx_1', 'var_14_1']"
+aS'LLIL: eax#3.ah = 0xab'
 p683
-aS'var_14_1#2 = ecx_1#7.cx'
+aS'Value: <undetermined>'
 p684
-aS'var_14_1 = ecx_1.cx'
+aS'Possible values: <undetermined>'
 p685
-aS'None'
+aS'Branch dependence: {}'
 p686
-aS'edx#3 = zx.d([ebp#1 - 0x10].w @ mem#3)'
+aS"Prefix operands: ['1', '171', '<MLIL_CONST 1>', '<MLIL_SET_VAR_FIELD 1>', 'eax']"
 p687
-ag226
-ag561
-aS'{10L: <ILBranchDependence.FalseBranchDependent: 2>}'
+aS"Postfix operands: ['1', '171', '<MLIL_CONST 1>', '<MLIL_SET_VAR_FIELD 1>', 'eax']"
 p688
-aS"['<MLIL_SET_VAR 4>', '<MLIL_VAR 2>', '<MLIL_ZX 4>', 'edx', 'var_14_1']"
+aS'SSA form: eax#3.ah = 0xab @ eax#2'
 p689
-aS"['<MLIL_SET_VAR 4>', '<MLIL_VAR 2>', '<MLIL_ZX 4>', 'edx', 'var_14_1']"
+aS'Non-SSA formeax.ah = 0xab'
 p690
-aS'edx#3 = zx.d(var_14_1#2)'
+aS'Expression type: None'
 p691
-aS'edx = zx.d(var_14_1)'
+aS'LLIL: edx#1.dh = 0xde'
 p692
-aS'None'
+aS'Value: <undetermined>'
 p693
-aS'edx#4.dh = edx#3.dh + 1'
+aS'Possible values: <undetermined>'
 p694
-ag226
-ag561
-aS'{10L: <ILBranchDependence.FalseBranchDependent: 2>}'
+aS'Branch dependence: {}'
 p695
-aS"['1', '1', '1', '<MLIL_ADD 1>', '<MLIL_CONST 1>', '<MLIL_SET_VAR_FIELD 1>', '<MLIL_VAR_FIELD 1>', 'edx', 'edx']"
+aS"Prefix operands: ['1', '222', '<MLIL_CONST 1>', '<MLIL_SET_VAR_FIELD 1>', 'edx']"
 p696
-aS"['1', '1', '1', '<MLIL_ADD 1>', '<MLIL_CONST 1>', '<MLIL_SET_VAR_FIELD 1>', '<MLIL_VAR_FIELD 1>', 'edx', 'edx']"
+aS"Postfix operands: ['1', '222', '<MLIL_CONST 1>', '<MLIL_SET_VAR_FIELD 1>', 'edx']"
 p697
-aS'edx#4.dh = edx#3.dh + 1 @ edx#3'
+aS'SSA form: edx#1.dh = 0xde @ edx#0'
 p698
-aS'edx.dh = edx.dh + 1'
+aS'Non-SSA formedx.dh = 0xde'
 p699
-aS'None'
+aS'Expression type: None'
 p700
-aS'goto 25 @ 0x40103e'
+aS'LLIL: edx#2.dl = 0xad'
 p701
-ag226
-ag561
-aS'{10L: <ILBranchDependence.FalseBranchDependent: 2>}'
+aS'Value: <undetermined>'
 p702
-aS"['21', '<MLIL_GOTO>']"
+aS'Possible values: <undetermined>'
 p703
-aS"['21', '<MLIL_GOTO>']"
+aS'Branch dependence: {}'
 p704
-aS'goto 29 @ 0x40103e'
+aS"Prefix operands: ['0', '173', '<MLIL_CONST 1>', '<MLIL_SET_VAR_FIELD 1>', 'edx']"
 p705
-aS'goto 21 @ 0x40103e'
+aS"Postfix operands: ['0', '173', '<MLIL_CONST 1>', '<MLIL_SET_VAR_FIELD 1>', 'edx']"
 p706
-aS'None'
+aS'SSA form: edx#2.dl = 0xad @ edx#1'
 p707
-aS'[ebp#1 - 4].w = edx#5.dx @ mem#4 -> mem#5'
+aS'Non-SSA formedx.dl = 0xad'
 p708
-ag226
-ag561
-aS'{}'
+aS'Expression type: None'
 p709
-aS"['0', '<MLIL_SET_VAR 2>', '<MLIL_VAR_FIELD 2>', 'edx', 'var_8_1']"
+aS'LLIL: ecx#1 = edx#2'
 p710
-aS"['0', '<MLIL_SET_VAR 2>', '<MLIL_VAR_FIELD 2>', 'edx', 'var_8_1']"
+aS'Value: <undetermined>'
 p711
-aS'var_8_1#1 = edx#5.dx'
+aS'Possible values: <undetermined>'
 p712
-aS'var_8_1 = edx.dx'
+aS'Branch dependence: {}'
 p713
-aS'None'
+aS"Prefix operands: ['<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', 'ecx', 'edx']"
 p714
-aS'eax#10 = zx.d([ebp#1 - 4].w @ mem#5)'
+aS"Postfix operands: ['<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', 'ecx', 'edx']"
 p715
-ag226
-ag561
-aS'{}'
+aS'SSA form: ecx#1 = edx#2'
 p716
-aS"['<MLIL_SET_VAR 4>', '<MLIL_VAR 2>', '<MLIL_ZX 4>', 'eax_2', 'var_8_1']"
+aS'Non-SSA formecx = edx'
 p717
-aS"['<MLIL_SET_VAR 4>', '<MLIL_VAR 2>', '<MLIL_ZX 4>', 'eax_2', 'var_8_1']"
+aS'Expression type: None'
 p718
-aS'eax_2#10 = zx.d(var_8_1#1)'
+aS'LLIL: eax#4 = rol.d(eax#3, 0x10)'
 p719
-aS'eax_2 = zx.d(var_8_1)'
+aS'Value: <undetermined>'
 p720
-aS'None'
+aS'Possible values: <undetermined>'
 p721
-aS'ecx#9 = ecx#8 u>> 0x18'
+aS'Branch dependence: {}'
 p722
-ag226
-ag561
-aS'{}'
+aS"Prefix operands: ['2879782911', '<MLIL_CONST 4>', '<MLIL_SET_VAR 4>', 'eax_1']"
 p723
-aS"['24', '<MLIL_CONST 1>', '<MLIL_LSR 4>', '<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', 'ecx_1', 'ecx_2']"
+aS"Postfix operands: ['2879782911', '<MLIL_CONST 4>', '<MLIL_SET_VAR 4>', 'eax_1']"
 p724
-aS"['24', '<MLIL_CONST 1>', '<MLIL_LSR 4>', '<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', 'ecx_1', 'ecx_2']"
+aS'SSA form: eax_1#4 = 0xaba5ffff'
 p725
-aS'ecx_2#9 = ecx_1#8 u>> 0x18'
+aS'Non-SSA formeax_1 = 0xaba5ffff'
 p726
-aS'ecx_2 = ecx_1 u>> 0x18'
+aS'Expression type: None'
 p727
-aS'None'
+aS'LLIL: eax#5.ax = ecx#1.cx'
 p728
-aS'cond:0#1 = ecx#9 u> 0x20'
+aS'Value: <undetermined>'
 p729
-ag226
-ag561
-aS'{}'
+aS'Possible values: <undetermined>'
 p730
-aS"['32', '<MLIL_CMP_UGT 4>', '<MLIL_CONST 4>', '<MLIL_SET_VAR>', '<MLIL_VAR 4>', 'cond:0_1', 'ecx_2']"
+aS'Branch dependence: {}'
 p731
-aS"['32', '<MLIL_CMP_UGT 4>', '<MLIL_CONST 4>', '<MLIL_SET_VAR>', '<MLIL_VAR 4>', 'cond:0_1', 'ecx_2']"
+aS"Prefix operands: ['0', '0', '<MLIL_SET_VAR_FIELD 2>', '<MLIL_VAR_FIELD 2>', 'eax_1', 'ecx']"
 p732
-aS'cond:0_1#1 = ecx_2#9 u> 0x20'
+aS"Postfix operands: ['0', '0', '<MLIL_SET_VAR_FIELD 2>', '<MLIL_VAR_FIELD 2>', 'eax_1', 'ecx']"
 p733
-aS'cond:0_1 = ecx_2 u> 0x20'
+aS'SSA form: eax_1#5.ax = ecx#1.cx @ eax_1#4'
 p734
-aS'None'
+aS'Non-SSA formeax_1.ax = ecx.cx'
 p735
-aS'if (cond:0#1) then 43 @ 0x401051 else 45 @ 0x401051'
+aS'Expression type: None'
 p736
-ag226
-ag561
-aS'{}'
+aS'LLIL: ecx#2 = ecx#1 u>> 0x10'
 p737
-aS"['33', '35', '<MLIL_IF>', '<MLIL_VAR>', 'cond:0_1']"
+aS'Value: <undetermined>'
 p738
-aS"['33', '35', '<MLIL_IF>', '<MLIL_VAR>', 'cond:0_1']"
+aS'Possible values: <undetermined>'
 p739
-aS'if (cond:0_1#1) then 47 else 49'
+aS'Branch dependence: {}'
 p740
-aS'if (cond:0_1) then 33 else 35'
+aS"Prefix operands: ['16', '<MLIL_CONST 1>', '<MLIL_LSR 4>', '<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', 'ecx', 'ecx_1']"
 p741
-aS'None'
+aS"Postfix operands: ['16', '<MLIL_CONST 1>', '<MLIL_LSR 4>', '<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', 'ecx', 'ecx_1']"
 p742
-aS'ecx#3 = ecx#2 u>> 8'
+aS'SSA form: ecx_1#2 = ecx#1 u>> 0x10'
 p743
-ag226
-ag561
-aS'{10L: <ILBranchDependence.TrueBranchDependent: 1>, 15L: <ILBranchDependence.FalseBranchDependent: 2>}'
+aS'Non-SSA formecx_1 = ecx u>> 0x10'
 p744
-aS"['8', '<MLIL_CONST 1>', '<MLIL_LSR 4>', '<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', 'ecx_1', 'ecx_4']"
+aS'Expression type: None'
 p745
-aS"['8', '<MLIL_CONST 1>', '<MLIL_LSR 4>', '<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', 'ecx_1', 'ecx_4']"
+aS'LLIL: [ebp#1 - 0x10].w = ecx#2.cx @ mem#1 -> mem#2'
 p746
-aS'ecx_4#3 = ecx_1#2 u>> 8'
+aS'Value: <undetermined>'
 p747
-aS'ecx_4 = ecx_1 u>> 8'
+aS'Possible values: <undetermined>'
 p748
-aS'None'
+aS'Branch dependence: {}'
 p749
-aS'ecx#4 = ecx#3 + ecx#3'
+aS"Prefix operands: ['0', '<MLIL_SET_VAR 2>', '<MLIL_VAR_FIELD 2>', 'ecx_1', 'var_14']"
 p750
-ag226
-ag561
-aS'{10L: <ILBranchDependence.TrueBranchDependent: 1>, 15L: <ILBranchDependence.FalseBranchDependent: 2>}'
+aS"Postfix operands: ['0', '<MLIL_SET_VAR 2>', '<MLIL_VAR_FIELD 2>', 'ecx_1', 'var_14']"
 p751
-aS"['<MLIL_ADD 4>', '<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', '<MLIL_VAR 4>', 'ecx_4', 'ecx_4', 'ecx_5']"
+aS'SSA form: var_14#1 = ecx_1#2.cx'
 p752
-aS"['<MLIL_ADD 4>', '<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', '<MLIL_VAR 4>', 'ecx_4', 'ecx_4', 'ecx_5']"
+aS'Non-SSA formvar_14 = ecx_1.cx'
 p753
-aS'ecx_5#4 = ecx_4#3 + ecx_4#3'
+aS'Expression type: None'
 p754
-aS'ecx_5 = ecx_4 + ecx_4'
+aS'LLIL: if (eax#5.ax u> 0xff) then 15 @ 0x401090 else 20 @ 0x40102f'
 p755
-aS'None'
+aS'Value: <undetermined>'
 p756
-aS'ecx#5 = ecx#4 + ecx#4'
+aS'Possible values: <undetermined>'
 p757
-ag226
-ag561
-aS'{10L: <ILBranchDependence.TrueBranchDependent: 1>, 15L: <ILBranchDependence.FalseBranchDependent: 2>}'
+aS'Branch dependence: {}'
 p758
-aS"['<MLIL_ADD 4>', '<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', '<MLIL_VAR 4>', 'ecx_5', 'ecx_5', 'ecx_6']"
+aS"Prefix operands: ['0', '11', '16', '255', '<MLIL_CMP_UGT 2>', '<MLIL_CONST 2>', '<MLIL_IF>', '<MLIL_VAR_FIELD 2>', 'eax_1']"
 p759
-aS"['<MLIL_ADD 4>', '<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', '<MLIL_VAR 4>', 'ecx_5', 'ecx_5', 'ecx_6']"
+aS"Postfix operands: ['0', '11', '16', '255', '<MLIL_CMP_UGT 2>', '<MLIL_CONST 2>', '<MLIL_IF>', '<MLIL_VAR_FIELD 2>', 'eax_1']"
 p760
-aS'ecx_6#5 = ecx_5#4 + ecx_5#4'
+aS'SSA form: if (eax_1#5.ax u> 0xff) then 11 @ 0x401090 else 16 @ 0x40102f'
 p761
-aS'ecx_6 = ecx_5 + ecx_5'
+aS'Non-SSA formif (eax_1.ax u> 0xff) then 11 @ 0x401090 else 16 @ 0x40102f'
 p762
-aS'None'
+aS'Expression type: None'
 p763
-aS'eax#7 = ecx#5'
+aS'LLIL: eax#6.ax = ecx#2.cx'
 p764
-ag226
-ag561
-aS'{10L: <ILBranchDependence.TrueBranchDependent: 1>, 15L: <ILBranchDependence.FalseBranchDependent: 2>}'
+aS'Value: <undetermined>'
 p765
-aS"['<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', 'eax_4', 'ecx_6']"
+aS'Possible values: <undetermined>'
 p766
-aS"['<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', 'eax_4', 'ecx_6']"
+aS'Branch dependence: {10L: <ILBranchDependence.TrueBranchDependent: 1>}'
 p767
-aS'eax_4#7 = ecx_6#5'
+aS"Prefix operands: ['0', '0', '<MLIL_SET_VAR_FIELD 2>', '<MLIL_VAR_FIELD 2>', 'eax_1', 'ecx_1']"
 p768
-aS'eax_4 = ecx_6'
+aS"Postfix operands: ['0', '0', '<MLIL_SET_VAR_FIELD 2>', '<MLIL_VAR_FIELD 2>', 'eax_1', 'ecx_1']"
 p769
-aS'None'
+aS'SSA form: eax_1#6.ax = ecx_1#2.cx @ eax_1#5'
 p770
-aS'ecx#6 = edi#0'
+aS'Non-SSA formeax_1.ax = ecx_1.cx'
 p771
-ag226
-ag561
-aS'{10L: <ILBranchDependence.TrueBranchDependent: 1>, 15L: <ILBranchDependence.FalseBranchDependent: 2>}'
+aS'Expression type: None'
 p772
-aS"['<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', 'arg1', 'ecx_7']"
+aS'LLIL: ebx#1.bx = ecx#2.cx'
 p773
-aS"['<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', 'arg1', 'ecx_7']"
+aS'Value: <undetermined>'
 p774
-aS'ecx_7#6 = arg1#0'
+aS'Possible values: <undetermined>'
 p775
-aS'ecx_7 = arg1'
+aS'Branch dependence: {10L: <ILBranchDependence.TrueBranchDependent: 1>}'
 p776
-aS'None'
+aS"Prefix operands: ['0', '0', '<MLIL_SET_VAR_FIELD 2>', '<MLIL_VAR_FIELD 2>', 'ebx', 'ecx_1']"
 p777
-aS'eax#8 = eax#7 u>> ecx#6.cl'
+aS"Postfix operands: ['0', '0', '<MLIL_SET_VAR_FIELD 2>', '<MLIL_VAR_FIELD 2>', 'ebx', 'ecx_1']"
 p778
-ag226
-ag561
-aS'{10L: <ILBranchDependence.TrueBranchDependent: 1>, 15L: <ILBranchDependence.FalseBranchDependent: 2>}'
+aS'SSA form: ebx#1.bx = ecx_1#2.cx @ ebx#0'
 p779
-aS"['0', '<MLIL_LSR 4>', '<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', '<MLIL_VAR_FIELD 1>', 'eax_3', 'eax_4', 'ecx_7']"
+aS'Non-SSA formebx.bx = ecx_1.cx'
 p780
-aS"['0', '<MLIL_LSR 4>', '<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', '<MLIL_VAR_FIELD 1>', 'eax_3', 'eax_4', 'ecx_7']"
+aS'Expression type: None'
 p781
-aS'eax_3#8 = eax_4#7 u>> ecx_7#6.cl'
+aS'LLIL: ebx#2 = 0'
 p782
-aS'eax_3 = eax_4 u>> ecx_7.cl'
+aS'Value: <undetermined>'
 p783
-aS'None'
+aS'Possible values: <undetermined>'
 p784
-aS'goto 47 @ 0x401058'
+aS'Branch dependence: {10L: <ILBranchDependence.TrueBranchDependent: 1>}'
 p785
-ag226
-ag561
-aS'{10L: <ILBranchDependence.TrueBranchDependent: 1>, 15L: <ILBranchDependence.FalseBranchDependent: 2>}'
+aS"Prefix operands: ['0', '<MLIL_CONST 4>', '<MLIL_SET_VAR 4>', 'ebx_1']"
 p786
-aS"['37', '<MLIL_GOTO>']"
+aS"Postfix operands: ['0', '<MLIL_CONST 4>', '<MLIL_SET_VAR 4>', 'ebx_1']"
 p787
-aS"['37', '<MLIL_GOTO>']"
+aS'SSA form: ebx_1#2 = 0'
 p788
-aS'goto 39 @ 0x40105f'
+aS'Non-SSA formebx_1 = 0'
 p789
-aS'goto 37 @ 0x40105f'
+aS'Expression type: None'
 p790
-aS'None'
+aS'LLIL: ebx#3.bx = ecx#2.cx'
 p791
-aS'ecx#10 = edx#6'
+aS'Value: <undetermined>'
 p792
-ag226
-ag561
-aS'{25L: <ILBranchDependence.TrueBranchDependent: 1>}'
+aS'Possible values: <undetermined>'
 p793
-aS"['32', '<MLIL_CONST 4>', '<MLIL_SET_VAR 4>', 'ecx_3']"
+aS'Branch dependence: {10L: <ILBranchDependence.TrueBranchDependent: 1>}'
 p794
-aS"['32', '<MLIL_CONST 4>', '<MLIL_SET_VAR 4>', 'ecx_3']"
+aS"Prefix operands: ['0', '0', '<MLIL_SET_VAR_FIELD 2>', '<MLIL_VAR_FIELD 2>', 'ebx_1', 'ecx_1']"
 p795
-aS'ecx_3#10 = 0x20'
+aS"Postfix operands: ['0', '0', '<MLIL_SET_VAR_FIELD 2>', '<MLIL_VAR_FIELD 2>', 'ebx_1', 'ecx_1']"
 p796
-aS'ecx_3 = 0x20'
+aS'SSA form: ebx_1#3.bx = ecx_1#2.cx @ ebx_1#2'
 p797
-aS'None'
+aS'Non-SSA formebx_1.bx = ecx_1.cx'
 p798
-aS'goto 57 @ 0x401054'
+aS'Expression type: None'
 p799
-ag226
-ag561
-aS'{25L: <ILBranchDependence.TrueBranchDependent: 1>}'
+aS'LLIL: if (edi#0 != 3) then 25 @ 0x40103e else 36 @ 0x4010a4'
 p800
-aS"['38', '<MLIL_GOTO>']"
+aS'Value: <undetermined>'
 p801
-aS"['38', '<MLIL_GOTO>']"
+aS'Possible values: <undetermined>'
 p802
-aS'goto 51 @ 0x401054'
+aS'Branch dependence: {10L: <ILBranchDependence.TrueBranchDependent: 1>}'
 p803
-aS'goto 38 @ 0x401054'
+aS"Prefix operands: ['21', '26', '3', '<MLIL_CMP_NE 4>', '<MLIL_CONST 4>', '<MLIL_IF>', '<MLIL_VAR 4>', 'arg1']"
 p804
-aS'None'
+aS"Postfix operands: ['21', '26', '3', '<MLIL_CMP_NE 4>', '<MLIL_CONST 4>', '<MLIL_IF>', '<MLIL_VAR 4>', 'arg1']"
 p805
-aS'ecx#11 = ecx#9'
+aS'SSA form: if (arg1#0 != 3) then 21 @ 0x0 else 22 @ 0x4010a4'
 p806
-ag226
-ag561
-aS'{25L: <ILBranchDependence.FalseBranchDependent: 2>}'
+aS'Non-SSA formif (arg1 != 3) then 21 @ 0x40103e else 26 @ 0x4010a4'
 p807
-aS"['<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', 'ecx_2', 'ecx_3']"
+aS'Expression type: None'
 p808
-aS"['<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', 'ecx_2', 'ecx_3']"
+aS'LLIL: ecx#7.cx = 0'
 p809
-aS'ecx_3#11 = ecx_2#9'
+aS'Value: <undetermined>'
 p810
-aS'ecx_3 = ecx_2'
+aS'Possible values: <undetermined>'
 p811
-aS'None'
+aS'Branch dependence: {10L: <ILBranchDependence.FalseBranchDependent: 2>}'
 p812
-aS'goto 57 @ 0x401054'
+aS"Prefix operands: ['0', '0', '<MLIL_CONST 2>', '<MLIL_SET_VAR_FIELD 2>', 'ecx_1']"
 p813
-ag226
-ag561
-aS'{25L: <ILBranchDependence.FalseBranchDependent: 2>}'
+aS"Postfix operands: ['0', '0', '<MLIL_CONST 2>', '<MLIL_SET_VAR_FIELD 2>', 'ecx_1']"
 p814
-aS"['38', '<MLIL_GOTO>']"
+aS'SSA form: ecx_1#7.cx = 0 @ ecx_1#2'
 p815
-aS"['38', '<MLIL_GOTO>']"
+aS'Non-SSA formecx_1.cx = 0'
 p816
-aS'goto 51 @ 0x401054'
+aS'Expression type: None'
 p817
-aS'goto 38 @ 0x401054'
+aS'LLIL: [ebp#1 - 0x10].w = ecx#7.cx @ mem#2 -> mem#3'
 p818
-aS'None'
+aS'Value: <undetermined>'
 p819
-aS'<return> jump([esp#4].d @ mem#6)'
+aS'Possible values: <undetermined>'
 p820
-ag226
-ag561
-aS'{}'
+aS'Branch dependence: {10L: <ILBranchDependence.FalseBranchDependent: 2>}'
 p821
-aS"['<MLIL_RET>', '[<il: eax_3>]']"
+aS"Prefix operands: ['0', '<MLIL_SET_VAR 2>', '<MLIL_VAR_FIELD 2>', 'ecx_1', 'var_14_1']"
 p822
-aS"['<MLIL_RET>', '[<il: eax_3>]']"
+aS"Postfix operands: ['0', '<MLIL_SET_VAR 2>', '<MLIL_VAR_FIELD 2>', 'ecx_1', 'var_14_1']"
 p823
-aS'return eax_3#12'
+aS'SSA form: var_14_1#2 = ecx_1#7.cx'
 p824
-aS'return eax_3'
+aS'Non-SSA formvar_14_1 = ecx_1.cx'
 p825
-aS'None'
+aS'Expression type: None'
 p826
-aS'edx#7 = ecx#12'
+aS'LLIL: edx#3 = zx.d([ebp#1 - 0x10].w @ mem#3)'
 p827
-ag226
-ag561
-aS'{}'
+aS'Value: <undetermined>'
 p828
-aS"['<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', 'ecx_3', 'edx_1']"
+aS'Possible values: <undetermined>'
 p829
-aS"['<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', 'ecx_3', 'edx_1']"
+aS'Branch dependence: {10L: <ILBranchDependence.FalseBranchDependent: 2>}'
 p830
-aS'edx_1#6 = ecx_3#12'
+aS"Prefix operands: ['<MLIL_SET_VAR 4>', '<MLIL_VAR 2>', '<MLIL_ZX 4>', 'edx', 'var_14_1']"
 p831
-aS'edx_1 = ecx_3'
+aS"Postfix operands: ['<MLIL_SET_VAR 4>', '<MLIL_VAR 2>', '<MLIL_ZX 4>', 'edx', 'var_14_1']"
 p832
-aS'None'
+aS'SSA form: edx#3 = zx.d(var_14_1#2)'
 p833
-aS'eax#11 = eax#10 + ecx#12'
+aS'Non-SSA formedx = zx.d(var_14_1)'
 p834
-ag226
-ag561
-aS'{}'
+aS'Expression type: None'
 p835
-aS"['<MLIL_ADD 4>', '<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', '<MLIL_VAR 4>', 'eax_2', 'eax_3', 'ecx_3']"
+aS'LLIL: edx#4.dh = edx#3.dh + 1'
 p836
-aS"['<MLIL_ADD 4>', '<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', '<MLIL_VAR 4>', 'eax_2', 'eax_3', 'ecx_3']"
+aS'Value: <undetermined>'
 p837
-aS'eax_3#11 = eax_2#10 + ecx_3#12'
+aS'Possible values: <undetermined>'
 p838
-aS'eax_3 = eax_2 + ecx_3'
+aS'Branch dependence: {10L: <ILBranchDependence.FalseBranchDependent: 2>}'
 p839
-aS'None'
+aS"Prefix operands: ['1', '1', '1', '<MLIL_ADD 1>', '<MLIL_CONST 1>', '<MLIL_SET_VAR_FIELD 1>', '<MLIL_VAR_FIELD 1>', 'edx', 'edx']"
 p840
-aS'goto 47 @ 0x401058'
+aS"Postfix operands: ['1', '1', '1', '<MLIL_ADD 1>', '<MLIL_CONST 1>', '<MLIL_SET_VAR_FIELD 1>', '<MLIL_VAR_FIELD 1>', 'edx', 'edx']"
 p841
-ag226
-ag561
-aS'{}'
+aS'SSA form: edx#4.dh = edx#3.dh + 1 @ edx#3'
 p842
-aS"['37', '<MLIL_GOTO>']"
+aS'Non-SSA formedx.dh = edx.dh + 1'
 p843
-aS"['37', '<MLIL_GOTO>']"
+aS'Expression type: None'
 p844
-aS'goto 39 @ 0x40105f'
+aS'LLIL: goto 25 @ 0x40103e'
 p845
-aS'goto 37 @ 0x40105f'
+aS'Value: <undetermined>'
 p846
-asS'test_function_symbol_names'
+aS'Possible values: <undetermined>'
 p847
-(lp848
-S'_start SymbolType.FunctionSymbol 0x401000L'
+aS'Branch dependence: {10L: <ILBranchDependence.FalseBranchDependent: 2>}'
+p848
+aS"Prefix operands: ['21', '<MLIL_GOTO>']"
 p849
-asS'test_BinaryView'
+aS"Postfix operands: ['21', '<MLIL_GOTO>']"
 p850
-(lp851
-S'[<segment: 0x400000-0x400400, r-->, <segment: 0x401000-0x40123e, r-x>, <segment: 0x402000-0x402180, r-->, <segment: 0x403000-0x403284, rw->]'
+aS'SSA form: goto 29 @ 0x40103e'
+p851
+aS'Non-SSA formgoto 21 @ 0x40103e'
 p852
-aS"{'.data': <section .data: 0x403000-0x403284>, '.text': <section .text: 0x401000-0x40123e>, '.rdata': <section .rdata: 0x402000-0x402180>}"
+aS'Expression type: None'
 p853
-aS'[<0x400000-0x400400>, <0x401000-0x40123e>, <0x402000-0x402180>, <0x403000-0x403284>]'
+aS'LLIL: [ebp#1 - 4].w = edx#5.dx @ mem#4 -> mem#5'
 p854
-aS'{}'
+aS'Value: <undetermined>'
 p855
-aS'4202496'
+aS'Possible values: <undetermined>'
 p856
-aS'4202504'
+aS'Branch dependence: {}'
 p857
-aS'4202500'
+aS"Prefix operands: ['0', '<MLIL_SET_VAR 2>', '<MLIL_VAR_FIELD 2>', 'edx', 'var_8_1']"
 p858
-aS'4202508'
+aS"Postfix operands: ['0', '<MLIL_SET_VAR 2>', '<MLIL_VAR_FIELD 2>', 'edx', 'var_8_1']"
 p859
-aS'<func: x86@0x401000>'
+aS'SSA form: var_8_1#1 = edx#5.dx'
 p860
-aS'<func: x86@0x401000>'
+aS'Non-SSA formvar_8_1 = edx.dx'
 p861
-aS'0x401000L'
+aS'Expression type: None'
 p862
-aS'0x400000L'
+aS'LLIL: eax#10 = zx.d([ebp#1 - 4].w @ mem#5)'
 p863
-aS'length: 0x3284'
+aS'Value: <undetermined>'
 p864
-asS'test_available_types'
+aS'Possible values: <undetermined>'
 p865
-(lp866
-S'Raw'
+aS'Branch dependence: {}'
+p866
+aS"Prefix operands: ['<MLIL_SET_VAR 4>', '<MLIL_VAR 2>', '<MLIL_ZX 4>', 'eax_2', 'var_8_1']"
 p867
-aS'PE'
+aS"Postfix operands: ['<MLIL_SET_VAR 4>', '<MLIL_VAR 2>', '<MLIL_ZX 4>', 'eax_2', 'var_8_1']"
 p868
-asS'test_function_basic_blocks'
+aS'SSA form: eax_2#10 = zx.d(var_8_1#1)'
 p869
-(lp870
-S'0x401000L 0x40102fL False'
+aS'Non-SSA formeax_2 = zx.d(var_8_1)'
+p870
+aS'Expression type: None'
 p871
-aS'0x401090L 0x4010a4L False'
+aS'LLIL: ecx#9 = ecx#8 u>> 0x18'
 p872
-aS'0x40102fL 0x40103eL False'
+aS'Value: <undetermined>'
 p873
-aS'0x40103eL 0x401058L False'
+aS'Possible values: <undetermined>'
 p874
-aS'0x4010a4L 0x4010b6L False'
+aS'Branch dependence: {}'
 p875
-aS'0x401058L 0x401060L True'
+aS"Prefix operands: ['24', '<MLIL_CONST 1>', '<MLIL_LSR 4>', '<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', 'ecx_1', 'ecx_2']"
 p876
-asS'test_function_med_il_basic_blocks'
+aS"Postfix operands: ['24', '<MLIL_CONST 1>', '<MLIL_LSR 4>', '<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', 'ecx_1', 'ecx_2']"
 p877
-(lp878
-S'0x0L 0xbL 2'
+aS'SSA form: ecx_2#9 = ecx_1#8 u>> 0x18'
+p878
+aS'Non-SSA formecx_2 = ecx_1 u>> 0x18'
 p879
-aS'0xbL 0x10L 2'
+aS'Expression type: None'
 p880
-aS'0x10L 0x15L 1'
+aS'LLIL: cond:0#1 = ecx#9 u> 0x20'
 p881
-aS'0x15L 0x1aL 2'
+aS'Value: <undetermined>'
 p882
-aS'0x1aL 0x21L 1'
+aS'Possible values: <undetermined>'
 p883
-aS'0x21L 0x23L 1'
+aS'Branch dependence: {}'
 p884
-aS'0x23L 0x25L 1'
+aS"Prefix operands: ['32', '<MLIL_CMP_UGT 4>', '<MLIL_CONST 4>', '<MLIL_SET_VAR>', '<MLIL_VAR 4>', 'cond:0_1', 'ecx_2']"
 p885
-aS'0x25L 0x26L 0'
+aS"Postfix operands: ['32', '<MLIL_CMP_UGT 4>', '<MLIL_CONST 4>', '<MLIL_SET_VAR>', '<MLIL_VAR 4>', 'cond:0_1', 'ecx_2']"
 p886
-aS'0x26L 0x29L 1'
+aS'SSA form: cond:0_1#1 = ecx_2#9 u> 0x20'
 p887
-asS'test_symbols'
+aS'Non-SSA formcond:0_1 = ecx_2 u> 0x20'
 p888
-(lp889
-S'KERNEL32!ExitProcess@IAT'
+aS'Expression type: None'
+p889
+aS'LLIL: if (cond:0#1) then 43 @ 0x401051 else 45 @ 0x401051'
 p890
-aS'KERNEL32!GetStdHandle@IAT'
+aS'Value: <undetermined>'
 p891
-aS'KERNEL32!ReadFile@IAT'
+aS'Possible values: <undetermined>'
 p892
-aS'KERNEL32!WriteFile@IAT'
+aS'Branch dependence: {}'
 p893
-aS'_start'
+aS"Prefix operands: ['33', '34', '<MLIL_IF>', '<MLIL_VAR>', 'cond:0_1']"
 p894
-asS'test_low_il_instructions'
+aS"Postfix operands: ['33', '34', '<MLIL_IF>', '<MLIL_VAR>', 'cond:0_1']"
 p895
-(lp896
-S'None'
+aS'SSA form: if (cond:0_1#1) then 47 else 48'
+p896
+aS'Non-SSA formif (cond:0_1) then 33 else 34'
 p897
-aS'__saved_ebp = ebp'
+aS'Expression type: None'
 p898
-ag226
-ag561
-aS'[<LLIL_PUSH 4>, <LLIL_REG 4>, ebp]'
+aS'LLIL: ecx#3 = ecx#2 u>> 8'
 p899
-aS'[ebp, <LLIL_REG 4>, <LLIL_PUSH 4>]'
+aS'Value: <undetermined>'
 p900
-aS'[esp#0 - 4].d = ebp#0 @ mem#0 -> mem#1'
+aS'Possible values: <undetermined>'
 p901
-aS'push(ebp)'
+aS'Branch dependence: {10L: <ILBranchDependence.TrueBranchDependent: 1>, 15L: <ILBranchDependence.FalseBranchDependent: 2>}'
 p902
-aS'None'
+aS"Prefix operands: ['8', '<MLIL_CONST 1>', '<MLIL_LSR 4>', '<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', 'ecx_1', 'ecx_3']"
 p903
-aS'ebp = &__saved_ebp'
+aS"Postfix operands: ['8', '<MLIL_CONST 1>', '<MLIL_LSR 4>', '<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', 'ecx_1', 'ecx_3']"
 p904
-ag226
-ag561
-aS'[<LLIL_SET_REG 4>, ebp, <LLIL_REG 4>, esp]'
+aS'SSA form: ecx_3#3 = ecx_1#2 u>> 8'
 p905
-aS'[ebp, esp, <LLIL_REG 4>, <LLIL_SET_REG 4>]'
+aS'Non-SSA formecx_3 = ecx_1 u>> 8'
 p906
-aS'ebp#1 = esp#1'
+aS'Expression type: None'
 p907
-aS'ebp = esp'
+aS'LLIL: ecx#4 = ecx#3 + ecx#3'
 p908
-aS'None'
+aS'Value: <undetermined>'
 p909
-aS'esp = &var_84'
+aS'Possible values: <undetermined>'
 p910
-ag226
-ag561
-aS'[<LLIL_SET_REG 4>, esp, <LLIL_SUB 4>, <LLIL_REG 4>, esp, <LLIL_CONST 4>, 128L]'
+aS'Branch dependence: {10L: <ILBranchDependence.TrueBranchDependent: 1>, 15L: <ILBranchDependence.FalseBranchDependent: 2>}'
 p911
-aS'[esp, esp, <LLIL_REG 4>, 128L, <LLIL_CONST 4>, <LLIL_SUB 4>, <LLIL_SET_REG 4>]'
+aS"Prefix operands: ['<MLIL_ADD 4>', '<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', '<MLIL_VAR 4>', 'ecx_3', 'ecx_3', 'ecx_4']"
 p912
-aS'esp#2 = esp#1 - 0x80'
+aS"Postfix operands: ['<MLIL_ADD 4>', '<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', '<MLIL_VAR 4>', 'ecx_3', 'ecx_3', 'ecx_4']"
 p913
-aS'esp = esp - 0x80'
+aS'SSA form: ecx_4#4 = ecx_3#3 + ecx_3#3'
 p914
-aS'eax = 0xffffffff'
+aS'Non-SSA formecx_4 = ecx_3 + ecx_3'
 p915
-aS'eax = 0xffffffff'
+aS'Expression type: None'
 p916
-ag226
-ag561
-aS'[<LLIL_SET_REG 4>, eax, <LLIL_CONST 4>, 4294967295L]'
+aS'LLIL: ecx#5 = ecx#4 + ecx#4'
 p917
-aS'[eax, 4294967295L, <LLIL_CONST 4>, <LLIL_SET_REG 4>]'
+aS'Value: <undetermined>'
 p918
-aS'eax#1 = 0xffffffff'
+aS'Possible values: <undetermined>'
 p919
-aS'eax = 0xffffffff'
+aS'Branch dependence: {10L: <ILBranchDependence.TrueBranchDependent: 1>, 15L: <ILBranchDependence.FalseBranchDependent: 2>}'
 p920
-aS'eax.al = 0xa5'
+aS"Prefix operands: ['<MLIL_ADD 4>', '<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', '<MLIL_VAR 4>', 'ecx_4', 'ecx_4', 'ecx_5']"
 p921
-aS'eax.al = 0xa5'
+aS"Postfix operands: ['<MLIL_ADD 4>', '<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', '<MLIL_VAR 4>', 'ecx_4', 'ecx_4', 'ecx_5']"
 p922
-ag226
-ag561
-aS'[<LLIL_SET_REG 1>, al, <LLIL_CONST 1>, 165L]'
+aS'SSA form: ecx_5#5 = ecx_4#4 + ecx_4#4'
 p923
-aS'[al, 165L, <LLIL_CONST 1>, <LLIL_SET_REG 1>]'
+aS'Non-SSA formecx_5 = ecx_4 + ecx_4'
 p924
-aS'eax#2.al = 0xa5'
+aS'Expression type: None'
 p925
-aS'al = 0xa5'
+aS'LLIL: eax#7 = ecx#5'
 p926
-aS'eax.ah = 0xab'
+aS'Value: <undetermined>'
 p927
-aS'eax.ah = 0xab'
+aS'Possible values: <undetermined>'
 p928
-ag226
-ag561
-aS'[<LLIL_SET_REG 1>, ah, <LLIL_CONST 1>, 171L]'
+aS'Branch dependence: {10L: <ILBranchDependence.TrueBranchDependent: 1>, 15L: <ILBranchDependence.FalseBranchDependent: 2>}'
 p929
-aS'[ah, 171L, <LLIL_CONST 1>, <LLIL_SET_REG 1>]'
+aS"Prefix operands: ['<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', 'eax_4', 'ecx_5']"
 p930
-aS'eax#3.ah = 0xab'
+aS"Postfix operands: ['<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', 'eax_4', 'ecx_5']"
 p931
-aS'ah = 0xab'
+aS'SSA form: eax_4#7 = ecx_5#5'
 p932
-aS'edx.dh = 0xde'
+aS'Non-SSA formeax_4 = ecx_5'
 p933
-aS'edx.dh = 0xde'
+aS'Expression type: None'
 p934
-ag226
-ag561
-aS'[<LLIL_SET_REG 1>, dh, <LLIL_CONST 1>, 222L]'
+aS'LLIL: ecx#6 = edi#0'
 p935
-aS'[dh, 222L, <LLIL_CONST 1>, <LLIL_SET_REG 1>]'
+aS'Value: <undetermined>'
 p936
-aS'edx#1.dh = 0xde'
+aS'Possible values: <undetermined>'
 p937
-aS'dh = 0xde'
+aS'Branch dependence: {10L: <ILBranchDependence.TrueBranchDependent: 1>, 15L: <ILBranchDependence.FalseBranchDependent: 2>}'
 p938
-aS'edx.dl = 0xad'
+aS"Prefix operands: ['<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', 'arg1', 'ecx_6']"
 p939
-aS'edx.dl = 0xad'
+aS"Postfix operands: ['<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', 'arg1', 'ecx_6']"
 p940
-ag226
-ag561
-aS'[<LLIL_SET_REG 1>, dl, <LLIL_CONST 1>, 173L]'
+aS'SSA form: ecx_6#6 = arg1#0'
 p941
-aS'[dl, 173L, <LLIL_CONST 1>, <LLIL_SET_REG 1>]'
+aS'Non-SSA formecx_6 = arg1'
 p942
-aS'edx#2.dl = 0xad'
+aS'Expression type: None'
 p943
-aS'dl = 0xad'
+aS'LLIL: eax#8 = eax#7 u>> ecx#6.cl'
 p944
-aS'ecx = edx'
+aS'Value: <undetermined>'
 p945
-aS'ecx = edx'
+aS'Possible values: <undetermined>'
 p946
-ag226
-ag561
-aS'[<LLIL_SET_REG 4>, ecx, <LLIL_REG 4>, edx]'
+aS'Branch dependence: {10L: <ILBranchDependence.TrueBranchDependent: 1>, 15L: <ILBranchDependence.FalseBranchDependent: 2>}'
 p947
-aS'[ecx, edx, <LLIL_REG 4>, <LLIL_SET_REG 4>]'
+aS"Prefix operands: ['0', '<MLIL_LSR 4>', '<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', '<MLIL_VAR_FIELD 1>', 'eax_3', 'eax_4', 'ecx_6']"
 p948
-aS'ecx#1 = edx#2'
+aS"Postfix operands: ['0', '<MLIL_LSR 4>', '<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', '<MLIL_VAR_FIELD 1>', 'eax_3', 'eax_4', 'ecx_6']"
 p949
-aS'ecx = edx'
+aS'SSA form: eax_3#8 = eax_4#7 u>> ecx_6#6.cl'
 p950
-aS'eax_1 = 0xaba5ffff'
+aS'Non-SSA formeax_3 = eax_4 u>> ecx_6.cl'
 p951
-aS'eax = rol.d(eax, 0x10)'
+aS'Expression type: None'
 p952
-ag226
-ag561
-aS'[<LLIL_SET_REG 4>, eax, <LLIL_ROL 4>, <LLIL_REG 4>, eax, <LLIL_CONST 1>, 16L]'
+aS'LLIL: goto 47 @ 0x401058'
 p953
-aS'[eax, eax, <LLIL_REG 4>, 16L, <LLIL_CONST 1>, <LLIL_ROL 4>, <LLIL_SET_REG 4>]'
+aS'Value: <undetermined>'
 p954
-aS'eax#4 = rol.d(eax#3, 0x10)'
+aS'Possible values: <undetermined>'
 p955
-aS'eax = rol.d(eax, 0x10)'
+aS'Branch dependence: {10L: <ILBranchDependence.TrueBranchDependent: 1>, 15L: <ILBranchDependence.FalseBranchDependent: 2>}'
 p956
-aS'eax_1.ax = ecx.cx'
+aS"Prefix operands: ['35', '<MLIL_GOTO>']"
 p957
-aS'eax.ax = ecx.cx'
+aS"Postfix operands: ['35', '<MLIL_GOTO>']"
 p958
-ag226
-ag561
-aS'[<LLIL_SET_REG 2>, ax, <LLIL_REG 2>, cx]'
+aS'SSA form: goto 39 @ 0x40105f'
 p959
-aS'[ax, cx, <LLIL_REG 2>, <LLIL_SET_REG 2>]'
+aS'Non-SSA formgoto 35 @ 0x40105f'
 p960
-aS'eax#5.ax = ecx#1.cx'
+aS'Expression type: None'
 p961
-aS'ax = cx'
+aS'LLIL: goto 57 @ 0x401054'
 p962
-aS'ecx_1 = ecx u>> 0x10'
+aS'Value: <undetermined>'
 p963
-aS'ecx = ecx u>> 0x10'
+aS'Possible values: <undetermined>'
 p964
-ag226
-ag561
-aS'[<LLIL_SET_REG 4>, ecx, <LLIL_LSR 4>, <LLIL_REG 4>, ecx, <LLIL_CONST 1>, 16L]'
+aS'Branch dependence: {25L: <ILBranchDependence.TrueBranchDependent: 1>}'
 p965
-aS'[ecx, ecx, <LLIL_REG 4>, 16L, <LLIL_CONST 1>, <LLIL_LSR 4>, <LLIL_SET_REG 4>]'
+aS"Prefix operands: ['36', '<MLIL_GOTO>']"
 p966
-aS'ecx#2 = ecx#1 u>> 0x10'
+aS"Postfix operands: ['36', '<MLIL_GOTO>']"
 p967
-aS'ecx = ecx u>> 0x10'
+aS'SSA form: goto 49 @ 0x401054'
 p968
-aS'var_14 = ecx_1.cx'
+aS'Non-SSA formgoto 36 @ 0x401054'
 p969
-aS'var_14 = ecx.cx'
+aS'Expression type: None'
 p970
-ag226
-ag561
-aS'[<LLIL_STORE 2>, <LLIL_ADD 4>, <LLIL_REG 4>, ebp, <LLIL_CONST 4>, 18446744073709551600L, <LLIL_REG 2>, cx]'
+aS'LLIL: goto 57 @ 0x401054'
 p971
-aS'[ebp, <LLIL_REG 4>, 18446744073709551600L, <LLIL_CONST 4>, <LLIL_ADD 4>, cx, <LLIL_REG 2>, <LLIL_STORE 2>]'
+aS'Value: <undetermined>'
 p972
-aS'[ebp#1 - 0x10].w = ecx#2.cx @ mem#1 -> mem#2'
+aS'Possible values: <undetermined>'
 p973
-aS'[ebp - 0x10].w = cx'
+aS'Branch dependence: {25L: <ILBranchDependence.FalseBranchDependent: 2>}'
 p974
-aS'None'
+aS"Prefix operands: ['36', '<MLIL_GOTO>']"
 p975
-aS'if (eax.ax u> 0xff) then 15 @ 0x401090 else 20 @ 0x40102f'
+aS"Postfix operands: ['36', '<MLIL_GOTO>']"
 p976
-ag226
-ag561
-aS'[<LLIL_IF>, <LLIL_CMP_UGT 2>, <LLIL_REG 2>, ax, <LLIL_CONST 2>, 255L, 14L, 19L]'
+aS'SSA form: goto 49 @ 0x401054'
 p977
-aS'[ax, <LLIL_REG 2>, 255L, <LLIL_CONST 2>, <LLIL_CMP_UGT 2>, 14L, 19L, <LLIL_IF>]'
+aS'Non-SSA formgoto 36 @ 0x401054'
 p978
-aS'if (eax#5.ax u> 0xff) then 15 @ 0x401090 else 20 @ 0x40102f'
+aS'Expression type: None'
 p979
-aS'if (ax u> 0xff) then 14 @ 0x401090 else 19 @ 0x40102f'
+aS'LLIL: <return> jump([esp#4].d @ mem#6)'
 p980
-aS'eax_1.ax = ecx_1.cx'
+aS'Value: <undetermined>'
 p981
-aS'eax.ax = ecx.cx'
+aS'Possible values: <undetermined>'
 p982
-ag226
-ag561
-aS'[<LLIL_SET_REG 2>, ax, <LLIL_REG 2>, cx]'
+aS'Branch dependence: {}'
 p983
-aS'[ax, cx, <LLIL_REG 2>, <LLIL_SET_REG 2>]'
+aS"Prefix operands: ['<MLIL_RET>', '[<il: eax_3>]']"
 p984
-aS'eax#6.ax = ecx#2.cx'
+aS"Postfix operands: ['<MLIL_RET>', '[<il: eax_3>]']"
 p985
-aS'ax = cx'
+aS'SSA form: return eax_3#12'
 p986
-aS'ebx.bx = ecx_1.cx'
+aS'Non-SSA formreturn eax_3'
 p987
-aS'ebx.bx = ecx.cx'
+aS'Expression type: None'
 p988
-ag226
-ag561
-aS'[<LLIL_SET_REG 2>, bx, <LLIL_REG 2>, cx]'
+aS'LLIL: edx#7 = ecx#12'
 p989
-aS'[bx, cx, <LLIL_REG 2>, <LLIL_SET_REG 2>]'
+aS'Value: <undetermined>'
 p990
-aS'ebx#1.bx = ecx#2.cx'
+aS'Possible values: <undetermined>'
 p991
-aS'bx = cx'
+aS'Branch dependence: {}'
 p992
-aS'ebx_1 = 0'
+aS"Prefix operands: ['32', '<MLIL_CONST 4>', '<MLIL_SET_VAR 4>', 'edx_1']"
 p993
-aS'ebx = 0'
+aS"Postfix operands: ['32', '<MLIL_CONST 4>', '<MLIL_SET_VAR 4>', 'edx_1']"
 p994
-ag226
-ag561
-aS'[<LLIL_SET_REG 4>, ebx, <LLIL_CONST 4>, 0L]'
+aS'SSA form: edx_1#6 = 0x20'
 p995
-aS'[ebx, 0L, <LLIL_CONST 4>, <LLIL_SET_REG 4>]'
+aS'Non-SSA formedx_1 = 0x20'
 p996
-aS'ebx#2 = 0'
+aS'Expression type: None'
 p997
-aS'ebx = 0'
+aS'LLIL: eax#11 = eax#10 + ecx#12'
 p998
-aS'ebx_1.bx = ecx_1.cx'
+aS'Value: <undetermined>'
 p999
-aS'ebx.bx = ecx.cx'
+aS'Possible values: <undetermined>'
 p1000
-ag226
-ag561
-aS'[<LLIL_SET_REG 2>, bx, <LLIL_REG 2>, cx]'
+aS'Branch dependence: {}'
 p1001
-aS'[bx, cx, <LLIL_REG 2>, <LLIL_SET_REG 2>]'
+aS"Prefix operands: ['32', '<MLIL_ADD 4>', '<MLIL_CONST 4>', '<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', 'eax_2', 'eax_3']"
 p1002
-aS'ebx#3.bx = ecx#2.cx'
+aS"Postfix operands: ['32', '<MLIL_ADD 4>', '<MLIL_CONST 4>', '<MLIL_SET_VAR 4>', '<MLIL_VAR 4>', 'eax_2', 'eax_3']"
 p1003
-aS'bx = cx'
+aS'SSA form: eax_3#11 = eax_2#10 + 0x20'
 p1004
-aS'None'
+aS'Non-SSA formeax_3 = eax_2 + 0x20'
 p1005
-aS'if (arg1 != 3) then 25 @ 0x40103e else 31 @ 0x4010a4'
+aS'Expression type: None'
 p1006
-ag226
-ag561
-aS'[<LLIL_IF>, <LLIL_CMP_NE 4>, <LLIL_REG 4>, edi, <LLIL_CONST 4>, 3L, 24L, 30L]'
+aS'LLIL: goto 47 @ 0x401058'
 p1007
-aS'[edi, <LLIL_REG 4>, 3L, <LLIL_CONST 4>, <LLIL_CMP_NE 4>, 24L, 30L, <LLIL_IF>]'
+aS'Value: <undetermined>'
 p1008
-aS'if (edi#0 != 3) then 25 @ 0x40103e else 36 @ 0x4010a4'
+aS'Possible values: <undetermined>'
 p1009
-aS'if (edi != 3) then 24 @ 0x40103e else 30 @ 0x4010a4'
+aS'Branch dependence: {}'
 p1010
-aS'ecx_1.cx = 0'
+aS"Prefix operands: ['35', '<MLIL_GOTO>']"
 p1011
-aS'ecx.cx = 0'
+aS"Postfix operands: ['35', '<MLIL_GOTO>']"
 p1012
-ag226
-ag561
-aS'[<LLIL_SET_REG 2>, cx, <LLIL_CONST 2>, 0L]'
+aS'SSA form: goto 39 @ 0x40105f'
 p1013
-aS'[cx, 0L, <LLIL_CONST 2>, <LLIL_SET_REG 2>]'
+aS'Non-SSA formgoto 35 @ 0x40105f'
 p1014
-aS'ecx#7.cx = 0'
+asS'test_function_symbol_names'
 p1015
-aS'cx = 0'
-p1016
-aS'var_14_1 = ecx_1.cx'
+(lp1016
+S'Symbol: _start SymbolType.FunctionSymbol 0x401000L'
 p1017
-aS'var_14 = ecx.cx'
+asS'test_BinaryView'
 p1018
-ag226
-ag561
-aS'[<LLIL_STORE 2>, <LLIL_ADD 4>, <LLIL_REG 4>, ebp, <LLIL_CONST 4>, 18446744073709551600L, <LLIL_REG 2>, cx]'
-p1019
-aS'[ebp, <LLIL_REG 4>, 18446744073709551600L, <LLIL_CONST 4>, <LLIL_ADD 4>, cx, <LLIL_REG 2>, <LLIL_STORE 2>]'
+(lp1019
+S'BV segment: <segment: 0x400000-0x400400, r-->'
 p1020
-aS'[ebp#1 - 0x10].w = ecx#7.cx @ mem#2 -> mem#3'
+aS'BV segment: <segment: 0x401000-0x40123e, r-x>'
 p1021
-aS'[ebp - 0x10].w = cx'
+aS'BV segment: <segment: 0x402000-0x402180, r-->'
 p1022
-aS'edx = zx.d(var_14_1)'
+aS'BV segment: <segment: 0x403000-0x403284, rw->'
 p1023
-aS'edx = zx.d(var_14)'
+aS'BV section: .data'
 p1024
-ag226
-ag561
-aS'[<LLIL_SET_REG 4>, edx, <LLIL_ZX 4>, <LLIL_LOAD 2>, <LLIL_ADD 4>, <LLIL_REG 4>, ebp, <LLIL_CONST 4>, 18446744073709551600L]'
+aS'BV section: .rdata'
 p1025
-aS'[edx, ebp, <LLIL_REG 4>, 18446744073709551600L, <LLIL_CONST 4>, <LLIL_ADD 4>, <LLIL_LOAD 2>, <LLIL_ZX 4>, <LLIL_SET_REG 4>]'
+aS'BV section: .text'
 p1026
-aS'edx#3 = zx.d([ebp#1 - 0x10].w @ mem#3)'
+aS'BV allocated range: <0x400000-0x400400>'
 p1027
-aS'edx = zx.d([ebp - 0x10].w)'
+aS'BV allocated range: <0x401000-0x40123e>'
 p1028
-aS'edx.dh = edx.dh + 1'
+aS'BV allocated range: <0x402000-0x402180>'
 p1029
-aS'edx.dh = edx.dh + 1'
+aS'BV allocated range: <0x403000-0x403284>'
 p1030
-ag226
-ag561
-aS'[<LLIL_SET_REG 1>, dh, <LLIL_ADD 1>, <LLIL_REG 1>, dh, <LLIL_CONST 1>, 1L]'
+aS'Session Data: {}'
 p1031
-aS'[dh, dh, <LLIL_REG 1>, 1L, <LLIL_CONST 1>, <LLIL_ADD 1>, <LLIL_SET_REG 1>]'
+aS'BV data var: 4202496'
 p1032
-aS'edx#4.dh = edx#3.dh + 1'
+aS'BV data var: 4202504'
 p1033
-aS'dh = dh + 1'
+aS'BV data var: 4202500'
 p1034
-aS'None'
+aS'BV data var: 4202508'
 p1035
-aS'goto 25 @ 0x40103e'
+aS'BV Entry function: <func: x86@0x401000>'
 p1036
-ag226
-ag561
-aS'[<LLIL_GOTO>, 24L]'
+aS'BV function: <func: x86@0x401000>'
 p1037
-aS'[24L, <LLIL_GOTO>]'
+aS'BV entry point: 0x401000L'
 p1038
-aS'goto 25 @ 0x40103e'
+aS'BV start: 0x400000L'
 p1039
-aS'goto 24 @ 0x40103e'
+aS'BV length: 0x3284'
 p1040
-aS'var_8_1 = edx.dx'
+asS'test_available_types'
 p1041
-aS'var_8 = edx.dx'
-p1042
-ag226
-ag561
-aS'[<LLIL_STORE 2>, <LLIL_ADD 4>, <LLIL_REG 4>, ebp, <LLIL_CONST 4>, 18446744073709551612L, <LLIL_REG 2>, dx]'
+(lp1042
+S'Available Type: Raw'
 p1043
-aS'[ebp, <LLIL_REG 4>, 18446744073709551612L, <LLIL_CONST 4>, <LLIL_ADD 4>, dx, <LLIL_REG 2>, <LLIL_STORE 2>]'
+aS'Available Type: PE'
 p1044
-aS'[ebp#1 - 4].w = edx#5.dx @ mem#4 -> mem#5'
+asS'test_function_basic_blocks'
 p1045
-aS'[ebp - 4].w = dx'
-p1046
-aS'eax_2 = zx.d(var_8_1)'
+(lp1046
+S'basic block <block: x86@0x401000-0x40102f> start: 0x401000L end: 0x40102fL undetermined outgoing edges: False'
 p1047
-aS'eax = zx.d(var_8)'
+aS'basic block <block: x86@0x401000-0x40102f> test get self: <block: x86@0x401000-0x40102f>'
 p1048
-ag226
-ag561
-aS'[<LLIL_SET_REG 4>, eax, <LLIL_ZX 4>, <LLIL_LOAD 2>, <LLIL_ADD 4>, <LLIL_REG 4>, ebp, <LLIL_CONST 4>, 18446744073709551612L]'
+aS'basic block <block: x86@0x401090-0x4010a4> start: 0x401090L end: 0x4010a4L undetermined outgoing edges: False'
 p1049
-aS'[eax, ebp, <LLIL_REG 4>, 18446744073709551612L, <LLIL_CONST 4>, <LLIL_ADD 4>, <LLIL_LOAD 2>, <LLIL_ZX 4>, <LLIL_SET_REG 4>]'
+aS'basic block <block: x86@0x401090-0x4010a4> test get self: <block: x86@0x401090-0x4010a4>'
 p1050
-aS'eax#10 = zx.d([ebp#1 - 4].w @ mem#5)'
+aS'basic block <block: x86@0x40102f-0x40103e> start: 0x40102fL end: 0x40103eL undetermined outgoing edges: False'
 p1051
-aS'eax = zx.d([ebp - 4].w)'
+aS'basic block <block: x86@0x40102f-0x40103e> test get self: <block: x86@0x40102f-0x40103e>'
 p1052
-aS'ecx_2 = ecx_1 u>> 0x18'
+aS'basic block <block: x86@0x40103e-0x401058> start: 0x40103eL end: 0x401058L undetermined outgoing edges: False'
 p1053
-aS'ecx = ecx u>> 0x18'
+aS'basic block <block: x86@0x40103e-0x401058> test get self: <block: x86@0x40103e-0x401058>'
 p1054
-ag226
-ag561
-aS'[<LLIL_SET_REG 4>, ecx, <LLIL_LSR 4>, <LLIL_REG 4>, ecx, <LLIL_CONST 1>, 24L]'
+aS'basic block <block: x86@0x4010a4-0x4010b6> start: 0x4010a4L end: 0x4010b6L undetermined outgoing edges: False'
 p1055
-aS'[ecx, ecx, <LLIL_REG 4>, 24L, <LLIL_CONST 1>, <LLIL_LSR 4>, <LLIL_SET_REG 4>]'
+aS'basic block <block: x86@0x4010a4-0x4010b6> test get self: <block: x86@0x4010a4-0x4010b6>'
 p1056
-aS'ecx#9 = ecx#8 u>> 0x18'
+aS'basic block <block: x86@0x401058-0x401060> start: 0x401058L end: 0x401060L undetermined outgoing edges: True'
 p1057
-aS'ecx = ecx u>> 0x18'
+aS'basic block <block: x86@0x401058-0x401060> test get self: <block: x86@0x401058-0x401060>'
 p1058
-aS'cond:0_1 = ecx_2 u> 0x20'
+asS'test_function_med_il_basic_blocks'
 p1059
-aS'cond:0 = ecx u> 0x20'
-p1060
-ag226
-ag561
-aS'[<LLIL_SET_FLAG>, cond:0, <LLIL_CMP_UGT 4>, <LLIL_REG 4>, ecx, <LLIL_CONST 4>, 32L]'
+(lp1060
+S'MLIL basic block <block: x86@0x0-0xb> start: 0x0L end: 0xbL outgoing_edges: 2'
 p1061
-aS'[cond:0, ecx, <LLIL_REG 4>, 32L, <LLIL_CONST 4>, <LLIL_CMP_UGT 4>, <LLIL_SET_FLAG>]'
+aS'MLIL basic block <block: x86@0xb-0x10> start: 0xbL end: 0x10L outgoing_edges: 2'
 p1062
-aS'cond:0#1 = ecx#9 u> 0x20'
+aS'MLIL basic block <block: x86@0x10-0x15> start: 0x10L end: 0x15L outgoing_edges: 1'
 p1063
-aS'cond:0 = ecx u> 0x20'
+aS'MLIL basic block <block: x86@0x15-0x1a> start: 0x15L end: 0x1aL outgoing_edges: 2'
 p1064
-aS'None'
+aS'MLIL basic block <block: x86@0x1a-0x21> start: 0x1aL end: 0x21L outgoing_edges: 1'
 p1065
-aS'edx = 0x20'
+aS'MLIL basic block <block: x86@0x21-0x22> start: 0x21L end: 0x22L outgoing_edges: 1'
 p1066
-ag226
-ag561
-aS'[<LLIL_SET_REG 4>, edx, <LLIL_CONST 4>, 32L]'
+aS'MLIL basic block <block: x86@0x22-0x23> start: 0x22L end: 0x23L outgoing_edges: 1'
 p1067
-aS'[edx, 32L, <LLIL_CONST 4>, <LLIL_SET_REG 4>]'
+aS'MLIL basic block <block: x86@0x23-0x24> start: 0x23L end: 0x24L outgoing_edges: 0'
 p1068
-aS'edx#6 = 0x20'
+aS'MLIL basic block <block: x86@0x24-0x27> start: 0x24L end: 0x27L outgoing_edges: 1'
 p1069
-aS'edx = 0x20'
+asS'test_symbols'
 p1070
-aS'None'
-p1071
-aS'if (cond:0) then 38 else 40'
+(lp1071
+S'Symbol: KERNEL32!ExitProcess@IAT'
 p1072
-ag226
-ag561
-aS'[<LLIL_IF>, <LLIL_FLAG>, cond:0, 37L, 39L]'
+aS'Symbol: KERNEL32!GetStdHandle@IAT'
 p1073
-aS'[cond:0, <LLIL_FLAG>, 37L, 39L, <LLIL_IF>]'
+aS'Symbol: KERNEL32!ReadFile@IAT'
 p1074
-aS'if (cond:0#1) then 43 @ 0x401051 else 45 @ 0x401051'
+aS'Symbol: KERNEL32!WriteFile@IAT'
 p1075
-aS'if (cond:0) then 37 @ 0x401051 else 39 @ 0x401051'
+aS'Symbol: _start'
 p1076
-aS'ecx_4 = ecx_1 u>> 8'
+asS'test_low_il_instructions'
 p1077
-aS'ecx = ecx u>> 8'
-p1078
-ag226
-ag561
-aS'[<LLIL_SET_REG 4>, ecx, <LLIL_LSR 4>, <LLIL_REG 4>, ecx, <LLIL_CONST 1>, 8L]'
+(lp1078
+S'MLIL: None'
 p1079
-aS'[ecx, ecx, <LLIL_REG 4>, 8L, <LLIL_CONST 1>, <LLIL_LSR 4>, <LLIL_SET_REG 4>]'
+aS'Mapped MLIL: __saved_ebp = ebp'
 p1080
-aS'ecx#3 = ecx#2 u>> 8'
+aS'Value: <undetermined>'
 p1081
-aS'ecx = ecx u>> 8'
+aS'Possible Values: <undetermined>'
 p1082
-aS'ecx_5 = ecx_4 + ecx_4'
+aS'Prefix operands: [<LLIL_PUSH 4>, <LLIL_REG 4>, ebp]'
 p1083
-aS'ecx = ecx + ecx'
+aS'Postfix operands: [ebp, <LLIL_REG 4>, <LLIL_PUSH 4>]'
 p1084
-ag226
-ag561
-aS'[<LLIL_SET_REG 4>, ecx, <LLIL_ADD 4>, <LLIL_REG 4>, ecx, <LLIL_REG 4>, ecx]'
+aS'SSA form: [esp#0 - 4].d = ebp#0 @ mem#0 -> mem#1'
 p1085
-aS'[ecx, ecx, <LLIL_REG 4>, ecx, <LLIL_REG 4>, <LLIL_ADD 4>, <LLIL_SET_REG 4>]'
+aS'Non-SSA form: push(ebp)'
 p1086
-aS'ecx#4 = ecx#3 + ecx#3'
+aS'MLIL: None'
 p1087
-aS'ecx = ecx + ecx'
+aS'Mapped MLIL: ebp = &__saved_ebp'
 p1088
-aS'ecx_6 = ecx_5 + ecx_5'
+aS'Value: <undetermined>'
 p1089
-aS'ecx = ecx + ecx'
+aS'Possible Values: <undetermined>'
 p1090
-ag226
-ag561
-aS'[<LLIL_SET_REG 4>, ecx, <LLIL_ADD 4>, <LLIL_REG 4>, ecx, <LLIL_REG 4>, ecx]'
+aS'Prefix operands: [<LLIL_SET_REG 4>, ebp, <LLIL_REG 4>, esp]'
 p1091
-aS'[ecx, ecx, <LLIL_REG 4>, ecx, <LLIL_REG 4>, <LLIL_ADD 4>, <LLIL_SET_REG 4>]'
+aS'Postfix operands: [ebp, esp, <LLIL_REG 4>, <LLIL_SET_REG 4>]'
 p1092
-aS'ecx#5 = ecx#4 + ecx#4'
+aS'SSA form: ebp#1 = esp#1'
 p1093
-aS'ecx = ecx + ecx'
+aS'Non-SSA form: ebp = esp'
 p1094
-aS'eax_4 = ecx_6'
+aS'MLIL: None'
 p1095
-aS'eax = ecx'
+aS'Mapped MLIL: esp = &var_84'
 p1096
-ag226
-ag561
-aS'[<LLIL_SET_REG 4>, eax, <LLIL_REG 4>, ecx]'
+aS'Value: <undetermined>'
 p1097
-aS'[eax, ecx, <LLIL_REG 4>, <LLIL_SET_REG 4>]'
+aS'Possible Values: <undetermined>'
 p1098
-aS'eax#7 = ecx#5'
+aS'Prefix operands: [<LLIL_SET_REG 4>, esp, <LLIL_SUB 4>, <LLIL_REG 4>, esp, <LLIL_CONST 4>, 128L]'
 p1099
-aS'eax = ecx'
+aS'Postfix operands: [esp, esp, <LLIL_REG 4>, 128L, <LLIL_CONST 4>, <LLIL_SUB 4>, <LLIL_SET_REG 4>]'
 p1100
-aS'ecx_7 = arg1'
+aS'SSA form: esp#2 = esp#1 - 0x80'
 p1101
-aS'ecx = arg1'
+aS'Non-SSA form: esp = esp - 0x80'
 p1102
-ag226
-ag561
-aS'[<LLIL_SET_REG 4>, ecx, <LLIL_REG 4>, edi]'
+aS'MLIL: eax = 0xffffffff'
 p1103
-aS'[ecx, edi, <LLIL_REG 4>, <LLIL_SET_REG 4>]'
+aS'Mapped MLIL: eax = 0xffffffff'
 p1104
-aS'ecx#6 = edi#0'
+aS'Value: <undetermined>'
 p1105
-aS'ecx = edi'
+aS'Possible Values: <undetermined>'
 p1106
-aS'eax_3 = eax_4 u>> ecx_7.cl'
+aS'Prefix operands: [<LLIL_SET_REG 4>, eax, <LLIL_CONST 4>, 4294967295L]'
 p1107
-aS'eax = eax u>> ecx.cl'
+aS'Postfix operands: [eax, 4294967295L, <LLIL_CONST 4>, <LLIL_SET_REG 4>]'
 p1108
-ag226
-ag561
-aS'[<LLIL_SET_REG 4>, eax, <LLIL_LSR 4>, <LLIL_REG 4>, eax, <LLIL_REG 1>, cl]'
+aS'SSA form: eax#1 = 0xffffffff'
 p1109
-aS'[eax, eax, <LLIL_REG 4>, cl, <LLIL_REG 1>, <LLIL_LSR 4>, <LLIL_SET_REG 4>]'
+aS'Non-SSA form: eax = 0xffffffff'
 p1110
-aS'eax#8 = eax#7 u>> ecx#6.cl'
+aS'MLIL: eax.al = 0xa5'
 p1111
-aS'eax = eax u>> cl'
+aS'Mapped MLIL: eax.al = 0xa5'
 p1112
-aS'None'
+aS'Value: <undetermined>'
 p1113
-aS'goto 42 @ 0x401058'
+aS'Possible Values: <undetermined>'
 p1114
-ag226
-ag561
-aS'[<LLIL_GOTO>, 41L]'
+aS'Prefix operands: [<LLIL_SET_REG 1>, al, <LLIL_CONST 1>, 165L]'
 p1115
-aS'[41L, <LLIL_GOTO>]'
+aS'Postfix operands: [al, 165L, <LLIL_CONST 1>, <LLIL_SET_REG 1>]'
 p1116
-aS'goto 47 @ 0x401058'
+aS'SSA form: eax#2.al = 0xa5'
 p1117
-aS'goto 41 @ 0x401058'
+aS'Non-SSA form: al = 0xa5'
 p1118
-aS'ecx_3 = 0x20'
+aS'MLIL: eax.ah = 0xab'
 p1119
-aS'ecx = 0x20'
+aS'Mapped MLIL: eax.ah = 0xab'
 p1120
-ag226
-ag561
-aS'[<LLIL_SET_REG 4>, ecx, <LLIL_REG 4>, edx]'
+aS'Value: <undetermined>'
 p1121
-aS'[ecx, edx, <LLIL_REG 4>, <LLIL_SET_REG 4>]'
+aS'Possible Values: <undetermined>'
 p1122
-aS'ecx#10 = edx#6'
+aS'Prefix operands: [<LLIL_SET_REG 1>, ah, <LLIL_CONST 1>, 171L]'
 p1123
-aS'ecx = edx'
+aS'Postfix operands: [ah, 171L, <LLIL_CONST 1>, <LLIL_SET_REG 1>]'
 p1124
-aS'None'
+aS'SSA form: eax#3.ah = 0xab'
 p1125
-aS'goto 46 @ 0x401054'
+aS'Non-SSA form: ah = 0xab'
 p1126
-ag226
-ag561
-aS'[<LLIL_GOTO>, 44L]'
+aS'MLIL: edx.dh = 0xde'
 p1127
-aS'[44L, <LLIL_GOTO>]'
+aS'Mapped MLIL: edx.dh = 0xde'
 p1128
-aS'goto 57 @ 0x401054'
+aS'Value: <undetermined>'
 p1129
-aS'goto 44 @ 0x401054'
+aS'Possible Values: <undetermined>'
 p1130
-aS'ecx_3 = ecx_2'
+aS'Prefix operands: [<LLIL_SET_REG 1>, dh, <LLIL_CONST 1>, 222L]'
 p1131
-aS'ecx = ecx'
+aS'Postfix operands: [dh, 222L, <LLIL_CONST 1>, <LLIL_SET_REG 1>]'
 p1132
-ag226
-ag561
-aS'[<LLIL_SET_REG 4>, ecx, <LLIL_REG 4>, ecx]'
+aS'SSA form: edx#1.dh = 0xde'
 p1133
-aS'[ecx, ecx, <LLIL_REG 4>, <LLIL_SET_REG 4>]'
+aS'Non-SSA form: dh = 0xde'
 p1134
-aS'ecx#11 = ecx#9'
+aS'MLIL: edx.dl = 0xad'
 p1135
-aS'ecx = ecx'
+aS'Mapped MLIL: edx.dl = 0xad'
 p1136
-aS'None'
+aS'Value: <undetermined>'
 p1137
-aS'goto 46 @ 0x401054'
+aS'Possible Values: <undetermined>'
 p1138
-ag226
-ag561
-aS'[<LLIL_GOTO>, 44L]'
+aS'Prefix operands: [<LLIL_SET_REG 1>, dl, <LLIL_CONST 1>, 173L]'
 p1139
-aS'[44L, <LLIL_GOTO>]'
+aS'Postfix operands: [dl, 173L, <LLIL_CONST 1>, <LLIL_SET_REG 1>]'
 p1140
-aS'goto 57 @ 0x401054'
+aS'SSA form: edx#2.dl = 0xad'
 p1141
-aS'goto 44 @ 0x401054'
+aS'Non-SSA form: dl = 0xad'
 p1142
-aS'None'
+aS'MLIL: ecx = edx'
 p1143
-aS'esp = &__saved_ebp'
+aS'Mapped MLIL: ecx = edx'
 p1144
-ag226
-ag561
-aS'[<LLIL_SET_REG 4>, esp, <LLIL_ADD 4>, <LLIL_REG 4>, esp, <LLIL_CONST 4>, 128L]'
+aS'Value: <undetermined>'
 p1145
-aS'[esp, esp, <LLIL_REG 4>, 128L, <LLIL_CONST 4>, <LLIL_ADD 4>, <LLIL_SET_REG 4>]'
+aS'Possible Values: <undetermined>'
 p1146
-aS'esp#3 = esp#2 + 0x80'
+aS'Prefix operands: [<LLIL_SET_REG 4>, ecx, <LLIL_REG 4>, edx]'
 p1147
-aS'esp = esp + 0x80'
+aS'Postfix operands: [ecx, edx, <LLIL_REG 4>, <LLIL_SET_REG 4>]'
 p1148
-aS'None'
+aS'SSA form: ecx#1 = edx#2'
 p1149
-aS'ebp = __saved_ebp'
+aS'Non-SSA form: ecx = edx'
 p1150
-ag226
-ag561
-aS'[<LLIL_SET_REG 4>, ebp, <LLIL_POP 4>]'
+aS'MLIL: eax_1 = 0xaba5ffff'
 p1151
-aS'[ebp, <LLIL_POP 4>, <LLIL_SET_REG 4>]'
+aS'Mapped MLIL: eax = rol.d(eax, 0x10)'
 p1152
-aS'ebp#2 = [esp#3].d @ mem#6'
+aS'Value: <undetermined>'
 p1153
-aS'ebp = pop'
+aS'Possible Values: <undetermined>'
 p1154
-aS'None'
+aS'Prefix operands: [<LLIL_SET_REG 4>, eax, <LLIL_ROL 4>, <LLIL_REG 4>, eax, <LLIL_CONST 1>, 16L]'
 p1155
-aS'return '
+aS'Postfix operands: [eax, eax, <LLIL_REG 4>, 16L, <LLIL_CONST 1>, <LLIL_ROL 4>, <LLIL_SET_REG 4>]'
 p1156
-ag226
-ag561
-aS'[<LLIL_RET>, <LLIL_POP 4>]'
+aS'SSA form: eax#4 = rol.d(eax#3, 0x10)'
 p1157
-aS'[<LLIL_POP 4>, <LLIL_RET>]'
+aS'Non-SSA form: eax = rol.d(eax, 0x10)'
 p1158
-aS'<return> jump([esp#4].d @ mem#6)'
+aS'MLIL: eax_1.ax = ecx.cx'
 p1159
-aS'<return> jump(pop)'
+aS'Mapped MLIL: eax.ax = ecx.cx'
 p1160
-aS'edx_1 = ecx_3'
+aS'Value: <undetermined>'
 p1161
-aS'edx = ecx'
+aS'Possible Values: <undetermined>'
 p1162
-ag226
-ag561
-aS'[<LLIL_SET_REG 4>, edx, <LLIL_REG 4>, ecx]'
+aS'Prefix operands: [<LLIL_SET_REG 2>, ax, <LLIL_REG 2>, cx]'
 p1163
-aS'[edx, ecx, <LLIL_REG 4>, <LLIL_SET_REG 4>]'
+aS'Postfix operands: [ax, cx, <LLIL_REG 2>, <LLIL_SET_REG 2>]'
 p1164
-aS'edx#7 = ecx#12'
+aS'SSA form: eax#5.ax = ecx#1.cx'
 p1165
-aS'edx = ecx'
+aS'Non-SSA form: ax = cx'
 p1166
-aS'eax_3 = eax_2 + ecx_3'
+aS'MLIL: ecx_1 = ecx u>> 0x10'
 p1167
-aS'eax = eax + ecx'
+aS'Mapped MLIL: ecx = ecx u>> 0x10'
 p1168
-ag226
-ag561
-aS'[<LLIL_SET_REG 4>, eax, <LLIL_ADD 4>, <LLIL_REG 4>, eax, <LLIL_REG 4>, ecx]'
+aS'Value: <undetermined>'
 p1169
-aS'[eax, eax, <LLIL_REG 4>, ecx, <LLIL_REG 4>, <LLIL_ADD 4>, <LLIL_SET_REG 4>]'
+aS'Possible Values: <undetermined>'
 p1170
-aS'eax#11 = eax#10 + ecx#12'
+aS'Prefix operands: [<LLIL_SET_REG 4>, ecx, <LLIL_LSR 4>, <LLIL_REG 4>, ecx, <LLIL_CONST 1>, 16L]'
 p1171
-aS'eax = eax + ecx'
+aS'Postfix operands: [ecx, ecx, <LLIL_REG 4>, 16L, <LLIL_CONST 1>, <LLIL_LSR 4>, <LLIL_SET_REG 4>]'
 p1172
-aS'None'
+aS'SSA form: ecx#2 = ecx#1 u>> 0x10'
 p1173
-aS'goto 42 @ 0x401058'
+aS'Non-SSA form: ecx = ecx u>> 0x10'
 p1174
-ag226
-ag561
-aS'[<LLIL_GOTO>, 41L]'
+aS'MLIL: var_14 = ecx_1.cx'
 p1175
-aS'[41L, <LLIL_GOTO>]'
+aS'Mapped MLIL: var_14 = ecx.cx'
 p1176
-aS'goto 47 @ 0x401058'
+aS'Value: <undetermined>'
 p1177
-aS'goto 41 @ 0x401058'
+aS'Possible Values: <undetermined>'
 p1178
-asS'test_med_il_vars'
+aS'Prefix operands: [<LLIL_STORE 2>, <LLIL_ADD 4>, <LLIL_REG 4>, ebp, <LLIL_CONST 4>, 18446744073709551600L, <LLIL_REG 2>, cx]'
 p1179
-(lp1180
-S'0 [1L] <const 0xffffffff> <const 0xffffffff> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: eax#1 = 0xffffffff>>'
+aS'Postfix operands: [ebp, <LLIL_REG 4>, 18446744073709551600L, <LLIL_CONST 4>, <LLIL_ADD 4>, cx, <LLIL_REG 2>, <LLIL_STORE 2>]'
+p1180
+aS'SSA form: [ebp#1 - 0x10].w = ecx#2.cx @ mem#1 -> mem#2'
 p1181
-aS'0 [1L] <const 0xffffffff> <const 0xffffffff> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: eax#2.al = 0xa5 @ eax#1>>'
+aS'Non-SSA form: [ebp - 0x10].w = cx'
 p1182
-aS'1 [2L] <const 0xffffffa5> <const 0xffffffa5> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: eax#2.al = 0xa5 @ eax#1>>'
+aS'MLIL: None'
 p1183
-aS'1 [2L] <const 0xffffffa5> <const 0xffffffa5> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: eax#3.ah = 0xab @ eax#2>>'
+aS'Mapped MLIL: if (eax.ax u> 0xff) then 15 @ 0x401090 else 20 @ 0x40102f'
 p1184
-aS'2 [] <const 0xffffaba5> <const 0xffffaba5> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: eax#3.ah = 0xab @ eax#2>>'
+aS'Value: <undetermined>'
 p1185
-aS'None [3L] <entry edx> <entry edx> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: edx#1.dh = 0xde @ edx#0>>'
+aS'Possible Values: <undetermined>'
 p1186
-aS'3 [4L] <undetermined> <undetermined> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: edx#1.dh = 0xde @ edx#0>>'
+aS'Prefix operands: [<LLIL_IF>, <LLIL_CMP_UGT 2>, <LLIL_REG 2>, ax, <LLIL_CONST 2>, 255L, 14L, 19L]'
 p1187
-aS'3 [4L] <undetermined> <undetermined> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: edx#2.dl = 0xad @ edx#1>>'
+aS'Postfix operands: [ax, <LLIL_REG 2>, 255L, <LLIL_CONST 2>, <LLIL_CMP_UGT 2>, 14L, 19L, <LLIL_IF>]'
 p1188
-aS'4 [5L, 21L, 37L] <undetermined> <const 0xdead> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: edx#2.dl = 0xad @ edx#1>>'
+aS'SSA form: if (eax#5.ax u> 0xff) then 15 @ 0x401090 else 20 @ 0x40102f'
 p1189
-aS'4 [5L, 21L, 37L] <undetermined> <const 0xdead> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ecx#1 = edx#2>>'
+aS'Non-SSA form: if (ax u> 0xff) then 14 @ 0x401090 else 19 @ 0x40102f'
 p1190
-aS'5 [7L, 8L] <undetermined> <const 0xdead> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ecx#1 = edx#2>>'
+aS'MLIL: eax_1.ax = ecx_1.cx'
 p1191
-aS'6 [7L] <const 0xaba5ffff> <const 0xaba5ffff> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: eax_1#4 = 0xaba5ffff>>'
+aS'Mapped MLIL: eax.ax = ecx.cx'
 p1192
-aS'6 [7L] <const 0xaba5ffff> <const 0xaba5ffff> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: eax_1#5.ax = ecx#1.cx @ eax_1#4>>'
+aS'Value: <undetermined>'
 p1193
-aS'5 [7L, 8L] <undetermined> <const 0xdead> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: eax_1#5.ax = ecx#1.cx @ eax_1#4>>'
+aS'Possible Values: <undetermined>'
 p1194
-aS'7 [10L, 11L, 21L] <undetermined> <const 0xaba5dead> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: eax_1#5.ax = ecx#1.cx @ eax_1#4>>'
+aS'Prefix operands: [<LLIL_SET_REG 2>, ax, <LLIL_REG 2>, cx]'
 p1195
-aS'5 [7L, 8L] <undetermined> <const 0xdead> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ecx_1#2 = ecx#1 u>> 0x10>>'
+aS'Postfix operands: [ax, cx, <LLIL_REG 2>, <LLIL_SET_REG 2>]'
 p1196
-aS'8 [9L, 11L, 12L, 14L, 16L, 21L, 26L] <undetermined> <unsigned ranges: [<range: 0x0 to 0xffff>]> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ecx_1#2 = ecx#1 u>> 0x10>>'
+aS'SSA form: eax#6.ax = ecx#2.cx'
 p1197
-aS'8 [9L, 11L, 12L, 14L, 16L, 21L, 26L] <undetermined> <unsigned ranges: [<range: 0x0 to 0xffff>]> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: var_14#1 = ecx_1#2.cx>>'
+aS'Non-SSA form: ax = cx'
 p1198
-aS'9 [21L, 37L] <undetermined> <unsigned ranges: [<range: 0x0 to 0xffff>]> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: var_14#1 = ecx_1#2.cx>>'
+aS'MLIL: ebx.bx = ecx_1.cx'
 p1199
-aS'7 [10L, 11L, 21L] <undetermined> <const 0xaba5dead> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: if (eax_1#5.ax u> 0xff) then 11 @ 0x401090 else 16 @ 0x40102f>>'
+aS'Mapped MLIL: ebx.bx = ecx.cx'
 p1200
-aS'7 [10L, 11L, 21L] <undetermined> <const 0xaba5dead> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: eax_1#6.ax = ecx_1#2.cx @ eax_1#5>>'
+aS'Value: <undetermined>'
 p1201
-aS'8 [9L, 11L, 12L, 14L, 16L, 21L, 26L] <undetermined> <unsigned ranges: [<range: 0x0 to 0xffff>]> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: eax_1#6.ax = ecx_1#2.cx @ eax_1#5>>'
+aS'Possible Values: <undetermined>'
 p1202
-aS'11 [21L] <undetermined> <unsigned ranges: [<range: 0xaba50000 to 0xaba5ffff>]> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: eax_1#6.ax = ecx_1#2.cx @ eax_1#5>>'
+aS'Prefix operands: [<LLIL_SET_REG 2>, bx, <LLIL_REG 2>, cx]'
 p1203
-aS'None [12L, 21L] <entry ebx> <entry ebx> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ebx#1.bx = ecx_1#2.cx @ ebx#0>>'
+aS'Postfix operands: [bx, cx, <LLIL_REG 2>, <LLIL_SET_REG 2>]'
 p1204
-aS'8 [9L, 11L, 12L, 14L, 16L, 21L, 26L] <undetermined> <unsigned ranges: [<range: 0x0 to 0xffff>]> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ebx#1.bx = ecx_1#2.cx @ ebx#0>>'
+aS'SSA form: ebx#1.bx = ecx#2.cx'
 p1205
-aS'12 [] <undetermined> <unsigned ranges: [<range: 0x0 to 0xffff>]> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ebx#1.bx = ecx_1#2.cx @ ebx#0>>'
+aS'Non-SSA form: bx = cx'
 p1206
-aS'13 [14L] <const 0x0> <const 0x0> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ebx_1#2 = 0>>'
+aS'MLIL: ebx_1 = 0'
 p1207
-aS'13 [14L] <const 0x0> <const 0x0> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ebx_1#3.bx = ecx_1#2.cx @ ebx_1#2>>'
+aS'Mapped MLIL: ebx = 0'
 p1208
-aS'8 [9L, 11L, 12L, 14L, 16L, 21L, 26L] <undetermined> <unsigned ranges: [<range: 0x0 to 0xffff>]> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ebx_1#3.bx = ecx_1#2.cx @ ebx_1#2>>'
+aS'Value: <undetermined>'
 p1209
-aS'14 [21L, 37L] <undetermined> <unsigned ranges: [<range: 0x0 to 0xffff>]> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ebx_1#3.bx = ecx_1#2.cx @ ebx_1#2>>'
+aS'Possible Values: <undetermined>'
 p1210
-aS'None [15L, 30L] <entry edi> <entry edi> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: if (arg1#0 != 3) then 21 @ 0x0 else 22 @ 0x4010a4>>'
+aS'Prefix operands: [<LLIL_SET_REG 4>, ebx, <LLIL_CONST 4>, 0L]'
 p1211
-aS'8 [9L, 11L, 12L, 14L, 16L, 21L, 26L] <undetermined> <unsigned ranges: [<range: 0x0 to 0xffff>]> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ecx_1#7.cx = 0 @ ecx_1#2>>'
+aS'Postfix operands: [ebx, 0L, <LLIL_CONST 4>, <LLIL_SET_REG 4>]'
 p1212
-aS'16 [17L, 21L] <undetermined> <const 0x0> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ecx_1#7.cx = 0 @ ecx_1#2>>'
+aS'SSA form: ebx#2 = 0'
 p1213
-aS'16 [17L, 21L] <undetermined> <const 0x0> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: var_14_1#2 = ecx_1#7.cx>>'
+aS'Non-SSA form: ebx = 0'
 p1214
-aS'17 [18L, 21L] <undetermined> <const 0x0> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: var_14_1#2 = ecx_1#7.cx>>'
+aS'MLIL: ebx_1.bx = ecx_1.cx'
 p1215
-aS'17 [18L, 21L] <undetermined> <const 0x0> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: edx#3 = zx.d(var_14_1#2)>>'
+aS'Mapped MLIL: ebx.bx = ecx.cx'
 p1216
-aS'18 [19L] <undetermined> <const 0x0> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: edx#3 = zx.d(var_14_1#2)>>'
+aS'Value: <undetermined>'
 p1217
-aS'18 [19L] <undetermined> <const 0x0> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: edx#4.dh = edx#3.dh + 1 @ edx#3>>'
+aS'Possible Values: <undetermined>'
 p1218
-aS'18 [19L] <undetermined> <const 0x0> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: edx#4.dh = edx#3.dh + 1 @ edx#3>>'
+aS'Prefix operands: [<LLIL_SET_REG 2>, bx, <LLIL_REG 2>, cx]'
 p1219
-aS'19 [21L] <undetermined> <const 0x100> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: edx#4.dh = edx#3.dh + 1 @ edx#3>>'
+aS'Postfix operands: [bx, cx, <LLIL_REG 2>, <LLIL_SET_REG 2>]'
 p1220
-aS'21 [21L] <undetermined> <in set([0x100, 0xdead])> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: var_8_1#1 = edx#5.dx>>'
+aS'SSA form: ebx#3.bx = ecx#2.cx'
 p1221
-aS'21 [22L, 37L] <undetermined> <undetermined> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: var_8_1#1 = edx#5.dx>>'
+aS'Non-SSA form: bx = cx'
 p1222
-aS'21 [22L, 37L] <undetermined> <undetermined> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: eax_2#10 = zx.d(var_8_1#1)>>'
+aS'MLIL: None'
 p1223
-aS'22 [39L] <undetermined> <in set([0x100, 0xdead])> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: eax_2#10 = zx.d(var_8_1#1)>>'
+aS'Mapped MLIL: if (arg1 != 3) then 25 @ 0x40103e else 31 @ 0x4010a4'
 p1224
-aS'21 [23L] <undetermined> <unsigned ranges: [<range: 0x0 to 0xffff>]> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ecx_2#9 = ecx_1#8 u>> 0x18>>'
+aS'Value: <undetermined>'
 p1225
-aS'23 [24L, 35L] <undetermined> <unsigned ranges: [<range: 0x0 to 0x0>]> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ecx_2#9 = ecx_1#8 u>> 0x18>>'
+aS'Possible Values: <undetermined>'
 p1226
-aS'23 [24L, 35L] <undetermined> <unsigned ranges: [<range: 0x0 to 0x0>]> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: cond:0_1#1 = ecx_2#9 u> 0x20>>'
+aS'Prefix operands: [<LLIL_IF>, <LLIL_CMP_NE 4>, <LLIL_REG 4>, edi, <LLIL_CONST 4>, 3L, 24L, 30L]'
 p1227
-aS'24 [25L, 37L] <undetermined> <undetermined> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: cond:0_1#1 = ecx_2#9 u> 0x20>>'
+aS'Postfix operands: [edi, <LLIL_REG 4>, 3L, <LLIL_CONST 4>, <LLIL_CMP_NE 4>, 24L, 30L, <LLIL_IF>]'
 p1228
-aS'24 [25L, 37L] <undetermined> <undetermined> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: if (cond:0_1#1) then 47 else 49>>'
+aS'SSA form: if (edi#0 != 3) then 25 @ 0x40103e else 36 @ 0x4010a4'
 p1229
-aS'8 [9L, 11L, 12L, 14L, 16L, 21L, 26L] <undetermined> <unsigned ranges: [<range: 0x0 to 0xffff>]> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ecx_4#3 = ecx_1#2 u>> 8>>'
+aS'Non-SSA form: if (edi != 3) then 24 @ 0x40103e else 30 @ 0x4010a4'
 p1230
-aS'26 [27L] <undetermined> <unsigned ranges: [<range: 0x0 to 0xff>]> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ecx_4#3 = ecx_1#2 u>> 8>>'
+aS'MLIL: ecx_1.cx = 0'
 p1231
-aS'26 [27L] <undetermined> <unsigned ranges: [<range: 0x0 to 0xff>]> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ecx_5#4 = ecx_4#3 + ecx_4#3>>'
+aS'Mapped MLIL: ecx.cx = 0'
 p1232
-aS'26 [27L] <undetermined> <unsigned ranges: [<range: 0x0 to 0xff>]> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ecx_5#4 = ecx_4#3 + ecx_4#3>>'
+aS'Value: <undetermined>'
 p1233
-aS'27 [28L] <undetermined> <unsigned ranges: [<range: 0x0 to 0x1fe, step 0x2>]> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ecx_5#4 = ecx_4#3 + ecx_4#3>>'
+aS'Possible Values: <undetermined>'
 p1234
-aS'27 [28L] <undetermined> <unsigned ranges: [<range: 0x0 to 0x1fe, step 0x2>]> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ecx_6#5 = ecx_5#4 + ecx_5#4>>'
+aS'Prefix operands: [<LLIL_SET_REG 2>, cx, <LLIL_CONST 2>, 0L]'
 p1235
-aS'27 [28L] <undetermined> <unsigned ranges: [<range: 0x0 to 0x1fe, step 0x2>]> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ecx_6#5 = ecx_5#4 + ecx_5#4>>'
+aS'Postfix operands: [cx, 0L, <LLIL_CONST 2>, <LLIL_SET_REG 2>]'
 p1236
-aS'28 [29L] <undetermined> <unsigned ranges: [<range: 0x0 to 0x3fc, step 0x4>]> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ecx_6#5 = ecx_5#4 + ecx_5#4>>'
+aS'SSA form: ecx#7.cx = 0'
 p1237
-aS'28 [29L] <undetermined> <unsigned ranges: [<range: 0x0 to 0x3fc, step 0x4>]> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: eax_4#7 = ecx_6#5>>'
+aS'Non-SSA form: cx = 0'
 p1238
-aS'29 [31L] <undetermined> <unsigned ranges: [<range: 0x0 to 0x3fc, step 0x4>]> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: eax_4#7 = ecx_6#5>>'
+aS'MLIL: var_14_1 = ecx_1.cx'
 p1239
-aS'None [15L, 30L] <entry edi> <const 0x3> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ecx_7#6 = arg1#0>>'
+aS'Mapped MLIL: var_14 = ecx.cx'
 p1240
-aS'30 [31L, 37L] <entry edi> <const 0x3> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ecx_7#6 = arg1#0>>'
+aS'Value: <undetermined>'
 p1241
-aS'29 [31L] <undetermined> <unsigned ranges: [<range: 0x0 to 0x3fc, step 0x4>]> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: eax_3#8 = eax_4#7 u>> ecx_7#6.cl>>'
+aS'Possible Values: <undetermined>'
 p1242
-aS'30 [31L, 37L] <entry edi> <const 0x3> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: eax_3#8 = eax_4#7 u>> ecx_7#6.cl>>'
+aS'Prefix operands: [<LLIL_STORE 2>, <LLIL_ADD 4>, <LLIL_REG 4>, ebp, <LLIL_CONST 4>, 18446744073709551600L, <LLIL_REG 2>, cx]'
 p1243
-aS'31 [37L] <undetermined> <unsigned ranges: [<range: 0x0 to 0x7f>]> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: eax_3#8 = eax_4#7 u>> ecx_7#6.cl>>'
+aS'Postfix operands: [ebp, <LLIL_REG 4>, 18446744073709551600L, <LLIL_CONST 4>, <LLIL_ADD 4>, cx, <LLIL_REG 2>, <LLIL_STORE 2>]'
 p1244
-aS'33 [38L] <const 0x20> <const 0x20> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ecx_3#10 = 0x20>>'
+aS'SSA form: [ebp#1 - 0x10].w = ecx#7.cx @ mem#2 -> mem#3'
 p1245
-aS'23 [24L, 35L] <undetermined> <const 0x0> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ecx_3#11 = ecx_2#9>>'
+aS'Non-SSA form: [ebp - 0x10].w = cx'
 p1246
-aS'35 [38L] <undetermined> <const 0x0> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ecx_3#11 = ecx_2#9>>'
+aS'MLIL: edx = zx.d(var_14_1)'
 p1247
-aS'38 [37L, 38L, 39L] <undetermined> <in set([0x0, 0x20])> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: edx_1#6 = ecx_3#12>>'
+aS'Mapped MLIL: edx = zx.d(var_14)'
 p1248
-aS'38 [37L] <undetermined> <in set([0x0, 0x20])> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: edx_1#6 = ecx_3#12>>'
+aS'Value: <undetermined>'
 p1249
-aS'22 [39L] <undetermined> <in set([0x100, 0xdead])> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: eax_3#11 = eax_2#10 + ecx_3#12>>'
+aS'Possible Values: <undetermined>'
 p1250
-aS'38 [37L, 38L, 39L] <undetermined> <in set([0x0, 0x20])> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: eax_3#11 = eax_2#10 + ecx_3#12>>'
+aS'Prefix operands: [<LLIL_SET_REG 4>, edx, <LLIL_ZX 4>, <LLIL_LOAD 2>, <LLIL_ADD 4>, <LLIL_REG 4>, ebp, <LLIL_CONST 4>, 18446744073709551600L]'
 p1251
-aS'39 [37L] <undetermined> <undetermined> <bound method MediumLevelILInstruction.get_ssa_var_version of <il: eax_3#11 = eax_2#10 + ecx_3#12>>'
+aS'Postfix operands: [edx, ebp, <LLIL_REG 4>, 18446744073709551600L, <LLIL_CONST 4>, <LLIL_ADD 4>, <LLIL_LOAD 2>, <LLIL_ZX 4>, <LLIL_SET_REG 4>]'
 p1252
+aS'SSA form: edx#3 = zx.d([ebp#1 - 0x10].w @ mem#3)'
+p1253
+aS'Non-SSA form: edx = zx.d([ebp - 0x10].w)'
+p1254
+aS'MLIL: edx.dh = edx.dh + 1'
+p1255
+aS'Mapped MLIL: edx.dh = edx.dh + 1'
+p1256
+aS'Value: <undetermined>'
+p1257
+aS'Possible Values: <undetermined>'
+p1258
+aS'Prefix operands: [<LLIL_SET_REG 1>, dh, <LLIL_ADD 1>, <LLIL_REG 1>, dh, <LLIL_CONST 1>, 1L]'
+p1259
+aS'Postfix operands: [dh, dh, <LLIL_REG 1>, 1L, <LLIL_CONST 1>, <LLIL_ADD 1>, <LLIL_SET_REG 1>]'
+p1260
+aS'SSA form: edx#4.dh = edx#3.dh + 1'
+p1261
+aS'Non-SSA form: dh = dh + 1'
+p1262
+aS'MLIL: None'
+p1263
+aS'Mapped MLIL: goto 25 @ 0x40103e'
+p1264
+aS'Value: <undetermined>'
+p1265
+aS'Possible Values: <undetermined>'
+p1266
+aS'Prefix operands: [<LLIL_GOTO>, 24L]'
+p1267
+aS'Postfix operands: [24L, <LLIL_GOTO>]'
+p1268
+aS'SSA form: goto 25 @ 0x40103e'
+p1269
+aS'Non-SSA form: goto 24 @ 0x40103e'
+p1270
+aS'MLIL: var_8_1 = edx.dx'
+p1271
+aS'Mapped MLIL: var_8 = edx.dx'
+p1272
+aS'Value: <undetermined>'
+p1273
+aS'Possible Values: <undetermined>'
+p1274
+aS'Prefix operands: [<LLIL_STORE 2>, <LLIL_ADD 4>, <LLIL_REG 4>, ebp, <LLIL_CONST 4>, 18446744073709551612L, <LLIL_REG 2>, dx]'
+p1275
+aS'Postfix operands: [ebp, <LLIL_REG 4>, 18446744073709551612L, <LLIL_CONST 4>, <LLIL_ADD 4>, dx, <LLIL_REG 2>, <LLIL_STORE 2>]'
+p1276
+aS'SSA form: [ebp#1 - 4].w = edx#5.dx @ mem#4 -> mem#5'
+p1277
+aS'Non-SSA form: [ebp - 4].w = dx'
+p1278
+aS'MLIL: eax_2 = zx.d(var_8_1)'
+p1279
+aS'Mapped MLIL: eax = zx.d(var_8)'
+p1280
+aS'Value: <undetermined>'
+p1281
+aS'Possible Values: <undetermined>'
+p1282
+aS'Prefix operands: [<LLIL_SET_REG 4>, eax, <LLIL_ZX 4>, <LLIL_LOAD 2>, <LLIL_ADD 4>, <LLIL_REG 4>, ebp, <LLIL_CONST 4>, 18446744073709551612L]'
+p1283
+aS'Postfix operands: [eax, ebp, <LLIL_REG 4>, 18446744073709551612L, <LLIL_CONST 4>, <LLIL_ADD 4>, <LLIL_LOAD 2>, <LLIL_ZX 4>, <LLIL_SET_REG 4>]'
+p1284
+aS'SSA form: eax#10 = zx.d([ebp#1 - 4].w @ mem#5)'
+p1285
+aS'Non-SSA form: eax = zx.d([ebp - 4].w)'
+p1286
+aS'MLIL: ecx_2 = ecx_1 u>> 0x18'
+p1287
+aS'Mapped MLIL: ecx = ecx u>> 0x18'
+p1288
+aS'Value: <undetermined>'
+p1289
+aS'Possible Values: <undetermined>'
+p1290
+aS'Prefix operands: [<LLIL_SET_REG 4>, ecx, <LLIL_LSR 4>, <LLIL_REG 4>, ecx, <LLIL_CONST 1>, 24L]'
+p1291
+aS'Postfix operands: [ecx, ecx, <LLIL_REG 4>, 24L, <LLIL_CONST 1>, <LLIL_LSR 4>, <LLIL_SET_REG 4>]'
+p1292
+aS'SSA form: ecx#9 = ecx#8 u>> 0x18'
+p1293
+aS'Non-SSA form: ecx = ecx u>> 0x18'
+p1294
+aS'MLIL: cond:0_1 = ecx_2 u> 0x20'
+p1295
+aS'Mapped MLIL: cond:0 = ecx u> 0x20'
+p1296
+aS'Value: <undetermined>'
+p1297
+aS'Possible Values: <undetermined>'
+p1298
+aS'Prefix operands: [<LLIL_SET_FLAG>, cond:0, <LLIL_CMP_UGT 4>, <LLIL_REG 4>, ecx, <LLIL_CONST 4>, 32L]'
+p1299
+aS'Postfix operands: [cond:0, ecx, <LLIL_REG 4>, 32L, <LLIL_CONST 4>, <LLIL_CMP_UGT 4>, <LLIL_SET_FLAG>]'
+p1300
+aS'SSA form: cond:0#1 = ecx#9 u> 0x20'
+p1301
+aS'Non-SSA form: cond:0 = ecx u> 0x20'
+p1302
+aS'MLIL: None'
+p1303
+aS'Mapped MLIL: edx = 0x20'
+p1304
+aS'Value: <undetermined>'
+p1305
+aS'Possible Values: <undetermined>'
+p1306
+aS'Prefix operands: [<LLIL_SET_REG 4>, edx, <LLIL_CONST 4>, 32L]'
+p1307
+aS'Postfix operands: [edx, 32L, <LLIL_CONST 4>, <LLIL_SET_REG 4>]'
+p1308
+aS'SSA form: edx#6 = 0x20'
+p1309
+aS'Non-SSA form: edx = 0x20'
+p1310
+aS'MLIL: None'
+p1311
+aS'Mapped MLIL: if (cond:0) then 38 else 40'
+p1312
+aS'Value: <undetermined>'
+p1313
+aS'Possible Values: <undetermined>'
+p1314
+aS'Prefix operands: [<LLIL_IF>, <LLIL_FLAG>, cond:0, 37L, 39L]'
+p1315
+aS'Postfix operands: [cond:0, <LLIL_FLAG>, 37L, 39L, <LLIL_IF>]'
+p1316
+aS'SSA form: if (cond:0#1) then 43 @ 0x401051 else 45 @ 0x401051'
+p1317
+aS'Non-SSA form: if (cond:0) then 37 @ 0x401051 else 39 @ 0x401051'
+p1318
+aS'MLIL: ecx_3 = ecx_1 u>> 8'
+p1319
+aS'Mapped MLIL: ecx = ecx u>> 8'
+p1320
+aS'Value: <undetermined>'
+p1321
+aS'Possible Values: <undetermined>'
+p1322
+aS'Prefix operands: [<LLIL_SET_REG 4>, ecx, <LLIL_LSR 4>, <LLIL_REG 4>, ecx, <LLIL_CONST 1>, 8L]'
+p1323
+aS'Postfix operands: [ecx, ecx, <LLIL_REG 4>, 8L, <LLIL_CONST 1>, <LLIL_LSR 4>, <LLIL_SET_REG 4>]'
+p1324
+aS'SSA form: ecx#3 = ecx#2 u>> 8'
+p1325
+aS'Non-SSA form: ecx = ecx u>> 8'
+p1326
+aS'MLIL: ecx_4 = ecx_3 + ecx_3'
+p1327
+aS'Mapped MLIL: ecx = ecx + ecx'
+p1328
+aS'Value: <undetermined>'
+p1329
+aS'Possible Values: <undetermined>'
+p1330
+aS'Prefix operands: [<LLIL_SET_REG 4>, ecx, <LLIL_ADD 4>, <LLIL_REG 4>, ecx, <LLIL_REG 4>, ecx]'
+p1331
+aS'Postfix operands: [ecx, ecx, <LLIL_REG 4>, ecx, <LLIL_REG 4>, <LLIL_ADD 4>, <LLIL_SET_REG 4>]'
+p1332
+aS'SSA form: ecx#4 = ecx#3 + ecx#3'
+p1333
+aS'Non-SSA form: ecx = ecx + ecx'
+p1334
+aS'MLIL: ecx_5 = ecx_4 + ecx_4'
+p1335
+aS'Mapped MLIL: ecx = ecx + ecx'
+p1336
+aS'Value: <undetermined>'
+p1337
+aS'Possible Values: <undetermined>'
+p1338
+aS'Prefix operands: [<LLIL_SET_REG 4>, ecx, <LLIL_ADD 4>, <LLIL_REG 4>, ecx, <LLIL_REG 4>, ecx]'
+p1339
+aS'Postfix operands: [ecx, ecx, <LLIL_REG 4>, ecx, <LLIL_REG 4>, <LLIL_ADD 4>, <LLIL_SET_REG 4>]'
+p1340
+aS'SSA form: ecx#5 = ecx#4 + ecx#4'
+p1341
+aS'Non-SSA form: ecx = ecx + ecx'
+p1342
+aS'MLIL: eax_4 = ecx_5'
+p1343
+aS'Mapped MLIL: eax = ecx'
+p1344
+aS'Value: <undetermined>'
+p1345
+aS'Possible Values: <undetermined>'
+p1346
+aS'Prefix operands: [<LLIL_SET_REG 4>, eax, <LLIL_REG 4>, ecx]'
+p1347
+aS'Postfix operands: [eax, ecx, <LLIL_REG 4>, <LLIL_SET_REG 4>]'
+p1348
+aS'SSA form: eax#7 = ecx#5'
+p1349
+aS'Non-SSA form: eax = ecx'
+p1350
+aS'MLIL: ecx_6 = arg1'
+p1351
+aS'Mapped MLIL: ecx = arg1'
+p1352
+aS'Value: <undetermined>'
+p1353
+aS'Possible Values: <undetermined>'
+p1354
+aS'Prefix operands: [<LLIL_SET_REG 4>, ecx, <LLIL_REG 4>, edi]'
+p1355
+aS'Postfix operands: [ecx, edi, <LLIL_REG 4>, <LLIL_SET_REG 4>]'
+p1356
+aS'SSA form: ecx#6 = edi#0'
+p1357
+aS'Non-SSA form: ecx = edi'
+p1358
+aS'MLIL: eax_3 = eax_4 u>> ecx_6.cl'
+p1359
+aS'Mapped MLIL: eax = eax u>> ecx.cl'
+p1360
+aS'Value: <undetermined>'
+p1361
+aS'Possible Values: <undetermined>'
+p1362
+aS'Prefix operands: [<LLIL_SET_REG 4>, eax, <LLIL_LSR 4>, <LLIL_REG 4>, eax, <LLIL_REG 1>, cl]'
+p1363
+aS'Postfix operands: [eax, eax, <LLIL_REG 4>, cl, <LLIL_REG 1>, <LLIL_LSR 4>, <LLIL_SET_REG 4>]'
+p1364
+aS'SSA form: eax#8 = eax#7 u>> ecx#6.cl'
+p1365
+aS'Non-SSA form: eax = eax u>> cl'
+p1366
+aS'MLIL: None'
+p1367
+aS'Mapped MLIL: goto 42 @ 0x401058'
+p1368
+aS'Value: <undetermined>'
+p1369
+aS'Possible Values: <undetermined>'
+p1370
+aS'Prefix operands: [<LLIL_GOTO>, 41L]'
+p1371
+aS'Postfix operands: [41L, <LLIL_GOTO>]'
+p1372
+aS'SSA form: goto 47 @ 0x401058'
+p1373
+aS'Non-SSA form: goto 41 @ 0x401058'
+p1374
+aS'MLIL: None'
+p1375
+aS'Mapped MLIL: ecx = 0x20'
+p1376
+aS'Value: <undetermined>'
+p1377
+aS'Possible Values: <undetermined>'
+p1378
+aS'Prefix operands: [<LLIL_SET_REG 4>, ecx, <LLIL_REG 4>, edx]'
+p1379
+aS'Postfix operands: [ecx, edx, <LLIL_REG 4>, <LLIL_SET_REG 4>]'
+p1380
+aS'SSA form: ecx#10 = edx#6'
+p1381
+aS'Non-SSA form: ecx = edx'
+p1382
+aS'MLIL: None'
+p1383
+aS'Mapped MLIL: goto 46 @ 0x401054'
+p1384
+aS'Value: <undetermined>'
+p1385
+aS'Possible Values: <undetermined>'
+p1386
+aS'Prefix operands: [<LLIL_GOTO>, 44L]'
+p1387
+aS'Postfix operands: [44L, <LLIL_GOTO>]'
+p1388
+aS'SSA form: goto 57 @ 0x401054'
+p1389
+aS'Non-SSA form: goto 44 @ 0x401054'
+p1390
+aS'MLIL: None'
+p1391
+aS'Mapped MLIL: ecx = ecx'
+p1392
+aS'Value: <undetermined>'
+p1393
+aS'Possible Values: <undetermined>'
+p1394
+aS'Prefix operands: [<LLIL_SET_REG 4>, ecx, <LLIL_REG 4>, ecx]'
+p1395
+aS'Postfix operands: [ecx, ecx, <LLIL_REG 4>, <LLIL_SET_REG 4>]'
+p1396
+aS'SSA form: ecx#11 = ecx#9'
+p1397
+aS'Non-SSA form: ecx = ecx'
+p1398
+aS'MLIL: None'
+p1399
+aS'Mapped MLIL: goto 46 @ 0x401054'
+p1400
+aS'Value: <undetermined>'
+p1401
+aS'Possible Values: <undetermined>'
+p1402
+aS'Prefix operands: [<LLIL_GOTO>, 44L]'
+p1403
+aS'Postfix operands: [44L, <LLIL_GOTO>]'
+p1404
+aS'SSA form: goto 57 @ 0x401054'
+p1405
+aS'Non-SSA form: goto 44 @ 0x401054'
+p1406
+aS'MLIL: None'
+p1407
+aS'Mapped MLIL: esp = &__saved_ebp'
+p1408
+aS'Value: <undetermined>'
+p1409
+aS'Possible Values: <undetermined>'
+p1410
+aS'Prefix operands: [<LLIL_SET_REG 4>, esp, <LLIL_ADD 4>, <LLIL_REG 4>, esp, <LLIL_CONST 4>, 128L]'
+p1411
+aS'Postfix operands: [esp, esp, <LLIL_REG 4>, 128L, <LLIL_CONST 4>, <LLIL_ADD 4>, <LLIL_SET_REG 4>]'
+p1412
+aS'SSA form: esp#3 = esp#2 + 0x80'
+p1413
+aS'Non-SSA form: esp = esp + 0x80'
+p1414
+aS'MLIL: None'
+p1415
+aS'Mapped MLIL: ebp = __saved_ebp'
+p1416
+aS'Value: <undetermined>'
+p1417
+aS'Possible Values: <undetermined>'
+p1418
+aS'Prefix operands: [<LLIL_SET_REG 4>, ebp, <LLIL_POP 4>]'
+p1419
+aS'Postfix operands: [ebp, <LLIL_POP 4>, <LLIL_SET_REG 4>]'
+p1420
+aS'SSA form: ebp#2 = [esp#3].d @ mem#6'
+p1421
+aS'Non-SSA form: ebp = pop'
+p1422
+aS'MLIL: None'
+p1423
+aS'Mapped MLIL: return '
+p1424
+aS'Value: <undetermined>'
+p1425
+aS'Possible Values: <undetermined>'
+p1426
+aS'Prefix operands: [<LLIL_RET>, <LLIL_POP 4>]'
+p1427
+aS'Postfix operands: [<LLIL_POP 4>, <LLIL_RET>]'
+p1428
+aS'SSA form: <return> jump([esp#4].d @ mem#6)'
+p1429
+aS'Non-SSA form: <return> jump(pop)'
+p1430
+aS'MLIL: edx_1 = 0x20'
+p1431
+aS'Mapped MLIL: edx = 0x20'
+p1432
+aS'Value: <undetermined>'
+p1433
+aS'Possible Values: <undetermined>'
+p1434
+aS'Prefix operands: [<LLIL_SET_REG 4>, edx, <LLIL_REG 4>, ecx]'
+p1435
+aS'Postfix operands: [edx, ecx, <LLIL_REG 4>, <LLIL_SET_REG 4>]'
+p1436
+aS'SSA form: edx#7 = ecx#12'
+p1437
+aS'Non-SSA form: edx = ecx'
+p1438
+aS'MLIL: eax_3 = eax_2 + 0x20'
+p1439
+aS'Mapped MLIL: eax = eax + 0x20'
+p1440
+aS'Value: <undetermined>'
+p1441
+aS'Possible Values: <undetermined>'
+p1442
+aS'Prefix operands: [<LLIL_SET_REG 4>, eax, <LLIL_ADD 4>, <LLIL_REG 4>, eax, <LLIL_REG 4>, ecx]'
+p1443
+aS'Postfix operands: [eax, eax, <LLIL_REG 4>, ecx, <LLIL_REG 4>, <LLIL_ADD 4>, <LLIL_SET_REG 4>]'
+p1444
+aS'SSA form: eax#11 = eax#10 + ecx#12'
+p1445
+aS'Non-SSA form: eax = eax + ecx'
+p1446
+aS'MLIL: None'
+p1447
+aS'Mapped MLIL: goto 42 @ 0x401058'
+p1448
+aS'Value: <undetermined>'
+p1449
+aS'Possible Values: <undetermined>'
+p1450
+aS'Prefix operands: [<LLIL_GOTO>, 41L]'
+p1451
+aS'Postfix operands: [41L, <LLIL_GOTO>]'
+p1452
+aS'SSA form: goto 47 @ 0x401058'
+p1453
+aS'Non-SSA form: goto 41 @ 0x401058'
+p1454
+asS'test_med_il_vars'
+p1455
+(lp1456
+S'SSA var definition: 0'
+p1457
+aS'SSA var uses: [1L]'
+p1458
+aS'SSA var value: <const 0xffffffff>'
+p1459
+aS'SSA var possible values: <const 0xffffffff>'
+p1460
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: eax#1 = 0xffffffff>>'
+p1461
+aS'SSA var definition: 0'
+p1462
+aS'SSA var uses: [1L]'
+p1463
+aS'SSA var value: <const 0xffffffff>'
+p1464
+aS'SSA var possible values: <const 0xffffffff>'
+p1465
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: eax#2.al = 0xa5 @ eax#1>>'
+p1466
+aS'SSA var definition: 1'
+p1467
+aS'SSA var uses: [2L]'
+p1468
+aS'SSA var value: <const 0xffffffa5>'
+p1469
+aS'SSA var possible values: <const 0xffffffa5>'
+p1470
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: eax#2.al = 0xa5 @ eax#1>>'
+p1471
+aS'SSA var definition: 1'
+p1472
+aS'SSA var uses: [2L]'
+p1473
+aS'SSA var value: <const 0xffffffa5>'
+p1474
+aS'SSA var possible values: <const 0xffffffa5>'
+p1475
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: eax#3.ah = 0xab @ eax#2>>'
+p1476
+aS'SSA var definition: 2'
+p1477
+aS'SSA var uses: []'
+p1478
+aS'SSA var value: <const 0xffffaba5>'
+p1479
+aS'SSA var possible values: <const 0xffffaba5>'
+p1480
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: eax#3.ah = 0xab @ eax#2>>'
+p1481
+aS'SSA var definition: None'
+p1482
+aS'SSA var uses: [3L]'
+p1483
+aS'SSA var value: <entry edx>'
+p1484
+aS'SSA var possible values: <entry edx>'
+p1485
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: edx#1.dh = 0xde @ edx#0>>'
+p1486
+aS'SSA var definition: 3'
+p1487
+aS'SSA var uses: [4L]'
+p1488
+aS'SSA var value: <undetermined>'
+p1489
+aS'SSA var possible values: <undetermined>'
+p1490
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: edx#1.dh = 0xde @ edx#0>>'
+p1491
+aS'SSA var definition: 3'
+p1492
+aS'SSA var uses: [4L]'
+p1493
+aS'SSA var value: <undetermined>'
+p1494
+aS'SSA var possible values: <undetermined>'
+p1495
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: edx#2.dl = 0xad @ edx#1>>'
+p1496
+aS'SSA var definition: 4'
+p1497
+aS'SSA var uses: [5L, 21L, 35L]'
+p1498
+aS'SSA var value: <undetermined>'
+p1499
+aS'SSA var possible values: <const 0xdead>'
+p1500
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: edx#2.dl = 0xad @ edx#1>>'
+p1501
+aS'SSA var definition: 4'
+p1502
+aS'SSA var uses: [5L, 21L, 35L]'
+p1503
+aS'SSA var value: <undetermined>'
+p1504
+aS'SSA var possible values: <const 0xdead>'
+p1505
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ecx#1 = edx#2>>'
+p1506
+aS'SSA var definition: 5'
+p1507
+aS'SSA var uses: [7L, 8L]'
+p1508
+aS'SSA var value: <undetermined>'
+p1509
+aS'SSA var possible values: <const 0xdead>'
+p1510
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ecx#1 = edx#2>>'
+p1511
+aS'SSA var definition: 6'
+p1512
+aS'SSA var uses: [7L]'
+p1513
+aS'SSA var value: <const 0xaba5ffff>'
+p1514
+aS'SSA var possible values: <const 0xaba5ffff>'
+p1515
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: eax_1#4 = 0xaba5ffff>>'
+p1516
+aS'SSA var definition: 6'
+p1517
+aS'SSA var uses: [7L]'
+p1518
+aS'SSA var value: <const 0xaba5ffff>'
+p1519
+aS'SSA var possible values: <const 0xaba5ffff>'
+p1520
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: eax_1#5.ax = ecx#1.cx @ eax_1#4>>'
+p1521
+aS'SSA var definition: 5'
+p1522
+aS'SSA var uses: [7L, 8L]'
+p1523
+aS'SSA var value: <undetermined>'
+p1524
+aS'SSA var possible values: <const 0xdead>'
+p1525
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: eax_1#5.ax = ecx#1.cx @ eax_1#4>>'
+p1526
+aS'SSA var definition: 7'
+p1527
+aS'SSA var uses: [10L, 11L, 21L]'
+p1528
+aS'SSA var value: <undetermined>'
+p1529
+aS'SSA var possible values: <const 0xaba5dead>'
+p1530
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: eax_1#5.ax = ecx#1.cx @ eax_1#4>>'
+p1531
+aS'SSA var definition: 5'
+p1532
+aS'SSA var uses: [7L, 8L]'
+p1533
+aS'SSA var value: <undetermined>'
+p1534
+aS'SSA var possible values: <const 0xdead>'
+p1535
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ecx_1#2 = ecx#1 u>> 0x10>>'
+p1536
+aS'SSA var definition: 8'
+p1537
+aS'SSA var uses: [9L, 11L, 12L, 14L, 16L, 21L, 26L]'
+p1538
+aS'SSA var value: <undetermined>'
+p1539
+aS'SSA var possible values: <unsigned ranges: [<range: 0x0 to 0xffff>]>'
+p1540
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ecx_1#2 = ecx#1 u>> 0x10>>'
+p1541
+aS'SSA var definition: 8'
+p1542
+aS'SSA var uses: [9L, 11L, 12L, 14L, 16L, 21L, 26L]'
+p1543
+aS'SSA var value: <undetermined>'
+p1544
+aS'SSA var possible values: <unsigned ranges: [<range: 0x0 to 0xffff>]>'
+p1545
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: var_14#1 = ecx_1#2.cx>>'
+p1546
+aS'SSA var definition: 9'
+p1547
+aS'SSA var uses: [21L, 35L]'
+p1548
+aS'SSA var value: <undetermined>'
+p1549
+aS'SSA var possible values: <unsigned ranges: [<range: 0x0 to 0xffff>]>'
+p1550
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: var_14#1 = ecx_1#2.cx>>'
+p1551
+aS'SSA var definition: 7'
+p1552
+aS'SSA var uses: [10L, 11L, 21L]'
+p1553
+aS'SSA var value: <undetermined>'
+p1554
+aS'SSA var possible values: <const 0xaba5dead>'
+p1555
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: if (eax_1#5.ax u> 0xff) then 11 @ 0x401090 else 16 @ 0x40102f>>'
+p1556
+aS'SSA var definition: 7'
+p1557
+aS'SSA var uses: [10L, 11L, 21L]'
+p1558
+aS'SSA var value: <undetermined>'
+p1559
+aS'SSA var possible values: <const 0xaba5dead>'
+p1560
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: eax_1#6.ax = ecx_1#2.cx @ eax_1#5>>'
+p1561
+aS'SSA var definition: 8'
+p1562
+aS'SSA var uses: [9L, 11L, 12L, 14L, 16L, 21L, 26L]'
+p1563
+aS'SSA var value: <undetermined>'
+p1564
+aS'SSA var possible values: <unsigned ranges: [<range: 0x0 to 0xffff>]>'
+p1565
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: eax_1#6.ax = ecx_1#2.cx @ eax_1#5>>'
+p1566
+aS'SSA var definition: 11'
+p1567
+aS'SSA var uses: [21L]'
+p1568
+aS'SSA var value: <undetermined>'
+p1569
+aS'SSA var possible values: <unsigned ranges: [<range: 0xaba50000 to 0xaba5ffff>]>'
+p1570
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: eax_1#6.ax = ecx_1#2.cx @ eax_1#5>>'
+p1571
+aS'SSA var definition: None'
+p1572
+aS'SSA var uses: [12L, 21L]'
+p1573
+aS'SSA var value: <entry ebx>'
+p1574
+aS'SSA var possible values: <entry ebx>'
+p1575
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ebx#1.bx = ecx_1#2.cx @ ebx#0>>'
+p1576
+aS'SSA var definition: 8'
+p1577
+aS'SSA var uses: [9L, 11L, 12L, 14L, 16L, 21L, 26L]'
+p1578
+aS'SSA var value: <undetermined>'
+p1579
+aS'SSA var possible values: <unsigned ranges: [<range: 0x0 to 0xffff>]>'
+p1580
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ebx#1.bx = ecx_1#2.cx @ ebx#0>>'
+p1581
+aS'SSA var definition: 12'
+p1582
+aS'SSA var uses: []'
+p1583
+aS'SSA var value: <undetermined>'
+p1584
+aS'SSA var possible values: <unsigned ranges: [<range: 0x0 to 0xffff>]>'
+p1585
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ebx#1.bx = ecx_1#2.cx @ ebx#0>>'
+p1586
+aS'SSA var definition: 13'
+p1587
+aS'SSA var uses: [14L]'
+p1588
+aS'SSA var value: <const 0x0>'
+p1589
+aS'SSA var possible values: <const 0x0>'
+p1590
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ebx_1#2 = 0>>'
+p1591
+aS'SSA var definition: 13'
+p1592
+aS'SSA var uses: [14L]'
+p1593
+aS'SSA var value: <const 0x0>'
+p1594
+aS'SSA var possible values: <const 0x0>'
+p1595
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ebx_1#3.bx = ecx_1#2.cx @ ebx_1#2>>'
+p1596
+aS'SSA var definition: 8'
+p1597
+aS'SSA var uses: [9L, 11L, 12L, 14L, 16L, 21L, 26L]'
+p1598
+aS'SSA var value: <undetermined>'
+p1599
+aS'SSA var possible values: <unsigned ranges: [<range: 0x0 to 0xffff>]>'
+p1600
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ebx_1#3.bx = ecx_1#2.cx @ ebx_1#2>>'
+p1601
+aS'SSA var definition: 14'
+p1602
+aS'SSA var uses: [21L, 35L]'
+p1603
+aS'SSA var value: <undetermined>'
+p1604
+aS'SSA var possible values: <unsigned ranges: [<range: 0x0 to 0xffff>]>'
+p1605
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ebx_1#3.bx = ecx_1#2.cx @ ebx_1#2>>'
+p1606
+aS'SSA var definition: None'
+p1607
+aS'SSA var uses: [15L, 30L]'
+p1608
+aS'SSA var value: <entry edi>'
+p1609
+aS'SSA var possible values: <entry edi>'
+p1610
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: if (arg1#0 != 3) then 21 @ 0x0 else 22 @ 0x4010a4>>'
+p1611
+aS'SSA var definition: 8'
+p1612
+aS'SSA var uses: [9L, 11L, 12L, 14L, 16L, 21L, 26L]'
+p1613
+aS'SSA var value: <undetermined>'
+p1614
+aS'SSA var possible values: <unsigned ranges: [<range: 0x0 to 0xffff>]>'
+p1615
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ecx_1#7.cx = 0 @ ecx_1#2>>'
+p1616
+aS'SSA var definition: 16'
+p1617
+aS'SSA var uses: [17L, 21L]'
+p1618
+aS'SSA var value: <undetermined>'
+p1619
+aS'SSA var possible values: <const 0x0>'
+p1620
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ecx_1#7.cx = 0 @ ecx_1#2>>'
+p1621
+aS'SSA var definition: 16'
+p1622
+aS'SSA var uses: [17L, 21L]'
+p1623
+aS'SSA var value: <undetermined>'
+p1624
+aS'SSA var possible values: <const 0x0>'
+p1625
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: var_14_1#2 = ecx_1#7.cx>>'
+p1626
+aS'SSA var definition: 17'
+p1627
+aS'SSA var uses: [18L, 21L]'
+p1628
+aS'SSA var value: <undetermined>'
+p1629
+aS'SSA var possible values: <const 0x0>'
+p1630
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: var_14_1#2 = ecx_1#7.cx>>'
+p1631
+aS'SSA var definition: 17'
+p1632
+aS'SSA var uses: [18L, 21L]'
+p1633
+aS'SSA var value: <undetermined>'
+p1634
+aS'SSA var possible values: <const 0x0>'
+p1635
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: edx#3 = zx.d(var_14_1#2)>>'
+p1636
+aS'SSA var definition: 18'
+p1637
+aS'SSA var uses: [19L]'
+p1638
+aS'SSA var value: <undetermined>'
+p1639
+aS'SSA var possible values: <const 0x0>'
+p1640
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: edx#3 = zx.d(var_14_1#2)>>'
+p1641
+aS'SSA var definition: 18'
+p1642
+aS'SSA var uses: [19L]'
+p1643
+aS'SSA var value: <undetermined>'
+p1644
+aS'SSA var possible values: <const 0x0>'
+p1645
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: edx#4.dh = edx#3.dh + 1 @ edx#3>>'
+p1646
+aS'SSA var definition: 18'
+p1647
+aS'SSA var uses: [19L]'
+p1648
+aS'SSA var value: <undetermined>'
+p1649
+aS'SSA var possible values: <const 0x0>'
+p1650
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: edx#4.dh = edx#3.dh + 1 @ edx#3>>'
+p1651
+aS'SSA var definition: 19'
+p1652
+aS'SSA var uses: [21L]'
+p1653
+aS'SSA var value: <undetermined>'
+p1654
+aS'SSA var possible values: <const 0x100>'
+p1655
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: edx#4.dh = edx#3.dh + 1 @ edx#3>>'
+p1656
+aS'SSA var definition: 21'
+p1657
+aS'SSA var uses: [21L]'
+p1658
+aS'SSA var value: <undetermined>'
+p1659
+aS'SSA var possible values: <in set([0x100, 0xdead])>'
+p1660
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: var_8_1#1 = edx#5.dx>>'
+p1661
+aS'SSA var definition: 21'
+p1662
+aS'SSA var uses: [22L, 35L]'
+p1663
+aS'SSA var value: <undetermined>'
+p1664
+aS'SSA var possible values: <undetermined>'
+p1665
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: var_8_1#1 = edx#5.dx>>'
+p1666
+aS'SSA var definition: 21'
+p1667
+aS'SSA var uses: [22L, 35L]'
+p1668
+aS'SSA var value: <undetermined>'
+p1669
+aS'SSA var possible values: <undetermined>'
+p1670
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: eax_2#10 = zx.d(var_8_1#1)>>'
+p1671
+aS'SSA var definition: 22'
+p1672
+aS'SSA var uses: [37L]'
+p1673
+aS'SSA var value: <undetermined>'
+p1674
+aS'SSA var possible values: <in set([0x100, 0xdead])>'
+p1675
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: eax_2#10 = zx.d(var_8_1#1)>>'
+p1676
+aS'SSA var definition: 21'
+p1677
+aS'SSA var uses: [23L]'
+p1678
+aS'SSA var value: <undetermined>'
+p1679
+aS'SSA var possible values: <unsigned ranges: [<range: 0x0 to 0xffff>]>'
+p1680
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ecx_2#9 = ecx_1#8 u>> 0x18>>'
+p1681
+aS'SSA var definition: 23'
+p1682
+aS'SSA var uses: [24L, 35L]'
+p1683
+aS'SSA var value: <undetermined>'
+p1684
+aS'SSA var possible values: <unsigned ranges: [<range: 0x0 to 0x0>]>'
+p1685
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ecx_2#9 = ecx_1#8 u>> 0x18>>'
+p1686
+aS'SSA var definition: 23'
+p1687
+aS'SSA var uses: [24L, 35L]'
+p1688
+aS'SSA var value: <undetermined>'
+p1689
+aS'SSA var possible values: <unsigned ranges: [<range: 0x0 to 0x0>]>'
+p1690
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: cond:0_1#1 = ecx_2#9 u> 0x20>>'
+p1691
+aS'SSA var definition: 24'
+p1692
+aS'SSA var uses: [25L, 35L]'
+p1693
+aS'SSA var value: <undetermined>'
+p1694
+aS'SSA var possible values: <undetermined>'
+p1695
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: cond:0_1#1 = ecx_2#9 u> 0x20>>'
+p1696
+aS'SSA var definition: 24'
+p1697
+aS'SSA var uses: [25L, 35L]'
+p1698
+aS'SSA var value: <undetermined>'
+p1699
+aS'SSA var possible values: <undetermined>'
+p1700
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: if (cond:0_1#1) then 47 else 48>>'
+p1701
+aS'SSA var definition: 8'
+p1702
+aS'SSA var uses: [9L, 11L, 12L, 14L, 16L, 21L, 26L]'
+p1703
+aS'SSA var value: <undetermined>'
+p1704
+aS'SSA var possible values: <unsigned ranges: [<range: 0x0 to 0xffff>]>'
+p1705
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ecx_3#3 = ecx_1#2 u>> 8>>'
+p1706
+aS'SSA var definition: 26'
+p1707
+aS'SSA var uses: [27L]'
+p1708
+aS'SSA var value: <undetermined>'
+p1709
+aS'SSA var possible values: <unsigned ranges: [<range: 0x0 to 0xff>]>'
+p1710
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ecx_3#3 = ecx_1#2 u>> 8>>'
+p1711
+aS'SSA var definition: 26'
+p1712
+aS'SSA var uses: [27L]'
+p1713
+aS'SSA var value: <undetermined>'
+p1714
+aS'SSA var possible values: <unsigned ranges: [<range: 0x0 to 0xff>]>'
+p1715
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ecx_4#4 = ecx_3#3 + ecx_3#3>>'
+p1716
+aS'SSA var definition: 26'
+p1717
+aS'SSA var uses: [27L]'
+p1718
+aS'SSA var value: <undetermined>'
+p1719
+aS'SSA var possible values: <unsigned ranges: [<range: 0x0 to 0xff>]>'
+p1720
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ecx_4#4 = ecx_3#3 + ecx_3#3>>'
+p1721
+aS'SSA var definition: 27'
+p1722
+aS'SSA var uses: [28L]'
+p1723
+aS'SSA var value: <undetermined>'
+p1724
+aS'SSA var possible values: <unsigned ranges: [<range: 0x0 to 0x1fe, step 0x2>]>'
+p1725
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ecx_4#4 = ecx_3#3 + ecx_3#3>>'
+p1726
+aS'SSA var definition: 27'
+p1727
+aS'SSA var uses: [28L]'
+p1728
+aS'SSA var value: <undetermined>'
+p1729
+aS'SSA var possible values: <unsigned ranges: [<range: 0x0 to 0x1fe, step 0x2>]>'
+p1730
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ecx_5#5 = ecx_4#4 + ecx_4#4>>'
+p1731
+aS'SSA var definition: 27'
+p1732
+aS'SSA var uses: [28L]'
+p1733
+aS'SSA var value: <undetermined>'
+p1734
+aS'SSA var possible values: <unsigned ranges: [<range: 0x0 to 0x1fe, step 0x2>]>'
+p1735
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ecx_5#5 = ecx_4#4 + ecx_4#4>>'
+p1736
+aS'SSA var definition: 28'
+p1737
+aS'SSA var uses: [29L]'
+p1738
+aS'SSA var value: <undetermined>'
+p1739
+aS'SSA var possible values: <unsigned ranges: [<range: 0x0 to 0x3fc, step 0x4>]>'
+p1740
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ecx_5#5 = ecx_4#4 + ecx_4#4>>'
+p1741
+aS'SSA var definition: 28'
+p1742
+aS'SSA var uses: [29L]'
+p1743
+aS'SSA var value: <undetermined>'
+p1744
+aS'SSA var possible values: <unsigned ranges: [<range: 0x0 to 0x3fc, step 0x4>]>'
+p1745
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: eax_4#7 = ecx_5#5>>'
+p1746
+aS'SSA var definition: 29'
+p1747
+aS'SSA var uses: [31L]'
+p1748
+aS'SSA var value: <undetermined>'
+p1749
+aS'SSA var possible values: <unsigned ranges: [<range: 0x0 to 0x3fc, step 0x4>]>'
+p1750
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: eax_4#7 = ecx_5#5>>'
+p1751
+aS'SSA var definition: None'
+p1752
+aS'SSA var uses: [15L, 30L]'
+p1753
+aS'SSA var value: <entry edi>'
+p1754
+aS'SSA var possible values: <const 0x3>'
+p1755
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ecx_6#6 = arg1#0>>'
+p1756
+aS'SSA var definition: 30'
+p1757
+aS'SSA var uses: [31L, 35L]'
+p1758
+aS'SSA var value: <entry edi>'
+p1759
+aS'SSA var possible values: <const 0x3>'
+p1760
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: ecx_6#6 = arg1#0>>'
+p1761
+aS'SSA var definition: 29'
+p1762
+aS'SSA var uses: [31L]'
+p1763
+aS'SSA var value: <undetermined>'
+p1764
+aS'SSA var possible values: <unsigned ranges: [<range: 0x0 to 0x3fc, step 0x4>]>'
+p1765
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: eax_3#8 = eax_4#7 u>> ecx_6#6.cl>>'
+p1766
+aS'SSA var definition: 30'
+p1767
+aS'SSA var uses: [31L, 35L]'
+p1768
+aS'SSA var value: <entry edi>'
+p1769
+aS'SSA var possible values: <const 0x3>'
+p1770
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: eax_3#8 = eax_4#7 u>> ecx_6#6.cl>>'
+p1771
+aS'SSA var definition: 31'
+p1772
+aS'SSA var uses: [35L]'
+p1773
+aS'SSA var value: <undetermined>'
+p1774
+aS'SSA var possible values: <unsigned ranges: [<range: 0x0 to 0x7f>]>'
+p1775
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: eax_3#8 = eax_4#7 u>> ecx_6#6.cl>>'
+p1776
+aS'SSA var definition: 36'
+p1777
+aS'SSA var uses: [35L]'
+p1778
+aS'SSA var value: <const 0x20>'
+p1779
+aS'SSA var possible values: <const 0x20>'
+p1780
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: edx_1#6 = 0x20>>'
+p1781
+aS'SSA var definition: 22'
+p1782
+aS'SSA var uses: [37L]'
+p1783
+aS'SSA var value: <undetermined>'
+p1784
+aS'SSA var possible values: <in set([0x100, 0xdead])>'
+p1785
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: eax_3#11 = eax_2#10 + 0x20>>'
+p1786
+aS'SSA var definition: 37'
+p1787
+aS'SSA var uses: [35L]'
+p1788
+aS'SSA var value: <undetermined>'
+p1789
+aS'SSA var possible values: <in set([0x120, 0xdecd])>'
+p1790
+aS'SSA var version: <bound method MediumLevelILInstruction.get_ssa_var_version of <il: eax_3#11 = eax_2#10 + 0x20>>'
+p1791
 as.
