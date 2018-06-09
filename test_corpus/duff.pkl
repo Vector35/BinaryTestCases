@@ -404,7 +404,7 @@ aS'Function _cpy indirect branches test: []'
 p204
 aS'Function _cpy test instr highlight: <color: #ff00ff>'
 p205
-aS'Function _cpy type token: uint64_t _cpy(int64_t arg1, int64_t arg2, int32_t arg3)'
+aS'Function _cpy type token: uint64_t _cpy(int64_t arg1, int64_t arg2, arg3)'
 p206
 aS'Function _main var: var_240'
 p207

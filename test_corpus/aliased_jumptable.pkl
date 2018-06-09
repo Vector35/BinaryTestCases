@@ -372,7 +372,7 @@ aS'Function _main indirect branches test: []'
 p188
 aS'Function _main test instr highlight: <color: #ff00ff>'
 p189
-aS'Function _main type token: int32_t _main()'
+aS'Function _main type token: _main()'
 p190
 aS'Function _printf var: testautovar'
 p191
@@ -422,7 +422,7 @@ aS'Function _printf indirect branches test: []'
 p213
 aS'Function _printf test instr highlight: <color: #ff00ff>'
 p214
-aS'Function _printf type token: int32_t _printf()'
+aS'Function _printf type token: _printf()'
 p215
 aS'Function _scanf var: testautovar'
 p216
@@ -472,7 +472,7 @@ aS'Function _scanf indirect branches test: []'
 p238
 aS'Function _scanf test instr highlight: <color: #ff00ff>'
 p239
-aS'Function _scanf type token: int32_t _scanf()'
+aS'Function _scanf type token: _scanf()'
 p240
 asS'test_function_starts'
 p241

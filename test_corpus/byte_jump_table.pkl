@@ -104,7 +104,7 @@ aS'Function _start indirect branches test: []'
 p54
 aS'Function _start test instr highlight: <color: #ff00ff>'
 p55
-aS'Function _start type token: int32_t __fastcall _start(int32_t arg1, int32_t arg2, int32_t* arg3 @ esi)'
+aS'Function _start type token: __fastcall _start(arg1, arg2, int32_t* arg3 @ esi)'
 p56
 asS'test_function_starts'
 p57

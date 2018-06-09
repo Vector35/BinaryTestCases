@@ -360,7 +360,7 @@ aS'Function _main indirect branches test: []'
 p182
 aS'Function _main test instr highlight: <color: #ff00ff>'
 p183
-aS'Function _main type token: int32_t _main(int32_t testautovar)'
+aS'Function _main type token: _main(testautovar)'
 p184
 aS'Function hang var: testautovar'
 p185
@@ -404,7 +404,7 @@ aS'Function hang indirect branches test: []'
 p204
 aS'Function hang test instr highlight: <color: #ff00ff>'
 p205
-aS'Function hang type token: int32_t hang() __noreturn'
+aS'Function hang type token: hang() __noreturn'
 p206
 aS'Function addfunc var: testautovar'
 p207
@@ -456,7 +456,7 @@ aS'Function addfunc indirect branches test: []'
 p230
 aS'Function addfunc test instr highlight: <color: #ff00ff>'
 p231
-aS'Function addfunc type token: int32_t addfunc(int32_t testautovar, int32_t arg2)'
+aS'Function addfunc type token: addfunc(testautovar, arg2)'
 p232
 asS'test_function_starts'
 p233

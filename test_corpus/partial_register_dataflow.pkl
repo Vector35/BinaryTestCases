@@ -196,7 +196,7 @@ aS'Function _start indirect branches test: []'
 p100
 aS'Function _start test instr highlight: <color: #ff00ff>'
 p101
-aS'Function _start type token: uint32_t _start(int32_t arg1 @ edi)'
+aS'Function _start type token: u_start(arg1 @ edi)'
 p102
 asS'test_function_starts'
 p103

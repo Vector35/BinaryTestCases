@@ -204,7 +204,7 @@ aS'Function _main indirect branches test: []'
 p104
 aS'Function _main test instr highlight: <color: #ff00ff>'
 p105
-aS'Function _main type token: int32_t _main()'
+aS'Function _main type token: _main()'
 p106
 aS'Function aliased var: var_8'
 p107
@@ -256,7 +256,7 @@ aS'Function aliased indirect branches test: []'
 p130
 aS'Function aliased test instr highlight: <color: #ff00ff>'
 p131
-aS'Function aliased type token: int32_t aliased()'
+aS'Function aliased type token: aliased()'
 p132
 aS'Function not_aliased var: testautovar'
 p133
@@ -304,7 +304,7 @@ aS'Function not_aliased indirect branches test: []'
 p154
 aS'Function not_aliased test instr highlight: <color: #ff00ff>'
 p155
-aS'Function not_aliased type token: int32_t not_aliased()'
+aS'Function not_aliased type token: not_aliased()'
 p156
 aS'Function write_to_arg var: testautovar'
 p157
@@ -352,7 +352,7 @@ aS'Function write_to_arg indirect branches test: []'
 p178
 aS'Function write_to_arg test instr highlight: <color: #ff00ff>'
 p179
-aS'Function write_to_arg type token: int32_t* write_to_arg(int32_t testautovar)'
+aS'Function write_to_arg type token: int32_t* write_to_arg(testautovar)'
 p180
 asS'test_function_starts'
 p181

@@ -370,7 +370,7 @@ aS'Function _init indirect branches test: []'
 p187
 aS'Function _init test instr highlight: <color: #ff00ff>'
 p188
-aS'Function _init type token: int32_t _init()'
+aS'Function _init type token: _init()'
 p189
 aS'Function puts var: testautovar'
 p190
@@ -426,7 +426,7 @@ aS'Function puts indirect branches test: []'
 p215
 aS'Function puts test instr highlight: <color: #ff00ff>'
 p216
-aS'Function puts type token: int32_t puts()'
+aS'Function puts type token: puts()'
 p217
 aS'Function __libc_start_main var: testautovar'
 p218
@@ -492,7 +492,7 @@ aS'Function __libc_start_main indirect branches test: []'
 p248
 aS'Function __libc_start_main test instr highlight: <color: #ff00ff>'
 p249
-aS'Function __libc_start_main type token: int32_t __libc_start_main(int32_t (* main)(int32_t argc, char** argv, char** envp), int32_t argc, char** ubp_av, void (* init)(), int32_t, int32_t testautovar, void* stack_end) __noreturn'
+aS'Function __libc_start_main type token: __libc_start_main((* main)(argc, char** argv, char** envp), argc, char** ubp_av, (* init)(), int32_t, testautovar, void* stack_end) __noreturn'
 p250
 aS'Function abort var: testautovar'
 p251
@@ -548,7 +548,7 @@ aS'Function abort indirect branches test: []'
 p276
 aS'Function abort test instr highlight: <color: #ff00ff>'
 p277
-aS'Function abort type token: int32_t abort() __noreturn'
+aS'Function abort type token: abort() __noreturn'
 p278
 aS'Function _start var: var_8'
 p279
@@ -606,7 +606,7 @@ aS'Function _start indirect branches test: []'
 p305
 aS'Function _start test instr highlight: <color: #ff00ff>'
 p306
-aS'Function _start type token: int32_t _start(void (* arg1)(), int32_t) __noreturn'
+aS'Function _start type token: _start((* arg1)(), int32_t) __noreturn'
 p307
 aS'Function call_weak_fn var: testautovar'
 p308
@@ -662,7 +662,7 @@ aS'Function call_weak_fn indirect branches test: []'
 p333
 aS'Function call_weak_fn test instr highlight: <color: #ff00ff>'
 p334
-aS'Function call_weak_fn type token: int32_t call_weak_fn()'
+aS'Function call_weak_fn type token: call_weak_fn()'
 p335
 aS'Function deregister_tm_clones var: __saved_r3'
 p336
@@ -734,7 +734,7 @@ aS'Function deregister_tm_clones indirect branches test: []'
 p369
 aS'Function deregister_tm_clones test instr highlight: <color: #ff00ff>'
 p370
-aS'Function deregister_tm_clones type token: int32_t deregister_tm_clones(int32_t arg1, int32_t arg2, int32_t arg3, int32_t arg4)'
+aS'Function deregister_tm_clones type token: deregister_tm_clones(arg1, arg2, arg3, arg4)'
 p371
 aS'Function register_tm_clones var: __saved_r3'
 p372
@@ -806,7 +806,7 @@ aS'Function register_tm_clones indirect branches test: []'
 p405
 aS'Function register_tm_clones test instr highlight: <color: #ff00ff>'
 p406
-aS'Function register_tm_clones type token: int32_t register_tm_clones(int32_t arg1, int32_t arg2, int32_t arg3, int32_t arg4)'
+aS'Function register_tm_clones type token: register_tm_clones(arg1, arg2, arg3, arg4)'
 p407
 aS'Function __do_global_dtors_aux var: __saved_r4'
 p408
@@ -876,7 +876,7 @@ aS'Function __do_global_dtors_aux indirect branches test: []'
 p440
 aS'Function __do_global_dtors_aux test instr highlight: <color: #ff00ff>'
 p441
-aS'Function __do_global_dtors_aux type token: int32_t __do_global_dtors_aux(int32_t arg1, int32_t arg2, int32_t arg3)'
+aS'Function __do_global_dtors_aux type token: __do_global_dtors_aux(arg1, arg2, arg3)'
 p442
 aS'Function frame_dummy var: __saved_r3'
 p443
@@ -952,7 +952,7 @@ aS'Function frame_dummy indirect branches test: []'
 p478
 aS'Function frame_dummy test instr highlight: <color: #ff00ff>'
 p479
-aS'Function frame_dummy type token: int32_t frame_dummy(int32_t arg1, int32_t arg2, int32_t arg3, int32_t arg4)'
+aS'Function frame_dummy type token: frame_dummy(arg1, arg2, arg3, arg4)'
 p480
 aS'Function main var: var_10'
 p481
@@ -1026,7 +1026,7 @@ aS'Function main indirect branches test: []'
 p515
 aS'Function main test instr highlight: <color: #ff00ff>'
 p516
-aS'Function main type token: int32_t main(int32_t argc, char** argv, char** envp)'
+aS'Function main type token: main(argc, char** argv, char** envp)'
 p517
 aS'Function __libc_csu_init var: __saved_r3'
 p518
@@ -1128,7 +1128,7 @@ aS'Function __libc_csu_init indirect branches test: []'
 p566
 aS'Function __libc_csu_init test instr highlight: <color: #ff00ff>'
 p567
-aS'Function __libc_csu_init type token: int32_t __libc_csu_init()'
+aS'Function __libc_csu_init type token: __libc_csu_init()'
 p568
 aS'Function __libc_csu_fini var: testautovar'
 p569
@@ -1174,7 +1174,7 @@ aS'Function __libc_csu_fini indirect branches test: []'
 p589
 aS'Function __libc_csu_fini test instr highlight: <color: #ff00ff>'
 p590
-aS'Function __libc_csu_fini type token: void __libc_csu_fini()'
+aS'Function __libc_csu_fini type token: __libc_csu_fini()'
 p591
 aS'Function _fini var: __saved_r3'
 p592
@@ -1234,7 +1234,7 @@ aS'Function _fini indirect branches test: []'
 p619
 aS'Function _fini test instr highlight: <color: #ff00ff>'
 p620
-aS'Function _fini type token: int32_t _fini()'
+aS'Function _fini type token: _fini()'
 p621
 asS'test_function_starts'
 p622

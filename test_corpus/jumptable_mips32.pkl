@@ -1730,7 +1730,7 @@ aS'Function _init indirect branches test: []'
 p867
 aS'Function _init test instr highlight: <color: #ff00ff>'
 p868
-aS'Function _init type token: int32_t _init()'
+aS'Function _init type token: _init()'
 p869
 aS'Function exit var: var_18'
 p870
@@ -1790,7 +1790,7 @@ aS'Function exit indirect branches test: []'
 p897
 aS'Function exit test instr highlight: <color: #ff00ff>'
 p898
-aS'Function exit type token: int32_t exit(int32_t arg1) __noreturn'
+aS'Function exit type token: exit(arg1) __noreturn'
 p899
 aS'Function _start var: var_10'
 p900
@@ -1892,7 +1892,7 @@ aS'Function _start indirect branches test: []'
 p948
 aS'Function _start test instr highlight: <color: #ff00ff>'
 p949
-aS'Function _start type token: int32_t _start()'
+aS'Function _start type token: _start()'
 p950
 aS'Function sub_400204 var: var_10'
 p951
@@ -1990,7 +1990,7 @@ aS'Function sub_400204 indirect branches test: []'
 p997
 aS'Function sub_400204 test instr highlight: <color: #ff00ff>'
 p998
-aS'Function sub_400204 type token: int32_t sub_400204()'
+aS'Function sub_400204 type token: sub_400204()'
 p999
 aS'Function _start_c var: var_20'
 p1000
@@ -2052,7 +2052,7 @@ aS'Function _start_c indirect branches test: []'
 p1028
 aS'Function _start_c test instr highlight: <color: #ff00ff>'
 p1029
-aS'Function _start_c type token: int32_t _start_c(int32_t* arg1) __noreturn'
+aS'Function _start_c type token: _start_c(int32_t* arg1) __noreturn'
 p1030
 aS'Function main var: var_18'
 p1031
@@ -2166,7 +2166,7 @@ aS'Function main indirect branches test: []'
 p1085
 aS'Function main test instr highlight: <color: #ff00ff>'
 p1086
-aS'Function main type token: int32_t main(int32_t arg1, int32_t* arg2)'
+aS'Function main type token: main(arg1, int32_t* arg2)'
 p1087
 aS'Function __init_ssp var: testautovar'
 p1088
@@ -2212,7 +2212,7 @@ aS'Function __init_ssp indirect branches test: []'
 p1108
 aS'Function __init_ssp test instr highlight: <color: #ff00ff>'
 p1109
-aS'Function __init_ssp type token: int32_t __init_ssp()'
+aS'Function __init_ssp type token: __init_ssp()'
 p1110
 aS'Function __init_libc var: var_d8'
 p1111
@@ -2388,7 +2388,7 @@ aS'Function __init_libc indirect branches test: []'
 p1196
 aS'Function __init_libc test instr highlight: <color: #ff00ff>'
 p1197
-aS'Function __init_libc type token: int32_t __init_libc(int32_t* arg1, int32_t arg2)'
+aS'Function __init_libc type token: __init_libc(int32_t* arg1, arg2)'
 p1198
 aS'Function __libc_start_init var: var_20'
 p1199
@@ -2492,7 +2492,7 @@ aS'Function __libc_start_init indirect branches test: []'
 p1248
 aS'Function __libc_start_init test instr highlight: <color: #ff00ff>'
 p1249
-aS'Function __libc_start_init type token: int32_t __libc_start_init()'
+aS'Function __libc_start_init type token: __libc_start_init()'
 p1250
 aS'Function __libc_start_main var: var_28'
 p1251
@@ -2592,7 +2592,7 @@ aS'Function __libc_start_main indirect branches test: []'
 p1298
 aS'Function __libc_start_main test instr highlight: <color: #ff00ff>'
 p1299
-aS'Function __libc_start_main type token: int32_t __libc_start_main(int32_t arg1, int32_t arg2, int32_t* arg3) __noreturn'
+aS'Function __libc_start_main type token: __libc_start_main(arg1, arg2, int32_t* arg3) __noreturn'
 p1300
 aS'Function __libc_exit_fini var: var_20'
 p1301
@@ -2692,7 +2692,7 @@ aS'Function __libc_exit_fini indirect branches test: []'
 p1348
 aS'Function __libc_exit_fini test instr highlight: <color: #ff00ff>'
 p1349
-aS'Function __libc_exit_fini type token: int32_t __libc_exit_fini()'
+aS'Function __libc_exit_fini type token: __libc_exit_fini()'
 p1350
 aS'Function __funcs_on_exit var: testautovar'
 p1351
@@ -2738,7 +2738,7 @@ aS'Function __funcs_on_exit indirect branches test: []'
 p1371
 aS'Function __funcs_on_exit test instr highlight: <color: #ff00ff>'
 p1372
-aS'Function __funcs_on_exit type token: int32_t __funcs_on_exit()'
+aS'Function __funcs_on_exit type token: __funcs_on_exit()'
 p1373
 aS'Function __syscall var: var_20'
 p1374
@@ -2844,7 +2844,7 @@ aS'Function __syscall indirect branches test: []'
 p1424
 aS'Function __syscall test instr highlight: <color: #ff00ff>'
 p1425
-aS'Function __syscall type token: int32_t __syscall(int32_t arg1, int32_t arg2, int32_t arg3, int32_t arg4, int32_t arg5, int32_t arg6, int32_t arg7)'
+aS'Function __syscall type token: __syscall(arg1, arg2, arg3, arg4, arg5, arg6, arg7)'
 p1426
 aS'Function puts var: var_20'
 p1427
@@ -2974,7 +2974,7 @@ aS'Function puts indirect branches test: []'
 p1489
 aS'Function puts test instr highlight: <color: #ff00ff>'
 p1490
-aS'Function puts type token: int32_t puts(char* arg1)'
+aS'Function puts type token: puts(char* arg1)'
 p1491
 aS'Function atoi var: testautovar'
 p1492
@@ -3084,7 +3084,7 @@ aS'Function atoi indirect branches test: []'
 p1544
 aS'Function atoi test instr highlight: <color: #ff00ff>'
 p1545
-aS'Function atoi type token: int32_t atoi(char* arg1)'
+aS'Function atoi type token: atoi(char* arg1)'
 p1546
 aS'Function memcpy var: testautovar'
 p1547
@@ -3524,7 +3524,7 @@ aS'Function memcpy indirect branches test: []'
 p1764
 aS'Function memcpy test instr highlight: <color: #ff00ff>'
 p1765
-aS'Function memcpy type token: uint32_t* memcpy(uint32_t* arg1, char* arg2, int32_t arg3)'
+aS'Function memcpy type token: uint32_t* memcpy(uint32_t* arg1, char* arg2, arg3)'
 p1766
 aS'Function memset var: testautovar'
 p1767
@@ -3646,7 +3646,7 @@ aS'Function memset indirect branches test: []'
 p1825
 aS'Function memset test instr highlight: <color: #ff00ff>'
 p1826
-aS'Function memset type token: int32_t* memset(int32_t* arg1, int32_t arg2, int32_t arg3)'
+aS'Function memset type token: int32_t* memset(int32_t* arg1, arg2, arg3)'
 p1827
 aS'Function __init_tp var: var_18'
 p1828
@@ -3738,7 +3738,7 @@ aS'Function __init_tp indirect branches test: []'
 p1871
 aS'Function __init_tp test instr highlight: <color: #ff00ff>'
 p1872
-aS'Function __init_tp type token: int32_t __init_tp(int32_t* arg1)'
+aS'Function __init_tp type token: __init_tp(int32_t* arg1)'
 p1873
 aS'Function __copy_tls var: var_28'
 p1874
@@ -3882,7 +3882,7 @@ aS'Function __copy_tls indirect branches test: []'
 p1943
 aS'Function __copy_tls test instr highlight: <color: #ff00ff>'
 p1944
-aS'Function __copy_tls type token: int32_t __copy_tls(int32_t arg1)'
+aS'Function __copy_tls type token: __copy_tls(arg1)'
 p1945
 aS'Function __init_tls var: var_28'
 p1946
@@ -4040,7 +4040,7 @@ aS'Function __init_tls indirect branches test: []'
 p2022
 aS'Function __init_tls test instr highlight: <color: #ff00ff>'
 p2023
-aS'Function __init_tls type token: int32_t __init_tls(int32_t arg1)'
+aS'Function __init_tls type token: __init_tls(arg1)'
 p2024
 aS'Function _Exit var: var_18'
 p2025
@@ -4102,7 +4102,7 @@ aS'Function _Exit indirect branches test: []'
 p2053
 aS'Function _Exit test instr highlight: <color: #ff00ff>'
 p2054
-aS'Function _Exit type token: int32_t _Exit(int32_t arg1) __noreturn'
+aS'Function _Exit type token: _Exit(arg1) __noreturn'
 p2055
 aS'Function __lockfile var: var_20'
 p2056
@@ -4214,7 +4214,7 @@ aS'Function __lockfile indirect branches test: []'
 p2109
 aS'Function __lockfile test instr highlight: <color: #ff00ff>'
 p2110
-aS'Function __lockfile type token: int32_t __lockfile(int32_t arg1)'
+aS'Function __lockfile type token: __lockfile(arg1)'
 p2111
 aS'Function __unlockfile var: var_18'
 p2112
@@ -4304,7 +4304,7 @@ aS'Function __unlockfile indirect branches test: []'
 p2154
 aS'Function __unlockfile test instr highlight: <color: #ff00ff>'
 p2155
-aS'Function __unlockfile type token: int32_t __unlockfile(int32_t arg1)'
+aS'Function __unlockfile type token: __unlockfile(arg1)'
 p2156
 aS'Function __overflow var: var_20'
 p2157
@@ -4436,7 +4436,7 @@ aS'Function __overflow indirect branches test: []'
 p2220
 aS'Function __overflow test instr highlight: <color: #ff00ff>'
 p2221
-aS'Function __overflow type token: uint32_t __overflow(int32_t* arg1, int32_t arg2)'
+aS'Function __overflow type token: u__overflow(int32_t* arg1, arg2)'
 p2222
 aS'Function __aio_close var: testautovar'
 p2223
@@ -4486,7 +4486,7 @@ aS'Function __aio_close indirect branches test: []'
 p2245
 aS'Function __aio_close test instr highlight: <color: #ff00ff>'
 p2246
-aS'Function __aio_close type token: int32_t __aio_close(int32_t arg1)'
+aS'Function __aio_close type token: __aio_close(arg1)'
 p2247
 aS'Function __stdio_close var: var_18'
 p2248
@@ -4562,7 +4562,7 @@ aS'Function __stdio_close indirect branches test: []'
 p2283
 aS'Function __stdio_close test instr highlight: <color: #ff00ff>'
 p2284
-aS'Function __stdio_close type token: int32_t __stdio_close(int32_t arg1)'
+aS'Function __stdio_close type token: __stdio_close(arg1)'
 p2285
 aS'Function __stdio_seek var: var_28'
 p2286
@@ -4664,7 +4664,7 @@ aS'Function __stdio_seek indirect branches test: []'
 p2334
 aS'Function __stdio_seek test instr highlight: <color: #ff00ff>'
 p2335
-aS'Function __stdio_seek type token: int32_t __stdio_seek(int32_t arg1, int32_t arg2, int32_t arg3, int32_t arg4)'
+aS'Function __stdio_seek type token: __stdio_seek(arg1, arg2, arg3, arg4)'
 p2336
 aS'Function __stdout_write var: var_28'
 p2337
@@ -4780,7 +4780,7 @@ aS'Function __stdout_write indirect branches test: []'
 p2392
 aS'Function __stdout_write test instr highlight: <color: #ff00ff>'
 p2393
-aS'Function __stdout_write type token: int32_t __stdout_write(int32_t* arg1, int32_t arg2, int32_t arg3, int32_t arg4 @ $s0, int32_t arg5 @ $s1)'
+aS'Function __stdout_write type token: __stdout_write(int32_t* arg1, arg2, arg3, arg4 @ $s0, arg5 @ $s1)'
 p2394
 aS'Function __towrite var: testautovar'
 p2395
@@ -4856,7 +4856,7 @@ aS'Function __towrite indirect branches test: []'
 p2430
 aS'Function __towrite test instr highlight: <color: #ff00ff>'
 p2431
-aS'Function __towrite type token: int32_t __towrite(int32_t* arg1)'
+aS'Function __towrite type token: __towrite(int32_t* arg1)'
 p2432
 aS'Function __towrite_needs_stdio_exit var: var_18'
 p2433
@@ -4942,7 +4942,7 @@ aS'Function __towrite_needs_stdio_exit indirect branches test: []'
 p2473
 aS'Function __towrite_needs_stdio_exit test instr highlight: <color: #ff00ff>'
 p2474
-aS'Function __towrite_needs_stdio_exit type token: int32_t __towrite_needs_stdio_exit()'
+aS'Function __towrite_needs_stdio_exit type token: __towrite_needs_stdio_exit()'
 p2475
 aS'Function fputs var: var_20'
 p2476
@@ -5062,7 +5062,7 @@ aS'Function fputs indirect branches test: []'
 p2533
 aS'Function fputs test instr highlight: <color: #ff00ff>'
 p2534
-aS'Function fputs type token: int32_t fputs(char* arg1, int32_t* arg2)'
+aS'Function fputs type token: fputs(char* arg1, int32_t* arg2)'
 p2535
 aS'Function __fwritex var: var_30'
 p2536
@@ -5246,7 +5246,7 @@ aS'Function __fwritex indirect branches test: []'
 p2625
 aS'Function __fwritex test instr highlight: <color: #ff00ff>'
 p2626
-aS'Function __fwritex type token: int32_t __fwritex(char* arg1, int32_t arg2, int32_t* arg3)'
+aS'Function __fwritex type token: __fwritex(char* arg1, arg2, int32_t* arg3)'
 p2627
 aS'Function fwrite var: var_30'
 p2628
@@ -5406,7 +5406,7 @@ aS'Function fwrite indirect branches test: []'
 p2705
 aS'Function fwrite test instr highlight: <color: #ff00ff>'
 p2706
-aS'Function fwrite type token: uint32_t fwrite(char* arg1, int32_t arg2, uint32_t arg3, int32_t* arg4)'
+aS'Function fwrite type token: ufwrite(char* arg1, arg2, uarg3, int32_t* arg4)'
 p2707
 aS'Function strlen var: testautovar'
 p2708
@@ -5566,7 +5566,7 @@ aS'Function __set_thread_area indirect branches test: []'
 p2785
 aS'Function __set_thread_area test instr highlight: <color: #ff00ff>'
 p2786
-aS'Function __set_thread_area type token: int32_t __set_thread_area(int32_t arg1)'
+aS'Function __set_thread_area type token: __set_thread_area(arg1)'
 p2787
 aS'Function __wait var: var_38'
 p2788
@@ -5702,7 +5702,7 @@ aS'Function __wait indirect branches test: []'
 p2853
 aS'Function __wait test instr highlight: <color: #ff00ff>'
 p2854
-aS'Function __wait type token: int32_t __wait(int32_t* arg1, int32_t* arg2, int32_t arg3, int32_t arg4)'
+aS'Function __wait type token: __wait(int32_t* arg1, int32_t* arg2, arg3, arg4)'
 p2855
 aS'Function __syscall_ret var: var_18'
 p2856
@@ -5778,7 +5778,7 @@ aS'Function __syscall_ret indirect branches test: []'
 p2891
 aS'Function __syscall_ret test instr highlight: <color: #ff00ff>'
 p2892
-aS'Function __syscall_ret type token: int32_t __syscall_ret(int32_t arg1)'
+aS'Function __syscall_ret type token: __syscall_ret(arg1)'
 p2893
 aS'Function __stdio_exit_needed var: var_18'
 p2894
@@ -5876,7 +5876,7 @@ aS'Function __stdio_exit_needed indirect branches test: []'
 p2940
 aS'Function __stdio_exit_needed test instr highlight: <color: #ff00ff>'
 p2941
-aS'Function __stdio_exit_needed type token: int32_t __stdio_exit_needed()'
+aS'Function __stdio_exit_needed type token: __stdio_exit_needed()'
 p2942
 aS'Function close_file var: var_20'
 p2943
@@ -6000,7 +6000,7 @@ aS'Function close_file indirect branches test: []'
 p3002
 aS'Function close_file test instr highlight: <color: #ff00ff>'
 p3003
-aS'Function close_file type token: int32_t close_file(int32_t arg1)'
+aS'Function close_file type token: close_file(arg1)'
 p3004
 aS'Function __stdio_write var: var_40'
 p3005
@@ -6168,7 +6168,7 @@ aS'Function __stdio_write indirect branches test: []'
 p3086
 aS'Function __stdio_write test instr highlight: <color: #ff00ff>'
 p3087
-aS'Function __stdio_write type token: int32_t __stdio_write(int32_t* arg1, int32_t arg2, int32_t arg3)'
+aS'Function __stdio_write type token: __stdio_write(int32_t* arg1, arg2, arg3)'
 p3088
 aS'Function __ofl_lock var: var_18'
 p3089
@@ -6240,7 +6240,7 @@ aS'Function __ofl_lock indirect branches test: []'
 p3122
 aS'Function __ofl_lock test instr highlight: <color: #ff00ff>'
 p3123
-aS'Function __ofl_lock type token: int32_t __ofl_lock()'
+aS'Function __ofl_lock type token: __ofl_lock()'
 p3124
 aS'Function __ofl_unlock var: var_18'
 p3125
@@ -6312,7 +6312,7 @@ aS'Function __ofl_unlock indirect branches test: []'
 p3158
 aS'Function __ofl_unlock test instr highlight: <color: #ff00ff>'
 p3159
-aS'Function __ofl_unlock type token: int32_t __ofl_unlock()'
+aS'Function __ofl_unlock type token: __ofl_unlock()'
 p3160
 aS'Function __lock var: var_20'
 p3161
@@ -6406,7 +6406,7 @@ aS'Function __lock indirect branches test: []'
 p3205
 aS'Function __lock test instr highlight: <color: #ff00ff>'
 p3206
-aS'Function __lock type token: int32_t __lock(int32_t* arg1)'
+aS'Function __lock type token: __lock(int32_t* arg1)'
 p3207
 aS'Function __unlock var: var_18'
 p3208
@@ -6494,7 +6494,7 @@ aS'Function __unlock indirect branches test: []'
 p3249
 aS'Function __unlock test instr highlight: <color: #ff00ff>'
 p3250
-aS'Function __unlock type token: int32_t __unlock(int32_t* arg1)'
+aS'Function __unlock type token: __unlock(int32_t* arg1)'
 p3251
 aS'Function __errno_location var: testautovar'
 p3252
@@ -6550,7 +6550,7 @@ aS'Function __errno_location indirect branches test: []'
 p3277
 aS'Function __errno_location test instr highlight: <color: #ff00ff>'
 p3278
-aS'Function __errno_location type token: int32_t __errno_location()'
+aS'Function __errno_location type token: __errno_location()'
 p3279
 aS'Function _fini var: var_18'
 p3280
@@ -6646,7 +6646,7 @@ aS'Function _fini indirect branches test: []'
 p3325
 aS'Function _fini test instr highlight: <color: #ff00ff>'
 p3326
-aS'Function _fini type token: int32_t _fini()'
+aS'Function _fini type token: _fini()'
 p3327
 asS'test_function_starts'
 p3328

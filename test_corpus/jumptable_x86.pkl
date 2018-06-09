@@ -238,7 +238,7 @@ aS'Function _main indirect branches test: []'
 p121
 aS'Function _main test instr highlight: <color: #ff00ff>'
 p122
-aS'Function _main type token: int32_t _main(int32_t* arg1)'
+aS'Function _main type token: _main(int32_t* arg1)'
 p123
 aS'Function _atoi var: testautovar'
 p124
@@ -288,7 +288,7 @@ aS'Function _atoi indirect branches test: []'
 p146
 aS'Function _atoi test instr highlight: <color: #ff00ff>'
 p147
-aS'Function _atoi type token: int32_t _atoi()'
+aS'Function _atoi type token: _atoi()'
 p148
 aS'Function _puts var: testautovar'
 p149
@@ -338,7 +338,7 @@ aS'Function _puts indirect branches test: []'
 p171
 aS'Function _puts test instr highlight: <color: #ff00ff>'
 p172
-aS'Function _puts type token: int32_t _puts()'
+aS'Function _puts type token: _puts()'
 p173
 asS'test_function_starts'
 p174

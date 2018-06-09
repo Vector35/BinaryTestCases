@@ -262,7 +262,7 @@ aS'Function _main indirect branches test: []'
 p133
 aS'Function _main test instr highlight: <color: #ff00ff>'
 p134
-aS'Function _main type token: int32_t _main()'
+aS'Function _main type token: _main()'
 p135
 aS'Function test1 var: var_8'
 p136
@@ -334,7 +334,7 @@ aS'Function test1 indirect branches test: []'
 p169
 aS'Function test1 test instr highlight: <color: #ff00ff>'
 p170
-aS'Function test1 type token: int32_t test1()'
+aS'Function test1 type token: test1()'
 p171
 aS'Function a var: testautovar'
 p172
@@ -438,7 +438,7 @@ aS'Function b indirect branches test: []'
 p221
 aS'Function b test instr highlight: <color: #ff00ff>'
 p222
-aS'Function b type token: long double __stdcall b(int32_t testautovar)'
+aS'Function b type token: long double __stdcall b(testautovar)'
 p223
 aS'Function c var: var_4'
 p224
@@ -494,7 +494,7 @@ aS'Function c indirect branches test: []'
 p249
 aS'Function c test instr highlight: <color: #ff00ff>'
 p250
-aS'Function c type token: int32_t c(long double arg1 @ st0, long double arg2 @ st1)'
+aS'Function c type token: c(long double arg1 @ st0, long double arg2 @ st1)'
 p251
 aS'Function test2 var: var_8'
 p252
@@ -562,7 +562,7 @@ aS'Function test2 indirect branches test: []'
 p283
 aS'Function test2 test instr highlight: <color: #ff00ff>'
 p284
-aS'Function test2 type token: int32_t __stdcall test2(int32_t testautovar)'
+aS'Function test2 type token: __stdcall test2(testautovar)'
 p285
 aS'Function d var: var_4'
 p286
@@ -624,7 +624,7 @@ aS'Function d indirect branches test: []'
 p314
 aS'Function d test instr highlight: <color: #ff00ff>'
 p315
-aS'Function d type token: int32_t __stdcall d(int32_t testautovar)'
+aS'Function d type token: __stdcall d(testautovar)'
 p316
 aS'Function test3 var: var_4'
 p317
@@ -700,7 +700,7 @@ aS'Function test3 indirect branches test: []'
 p352
 aS'Function test3 test instr highlight: <color: #ff00ff>'
 p353
-aS'Function test3 type token: int32_t __stdcall test3(int32_t testautovar)'
+aS'Function test3 type token: __stdcall test3(testautovar)'
 p354
 asS'test_function_starts'
 p355

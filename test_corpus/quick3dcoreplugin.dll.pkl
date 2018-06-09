@@ -3050,7 +3050,7 @@ aS'Function sub_18000361c indirect branches test: []'
 p1527
 aS'Function sub_18000361c test instr highlight: <color: #ff00ff>'
 p1528
-aS'Function sub_18000361c type token: int64_t sub_18000361c(int32_t arg1)'
+aS'Function sub_18000361c type token: int64_t sub_18000361c(arg1)'
 p1529
 aS'Function sub_180003668 var: var_48'
 p1530
@@ -3154,7 +3154,7 @@ aS'Function sub_180003668 indirect branches test: []'
 p1579
 aS'Function sub_180003668 test instr highlight: <color: #ff00ff>'
 p1580
-aS'Function sub_180003668 type token: uint64_t sub_180003668(int32_t arg1)'
+aS'Function sub_180003668 type token: uint64_t sub_180003668(arg1)'
 p1581
 aS'Function sub_180003734 var: var_18'
 p1582
@@ -3840,7 +3840,7 @@ aS'Function sub_180003af4 indirect branches test: []'
 p1922
 aS'Function sub_180003af4 test instr highlight: <color: #ff00ff>'
 p1923
-aS'Function sub_180003af4 type token: int64_t sub_180003af4(int32_t arg1)'
+aS'Function sub_180003af4 type token: int64_t sub_180003af4(arg1)'
 p1924
 aS'Function sub_180003b8c var: var_28'
 p1925
@@ -3994,7 +3994,7 @@ aS'Function sub_180003b8c indirect branches test: []'
 p1999
 aS'Function sub_180003b8c test instr highlight: <color: #ff00ff>'
 p2000
-aS'Function sub_180003b8c type token: uint64_t sub_180003b8c(int64_t arg1, int32_t arg2, int64_t arg3)'
+aS'Function sub_180003b8c type token: uint64_t sub_180003b8c(int64_t arg1, arg2, int64_t arg3)'
 p2001
 aS'Function sub_180003e84 var: var_28'
 p2002
@@ -4074,7 +4074,7 @@ aS'Function sub_180003e84 indirect branches test: []'
 p2039
 aS'Function sub_180003e84 test instr highlight: <color: #ff00ff>'
 p2040
-aS'Function sub_180003e84 type token: int64_t sub_180003e84(int64_t arg1, int32_t arg2, int64_t arg3)'
+aS'Function sub_180003e84 type token: int64_t sub_180003e84(int64_t arg1, arg2, int64_t arg3)'
 p2041
 aS'Function _start var: var_58'
 p2042
@@ -4256,7 +4256,7 @@ aS'Function _start indirect branches test: []'
 p2130
 aS'Function _start test instr highlight: <color: #ff00ff>'
 p2131
-aS'Function _start type token: uint64_t _start(int64_t arg1, int32_t arg2, int64_t arg3)'
+aS'Function _start type token: uint64_t _start(int64_t arg1, arg2, int64_t arg3)'
 p2132
 aS'Function sub_180003f58 var: testautovar'
 p2133
@@ -5122,7 +5122,7 @@ aS'Function sub_180004494 indirect branches test: []'
 p2563
 aS'Function sub_180004494 test instr highlight: <color: #ff00ff>'
 p2564
-aS'Function sub_180004494 type token: int64_t sub_180004494(int64_t arg1, int32_t arg2)'
+aS'Function sub_180004494 type token: int64_t sub_180004494(int64_t arg1, arg2)'
 p2565
 aS'Function KERNEL32!InitializeSListHead var: testautovar'
 p2566

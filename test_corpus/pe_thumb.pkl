@@ -1164,7 +1164,7 @@ aS'Function ?Test@@YAHHH@Z indirect branches test: []'
 p584
 aS'Function ?Test@@YAHHH@Z test instr highlight: <color: #ff00ff>'
 p585
-aS'Function ?Test@@YAHHH@Z type token: int32_t ?Test@@YAHHH@Z(int32_t arg1, int32_t arg2)'
+aS'Function ?Test@@YAHHH@Z type token: ?Test@@YAHHH@Z(arg1, arg2)'
 p586
 aS'Function sub_10001018 var: var_28'
 p587
@@ -1252,7 +1252,7 @@ aS'Function sub_10001018 indirect branches test: []'
 p628
 aS'Function sub_10001018 test instr highlight: <color: #ff00ff>'
 p629
-aS'Function sub_10001018 type token: int32_t sub_10001018()'
+aS'Function sub_10001018 type token: sub_10001018()'
 p630
 aS'Function sub_1000116c var: var_88'
 p631
@@ -1642,7 +1642,7 @@ aS'Function sub_1000116c indirect branches test: []'
 p823
 aS'Function sub_1000116c test instr highlight: <color: #ff00ff>'
 p824
-aS'Function sub_1000116c type token: int32_t sub_1000116c(int32_t arg1, int32_t arg2, int32_t arg3)'
+aS'Function sub_1000116c type token: sub_1000116c(arg1, arg2, arg3)'
 p825
 aS'Function _start var: var_20'
 p826
@@ -1736,7 +1736,7 @@ aS'Function _start indirect branches test: []'
 p870
 aS'Function _start test instr highlight: <color: #ff00ff>'
 p871
-aS'Function _start type token: int32_t _start(int32_t arg1, int32_t arg2, int32_t arg3)'
+aS'Function _start type token: _start(arg1, arg2, arg3)'
 p872
 aS'Function sub_10001494 var: var_10'
 p873
@@ -1810,7 +1810,7 @@ aS'Function sub_10001494 indirect branches test: []'
 p907
 aS'Function sub_10001494 test instr highlight: <color: #ff00ff>'
 p908
-aS'Function sub_10001494 type token: int32_t sub_10001494(int32_t arg1, int32_t, int32_t, int32_t arg4)'
+aS'Function sub_10001494 type token: sub_10001494(arg1, int32_t, int32_t, arg4)'
 p909
 aS'Function sub_100014b0 var: var_48'
 p910
@@ -1994,7 +1994,7 @@ aS'Function sub_100014b0 indirect branches test: []'
 p999
 aS'Function sub_100014b0 test instr highlight: <color: #ff00ff>'
 p1000
-aS'Function sub_100014b0 type token: int32_t sub_100014b0(int32_t arg1, int32_t arg2, int32_t arg3)'
+aS'Function sub_100014b0 type token: sub_100014b0(arg1, arg2, arg3)'
 p1001
 aS'Function sub_100015c6 var: testautovar'
 p1002
@@ -2044,7 +2044,7 @@ aS'Function sub_100015c6 indirect branches test: []'
 p1024
 aS'Function sub_100015c6 test instr highlight: <color: #ff00ff>'
 p1025
-aS'Function sub_100015c6 type token: int32_t sub_100015c6()'
+aS'Function sub_100015c6 type token: sub_100015c6()'
 p1026
 aS'Function MSVCR110D!_amsg_exit var: testautovar'
 p1027
@@ -2100,7 +2100,7 @@ aS'Function MSVCR110D!_amsg_exit indirect branches test: []'
 p1052
 aS'Function MSVCR110D!_amsg_exit test instr highlight: <color: #ff00ff>'
 p1053
-aS'Function MSVCR110D!_amsg_exit type token: int32_t MSVCR110D!_amsg_exit()'
+aS'Function MSVCR110D!_amsg_exit type token: MSVCR110D!_amsg_exit()'
 p1054
 aS'Function MSVCR110D!_initterm_e var: testautovar'
 p1055
@@ -2156,7 +2156,7 @@ aS'Function MSVCR110D!_initterm_e indirect branches test: []'
 p1080
 aS'Function MSVCR110D!_initterm_e test instr highlight: <color: #ff00ff>'
 p1081
-aS'Function MSVCR110D!_initterm_e type token: int32_t MSVCR110D!_initterm_e()'
+aS'Function MSVCR110D!_initterm_e type token: MSVCR110D!_initterm_e()'
 p1082
 aS'Function MSVCR110D!_initterm var: testautovar'
 p1083
@@ -2212,7 +2212,7 @@ aS'Function MSVCR110D!_initterm indirect branches test: []'
 p1108
 aS'Function MSVCR110D!_initterm test instr highlight: <color: #ff00ff>'
 p1109
-aS'Function MSVCR110D!_initterm type token: int32_t MSVCR110D!_initterm()'
+aS'Function MSVCR110D!_initterm type token: MSVCR110D!_initterm()'
 p1110
 aS'Function sub_1000193c var: var_18'
 p1111
@@ -2314,7 +2314,7 @@ aS'Function sub_1000193c indirect branches test: []'
 p1159
 aS'Function sub_1000193c test instr highlight: <color: #ff00ff>'
 p1160
-aS'Function sub_1000193c type token: int32_t sub_1000193c(int16_t* arg1)'
+aS'Function sub_1000193c type token: sub_1000193c(int16_t* arg1)'
 p1161
 aS'Function sub_10001998 var: var_18'
 p1162
@@ -2448,7 +2448,7 @@ aS'Function sub_10001998 indirect branches test: []'
 p1226
 aS'Function sub_10001998 test instr highlight: <color: #ff00ff>'
 p1227
-aS'Function sub_10001998 type token: int32_t sub_10001998(int32_t arg1, int32_t arg2)'
+aS'Function sub_10001998 type token: sub_10001998(arg1, arg2)'
 p1228
 aS'Function sub_10001a0c var: var_50'
 p1229
@@ -2578,7 +2578,7 @@ aS'Function sub_10001a0c indirect branches test: []'
 p1291
 aS'Function sub_10001a0c test instr highlight: <color: #ff00ff>'
 p1292
-aS'Function sub_10001a0c type token: int32_t sub_10001a0c(int32_t arg1, int32_t arg2, int32_t arg3)'
+aS'Function sub_10001a0c type token: sub_10001a0c(arg1, arg2, arg3)'
 p1293
 aS'Function sub_10001ad8 var: var_28'
 p1294
@@ -2738,7 +2738,7 @@ aS'Function sub_10001ad8 indirect branches test: []'
 p1371
 aS'Function sub_10001ad8 test instr highlight: <color: #ff00ff>'
 p1372
-aS'Function sub_10001ad8 type token: int32_t sub_10001ad8(int32_t arg1, int32_t arg2)'
+aS'Function sub_10001ad8 type token: sub_10001ad8(arg1, arg2)'
 p1373
 asS'test_function_starts'
 p1374

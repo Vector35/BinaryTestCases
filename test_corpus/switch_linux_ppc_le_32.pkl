@@ -590,7 +590,7 @@ aS'Function _init indirect branches test: []'
 p297
 aS'Function _init test instr highlight: <color: #ff00ff>'
 p298
-aS'Function _init type token: int32_t _init()'
+aS'Function _init type token: _init()'
 p299
 aS'Function _start var: var_10'
 p300
@@ -696,7 +696,7 @@ aS'Function _start indirect branches test: []'
 p350
 aS'Function _start test instr highlight: <color: #ff00ff>'
 p351
-aS'Function _start type token: int32_t _start()'
+aS'Function _start type token: _start()'
 p352
 aS'Function deregister_tm_clones var: testautovar'
 p353
@@ -794,7 +794,7 @@ aS'Function deregister_tm_clones indirect branches test: []'
 p399
 aS'Function deregister_tm_clones test instr highlight: <color: #ff00ff>'
 p400
-aS'Function deregister_tm_clones type token: int32_t deregister_tm_clones()'
+aS'Function deregister_tm_clones type token: deregister_tm_clones()'
 p401
 aS'Function register_tm_clones var: testautovar'
 p402
@@ -894,7 +894,7 @@ aS'Function register_tm_clones indirect branches test: []'
 p449
 aS'Function register_tm_clones test instr highlight: <color: #ff00ff>'
 p450
-aS'Function register_tm_clones type token: int32_t register_tm_clones()'
+aS'Function register_tm_clones type token: register_tm_clones()'
 p451
 aS'Function __do_global_dtors_aux var: var_20'
 p452
@@ -1032,7 +1032,7 @@ aS'Function __do_global_dtors_aux indirect branches test: []'
 p518
 aS'Function __do_global_dtors_aux test instr highlight: <color: #ff00ff>'
 p519
-aS'Function __do_global_dtors_aux type token: int32_t __do_global_dtors_aux()'
+aS'Function __do_global_dtors_aux type token: __do_global_dtors_aux()'
 p520
 aS'Function call___do_global_dtors_aux var: var_10'
 p521
@@ -1082,7 +1082,7 @@ aS'Function call___do_global_dtors_aux indirect branches test: []'
 p543
 aS'Function call___do_global_dtors_aux test instr highlight: <color: #ff00ff>'
 p544
-aS'Function call___do_global_dtors_aux type token: int32_t call___do_global_dtors_aux()'
+aS'Function call___do_global_dtors_aux type token: call___do_global_dtors_aux()'
 p545
 aS'Function frame_dummy var: var_10'
 p546
@@ -1208,7 +1208,7 @@ aS'Function frame_dummy indirect branches test: []'
 p606
 aS'Function frame_dummy test instr highlight: <color: #ff00ff>'
 p607
-aS'Function frame_dummy type token: int32_t frame_dummy(int32_t arg1, int32_t arg2, int32_t arg3, int32_t arg4, int32_t arg5, int32_t arg6)'
+aS'Function frame_dummy type token: frame_dummy(arg1, arg2, arg3, arg4, arg5, arg6)'
 p608
 aS'Function call_frame_dummy var: var_10'
 p609
@@ -1258,7 +1258,7 @@ aS'Function call_frame_dummy indirect branches test: []'
 p631
 aS'Function call_frame_dummy test instr highlight: <color: #ff00ff>'
 p632
-aS'Function call_frame_dummy type token: int32_t call_frame_dummy()'
+aS'Function call_frame_dummy type token: call_frame_dummy()'
 p633
 aS'Function main var: var_20'
 p634
@@ -1520,7 +1520,7 @@ aS'Function main indirect branches test: []'
 p762
 aS'Function main test instr highlight: <color: #ff00ff>'
 p763
-aS'Function main type token: int32_t main(int32_t arg1, int32_t arg2, int32_t arg3, int32_t arg4, int32_t arg5, int32_t arg6)'
+aS'Function main type token: main(arg1, arg2, arg3, arg4, arg5, arg6)'
 p764
 aS'Function __libc_csu_init var: var_30'
 p765
@@ -1672,7 +1672,7 @@ aS'Function __libc_csu_init indirect branches test: []'
 p838
 aS'Function __libc_csu_init test instr highlight: <color: #ff00ff>'
 p839
-aS'Function __libc_csu_init type token: int32_t __libc_csu_init(int32_t arg1, int32_t arg2, int32_t arg3)'
+aS'Function __libc_csu_init type token: __libc_csu_init(arg1, arg2, arg3)'
 p840
 aS'Function __libc_csu_fini var: testautovar'
 p841
@@ -1718,7 +1718,7 @@ aS'Function __libc_csu_fini indirect branches test: []'
 p861
 aS'Function __libc_csu_fini test instr highlight: <color: #ff00ff>'
 p862
-aS'Function __libc_csu_fini type token: int32_t __libc_csu_fini()'
+aS'Function __libc_csu_fini type token: __libc_csu_fini()'
 p863
 aS'Function __do_global_ctors_aux var: var_10'
 p864
@@ -1830,7 +1830,7 @@ aS'Function __do_global_ctors_aux indirect branches test: []'
 p917
 aS'Function __do_global_ctors_aux test instr highlight: <color: #ff00ff>'
 p918
-aS'Function __do_global_ctors_aux type token: int32_t __do_global_ctors_aux()'
+aS'Function __do_global_ctors_aux type token: __do_global_ctors_aux()'
 p919
 aS'Function call___do_global_ctors_aux var: var_10'
 p920
@@ -1880,7 +1880,7 @@ aS'Function call___do_global_ctors_aux indirect branches test: []'
 p942
 aS'Function call___do_global_ctors_aux test instr highlight: <color: #ff00ff>'
 p943
-aS'Function call___do_global_ctors_aux type token: int32_t call___do_global_ctors_aux()'
+aS'Function call___do_global_ctors_aux type token: call___do_global_ctors_aux()'
 p944
 aS'Function puts var: testautovar'
 p945
@@ -1978,7 +1978,7 @@ aS'Function puts indirect branches test: []'
 p991
 aS'Function puts test instr highlight: <color: #ff00ff>'
 p992
-aS'Function puts type token: int32_t puts()'
+aS'Function puts type token: puts()'
 p993
 aS'Function sub_10000ac0 var: testautovar'
 p994
@@ -2080,7 +2080,7 @@ aS'Function sub_10000ac0 indirect branches test: []'
 p1042
 aS'Function sub_10000ac0 test instr highlight: <color: #ff00ff>'
 p1043
-aS'Function sub_10000ac0 type token: int32_t sub_10000ac0()'
+aS'Function sub_10000ac0 type token: sub_10000ac0()'
 p1044
 aS'Function _fini var: var_10'
 p1045
@@ -2186,7 +2186,7 @@ aS'Function _fini indirect branches test: []'
 p1095
 aS'Function _fini test instr highlight: <color: #ff00ff>'
 p1096
-aS'Function _fini type token: int32_t _fini()'
+aS'Function _fini type token: _fini()'
 p1097
 asS'test_function_starts'
 p1098

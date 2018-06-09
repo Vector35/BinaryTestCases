@@ -122,7 +122,7 @@ aS'Function _start indirect branches test: []'
 p63
 aS'Function _start test instr highlight: <color: #ff00ff>'
 p64
-aS'Function _start type token: int32_t __convention("linux-syscall") _start(int32_t arg1)'
+aS'Function _start type token: __convention("linux-syscall") _start(arg1)'
 p65
 asS'test_function_starts'
 p66

@@ -210,7 +210,7 @@ aS'Function _start indirect branches test: []'
 p107
 aS'Function _start test instr highlight: <color: #ff00ff>'
 p108
-aS'Function _start type token: int32_t _start(char* arg1, int32_t arg2)'
+aS'Function _start type token: _start(char* arg1, arg2)'
 p109
 asS'test_function_starts'
 p110
