@@ -298,7 +298,9 @@ func_cmpxchg:
     ; nasm cannot assemble these
     ; bug report filed: https://bugzilla.nasm.us/show_bug.cgi?id=3392676
     ; CMPXCHG8B qword [rdi]
-    ; CMPXCHG16B oword [edi]
+    ; CMPXCHG16B oword [rdi]
+    CMPXCHG8B [rdi]
+    CMPXCHG16B [rdi]
 
     ret
 
@@ -336,6 +338,8 @@ func_movnt:
     ; nasm cannot assemble this properly
     ; MOVNTSD oword[rdi], xmm1
     ; MOVNTSS oword[rdi], xmm1
+    MOVNTSD [rdi], xmm1
+    MOVNTSS [rdi], xmm1
 
     ret
 
