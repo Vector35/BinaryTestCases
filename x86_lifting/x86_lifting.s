@@ -24,7 +24,7 @@ packedComparison:
     VPCMPEQW xmm1, xmm2, xmm3
     VPCMPEQD xmm1, xmm2, xmm3
     VPCMPEQQ xmm1, xmm2, xmm3
-    
+
     VPCMPEQB ymm1, ymm2, ymm3
     VPCMPEQW ymm1, ymm2, ymm3
     VPCMPEQD ymm1, ymm2, ymm3
@@ -63,7 +63,7 @@ packedGreater:
     VPCMPGTW xmm1, xmm2, xmm3
     VPCMPGTD xmm1, xmm2, xmm3
     VPCMPGTQ xmm1, xmm2, xmm3
-    
+
     VPCMPGTB ymm1, ymm2, ymm3
     VPCMPGTW ymm1, ymm2, ymm3
     VPCMPGTD ymm1, ymm2, ymm3
@@ -113,7 +113,7 @@ moveMask:
 
     MOVMSKPD eax, xmm0
     VMOVMSKPD eax, xmm1
-    VMOVMSKPD eax, ymm1    
+    VMOVMSKPD eax, ymm1
 
     ret
 
@@ -304,11 +304,19 @@ func_cmpxchg:
 
     ret
 
-func_tzct:
+func_bits_related:
 
     tzcnt ax, bx
     tzcnt eax, ebx
     tzcnt rax, rbx
+
+    lzcnt ax, bx
+    lzcnt eax, ebx
+    lzcnt rax, rbx
+
+    popcnt ax, bx
+    popcnt eax, ebx
+    popcnt rax, rbx
 
     ret
 
@@ -347,14 +355,14 @@ movPackedSingle:
 
     VMOVUPS xmm1, xmm2
     VMOVUPS ymm1, ymm2
-    
+
     VMOVUPS xmm1 {k1}{z}, xmm2
     VMOVUPS ymm1 {k1}{z}, ymm2
     VMOVUPS zmm1 {k1}{z}, zmm2
 
     VMOVAPS xmm1, xmm2
     VMOVAPS ymm1, ymm2
-    
+
     VMOVAPS xmm1 {k1}{z}, xmm2
     VMOVAPS ymm1 {k1}{z}, ymm2
     VMOVAPS zmm1 {k1}{z}, zmm2
@@ -381,7 +389,7 @@ movPackedIntegers:
 
     VMOVDQU64 xmm1 {k1}{z}, xmm2
     VMOVDQU64 ymm1 {k1}{z}, ymm2
-    VMOVDQU64 zmm1 {k1}{z}, zmm2    
+    VMOVDQU64 zmm1 {k1}{z}, zmm2
 
     ret
 
@@ -392,10 +400,103 @@ func_movss:
     VMOVSS xmm1, xmm2, xmm3
 
     VMOVSS xmm1 {k1}{z}, xmm2, xmm3
-    VMOVSS xmm1 {k1}{z}, dword [eax]    
+    VMOVSS xmm1 {k1}{z}, dword [eax]
     VMOVSS xmm1 {k1}{z}, xmm2, xmm3
     VMOVSS dword [eax]  {k1}, xmm0
 
+    ret
+
+func_cvtxx:
+
+    CVTSI2SS xmm0, eax
+    CVTSI2SS xmm0, rax
+    VCVTSI2SS xmm0, xmm1, eax
+    VCVTSI2SS xmm0, xmm1, rax
+
+    CVTSS2SI eax, xmm0
+    CVTSS2SI rax, xmm0
+    VCVTSS2SI eax, xmm0
+    VCVTSS2SI rax, xmm0
+
+    CVTSD2SI eax, xmm0
+    CVTSD2SI rax, xmm0
+    VCVTSD2SI eax, xmm0
+    VCVTSD2SI rax, xmm0
+
+    CVTTSS2SI eax, xmm0
+    CVTTSS2SI rax, xmm0
+    VCVTTSS2SI eax, xmm0
+    VCVTTSS2SI rax, xmm0
+
+    CVTTSD2SI eax, xmm0
+    CVTTSD2SI rax, xmm0
+    VCVTTSD2SI eax, xmm0
+    VCVTTSD2SI rax, xmm0
+
+    CVTSS2SD xmm1, xmm2
+    VCVTSS2SD xmm1, xmm2, xmm3
+    CVTSD2SS xmm1, xmm2
+    VCVTSD2SS xmm1, xmm2, xmm3
+
+    ret
+
+func_misc:
+
+    xlatb
+    ; andn eax, ebx
+    ; andn rax, rbx
+
+    LDMXCSR dword [rdi]
+    VLDMXCSR dword [rdi]
+
+func_fstp:
+
+    fld dword [ecx]
+    fld dword [edx]
+    fadd st1
+    fstp st1
+    ret
+
+func_shifts:
+
+    ; nasm cannot assemble these
+    ; sarx eax, 3
+    ; sarx rax, 3
+    ; shrx eax, 3
+    ; shrx rax, 3
+    ; shlx eax, 3
+    ; shlx rax, 3
+    ; rorx eax, 3
+    ; rorx rax, 3
+
+    ret
+
+func_addss:
+
+    ADDSS xmm1, xmm2
+    VADDSS xmm1,xmm2, xmm3
+    VADDSS xmm1{k1}{z}, xmm2, xmm3
+    ret
+
+func_subss:
+
+    SUBSS xmm1, xmm2
+    VSUBSS xmm1,xmm2, xmm3
+    VSUBSS xmm1{k1}{z}, xmm2, xmm3
+    ret
+
+func_mulss:
+
+    MULSS xmm1, xmm2
+    VMULSS xmm1,xmm2, xmm3
+    VMULSS xmm1{k1}{z}, xmm2, xmm3
+    ret
+
+func_divss:
+
+    DIVSS xmm1, xmm2
+    VDIVSS xmm1,xmm2, xmm3
+    VDIVSS xmm1{k1}{z}, xmm2, xmm3
     ret
 
 _start:
@@ -413,11 +514,19 @@ _start:
     call packedXor
     call func_ptest
     call func_cmpxchg
-    call func_tzct
+    call func_bits_related
     call func_movnt
     call movPackedSingle
     call movPackedIntegers
     call func_movss
+    call func_cvtxx
+    call func_misc
+    call func_fstp
+    call func_shifts
+    call func_addss
+    call func_subss
+    call func_mulss
+    call func_divss
 
     xor eax, eax
     ret
