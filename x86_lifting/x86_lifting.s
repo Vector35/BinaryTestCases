@@ -521,7 +521,7 @@ _start:
     call func_movss
     call func_cvtxx
     call func_misc
-    call func_fstp
+    ; call func_fstp
     call func_shifts
     call func_addss
     call func_subss
