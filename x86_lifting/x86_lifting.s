@@ -448,6 +448,7 @@ func_misc:
 
     LDMXCSR dword [rdi]
     VLDMXCSR dword [rdi]
+    ret
 
 func_fstp:
 
