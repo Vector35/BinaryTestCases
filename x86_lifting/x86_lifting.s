@@ -504,6 +504,25 @@ func_divss:
     VDIVSS xmm1{k1}{z}, xmm2, xmm3
     ret
 
+func_movps_related:
+
+    MOVLPD xmm1, qword [rax]
+    VMOVLPD xmm2, xmm1, qword [rax]
+    MOVLPS xmm1, qword [rax]
+    VMOVLPS xmm2, xmm1, qword [rax]
+
+    MOVHPD  xmm1, [rax]
+    VMOVHPD xmm2, xmm1, qword [rax]
+    MOVHPS  xmm1, qword [rax]
+    VMOVHPS xmm2, xmm1, qword [rax]
+
+    MOVHLPS xmm1, xmm2
+    VMOVHLPS xmm1, xmm2, xmm3
+    MOVLHPS xmm1, xmm2
+    VMOVLHPS xmm1, xmm2, xmm3
+
+    ret
+
 _start:
 
     call packedComparison
@@ -532,6 +551,7 @@ _start:
     call func_subss
     call func_mulss
     call func_divss
+    call func_movps_related
 
     xor eax, eax
     ret
