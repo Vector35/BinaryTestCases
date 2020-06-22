@@ -448,6 +448,13 @@ func_misc:
 
     LDMXCSR dword [rdi]
     VLDMXCSR dword [rdi]
+
+    SAHF
+    LAHF
+    ; FNSTCW [rax]
+    ; FLDCW [rax]
+    ; FNSTSW ax
+
     ret
 
 func_fstp:
@@ -523,6 +530,89 @@ func_movps_related:
 
     ret
 
+func_bit_count:
+    lzcnt rax, rbx
+    tzcnt rax, rbx
+    popcnt rax, rbx
+    ret
+
+func_float_conversion:
+
+    ucomiss xmm1, xmm2
+    ucomisd xmm1, xmm2
+    comiss xmm1, xmm2
+    comisd xmm1, xmm2
+
+    CVTSI2SS xmm1, [rax]
+    VCVTSI2SS xmm1, xmm2, [rax]
+
+    CVTSI2SD xmm1, [rax]
+    VCVTSI2SD xmm1, xmm2, [rax]
+
+    CVTSS2SI rax, xmm1
+    VCVTSS2SI rax, xmm1
+    CVTSD2SI rax, xmm1
+    VCVTSD2SI rax, xmm1
+
+    CVTTSS2SI rax, xmm1
+    VCVTTSS2SI rax, xmm1
+    CVTTSD2SI rax, xmm1
+    VCVTTSD2SI rax, xmm1
+
+    ret
+
+func_packed_bitwise_operation:
+
+    ANDPS xmm1, xmm2
+    VANDPS xmm1, xmm2, xmm2
+
+    ORPS xmm1, xmm2
+    VORPS xmm1, xmm2, xmm2
+
+    ORPS xmm1, xmm2
+    VXORPS xmm1, xmm2, xmm2
+
+    ANDPD xmm1, xmm2
+    VANDPD xmm1, xmm2, xmm2
+
+    ORPD xmm1, xmm2
+    VORPD xmm1, xmm2, xmm2
+
+    XORPD xmm1, xmm2
+    VXORPD xmm1, xmm2, xmm2
+
+    ANDNPS xmm1, xmm2
+    VANDNPS xmm1, xmm2, xmm2
+
+    ret
+
+func_addsub:
+
+    addsubps xmm1, xmm2
+    vaddsubps xmm1, xmm2, xmm3
+
+    addsubpd xmm1, xmm2
+    vaddsubpd xmm1, xmm2, xmm3
+
+    ret
+
+func_extract:
+
+    PEXTRB eax, xmm2, 3
+    PEXTRW eax, xmm2, 3
+    PEXTRD eax, xmm2, 3
+    PEXTRQ rax, xmm2, 3
+    EXTRACTPS eax, xmm1, 2
+    ret
+
+func_insert:
+
+    PEXTRB eax, xmm2, 3
+    PEXTRW eax, xmm2, 3
+    PEXTRD eax, xmm2, 3
+    PEXTRQ rax, xmm2, 3
+    ret
+
 _start:
 
     call packedComparison
@@ -552,6 +642,12 @@ _start:
     call func_mulss
     call func_divss
     call func_movps_related
+    call func_bit_count
+    call func_float_conversion
+    call func_packed_bitwise_operation
+    call func_addsub
+    call func_extract
+    call func_insert
 
     xor eax, eax
     ret
