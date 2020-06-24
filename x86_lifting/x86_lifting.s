@@ -451,9 +451,9 @@ func_misc:
 
     SAHF
     LAHF
-    ; FNSTCW [rax]
-    ; FLDCW [rax]
-    ; FNSTSW ax
+    FNSTCW [rax]
+    FLDCW [rax]
+    FNSTSW ax
 
     ret
 
